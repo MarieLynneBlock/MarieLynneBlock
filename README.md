@@ -13,25 +13,25 @@
 <p align = "center">
   <img src = "https://github.com/MarieLynneBlock/MarieLynneBlock/blob/master/img/readme_aboutme-MarieLynneBlock.png">
 </p>
-
-
+&nbsp;
+&nbsp;
 I am a strong T-shaped developer with a creative side and a passion for design, UX/UI. My mission is to build a connection between the product and the users as well as connecting developers and business.
-
-
+&nbsp;
+&nbsp;
 :sunny: by day\
 • Full-Stack, Enterprise software developer\
 • With experience in international and multilingual environments, and strong communication skills\
 • Does not shirk technical analyses and data driven decision making\
 • Agile: experience with Scrum, Lean, Kanban and XP\
-• A strong interest in product management, using my technical background to bring added value to the business processes\
-• Finds interaction between creativity, innovation and technology essential\
+• A strong interest in product management, using my technical background to bring added value to business processes\
+• Finds interaction between creativity, innovation and technology essential
 
 :first_quarter_moon_with_face: by night\
 • Creative jack-of-all-trades with a strong interest in multimedia\
 • A musician that loves challenge and originality, moreover has an interest in sound engineering\
 • Likes photography and videography (especially mirrorless technology)\
 • Enjoys working with pen and paper as much as experimenting with generative art\
-• Loves learning new languages and, consequently, loves traveling\
+• Loves learning new languages and, consequently, loves traveling
 
 <!--
 **MarieLynneBlock/MarieLynneBlock** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
