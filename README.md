@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 <p align = "center">
-  <img src = "https://github.com/MarieLynneBlock/MarieLynneBlock/blob/master/img/BannerReadMe-MarieLynneBlock.png">
+  <img src = "https://github.com/MarieLynneBlock/MarieLynneBlock/blob/master/img/readme_banner-MarieLynneBlock.png">
 </p>
 
 <!--
