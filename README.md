@@ -16,4 +16,4 @@ Here are some ideas to get you started:
 -->
 
 
-[![Github Stats](https://github-readme-stats.vercel.app/api?username=MarieLynneBlock)&hide=["stars","commits","prs"]](https://github.com/MarieLynneBlock/github-readme-stats)
+![github stats](https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&hide=["contribs","prs","issues"]&show_icons=true&theme=dracula)
