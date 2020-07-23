@@ -3,20 +3,12 @@
   <img src = "https://github.com/MarieLynneBlock/MarieLynneBlock/blob/master/img/readme_banner-MarieLynneBlock.png">
 </p>
 
-<!-- NEW Stats Dashboard -->
-<p align = "center">
-  <img src = "https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&show_icons=true&theme=dracula&line_height=33&bg_color=506487&title_color=F19FAC">
-  <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&hide_langs_below=12&theme=dracula&bg_color=506487&title_color=F19FAC">
-</p>
-
 <!-- About me -->
 <p align = "center">
   <img src = "https://github.com/MarieLynneBlock/MarieLynneBlock/blob/master/img/readme_aboutme-MarieLynneBlock.png">
 </p>
-  
-  
+    
 I am a strong T-shaped developer with a creative side and a passion for design, UX/UI. My mission is to build a connection between the product and the users as well as connecting developers and business.
-  
   
 :sunny: by day\
 • Full-Stack, Enterprise software developer\
@@ -32,6 +24,13 @@ I am a strong T-shaped developer with a creative side and a passion for design, 
 • Likes photography and videography (especially mirrorless technology)\
 • Enjoys working with pen and paper as much as experimenting with generative art\
 • Loves learning new languages and, consequently, loves traveling
+
+<!-- NEW Stats Dashboard -->
+<p align = "center">
+  <img src = "https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&show_icons=true&theme=dracula&line_height=33&bg_color=506487&title_color=F19FAC">
+  <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&hide_langs_below=12&theme=dracula&bg_color=506487&title_color=F19FAC">
+</p>
+
 
 <!--
 **MarieLynneBlock/MarieLynneBlock** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
