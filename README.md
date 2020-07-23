@@ -17,3 +17,4 @@ Here are some ideas to get you started:
 
 
 ![github stats](https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&hide=["issues"]&show_icons=true&theme=dracula)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=ElectronicMusicTools)](https://github.com/MarieLynneBlock/ElectronicMusicTools)
