@@ -16,4 +16,4 @@ Here are some ideas to get you started:
 -->
 
 
-![github stats](https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&hide=["contribs","prs","issues"]&show_icons=true&theme=dracula)
+![github stats](https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&hide=["contribs","issues"]&show_icons=true&theme=dracula)
