@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-<p align = "center">
+<p align = "right">
   <img src = "https://github.com/MarieLynneBlock/MarieLynneBlock/blob/master/img/Banner-MarieLynneBlock.png">
 </p>
 
