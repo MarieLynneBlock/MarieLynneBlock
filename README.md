@@ -31,6 +31,7 @@ I am a strong T-shaped developer with a creative side and a passion for design, 
 
 </br>
 
+TL;TR:
 - :construction_worker: I’m currently working on software and AI for medical applications and administration, due to the developments in the spread of the corona virus :microbe:, building proactive measures in order to help health care providers streamline their work and offer patients the best possible care.
 - :mortar_board: I’m currently learning OutSystems, .NET (professional) and audio programming in JavaScript (in my free time)
 - 👯 I’m looking to collaborate on creative projects
