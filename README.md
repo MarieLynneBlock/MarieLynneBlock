@@ -11,7 +11,9 @@
 </p>
     
 I am a strong T-shaped developer with a creative side and a passion for design, UX/UI. My mission is to build a connection between the product and the users as well as connecting developers and business.
-  
+
+<br/>
+
 :sunny: by day\
 • Full-Stack, Enterprise software developer\
 • With experience in international and multilingual environments, and strong communication skills\
@@ -32,6 +34,13 @@ I am a strong T-shaped developer with a creative side and a passion for design, 
   <img src = "https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&show_icons=true&theme=dracula&line_height=33&bg_color=506487&title_color=F19FAC">
   <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&hide_langs_below=12&theme=dracula&bg_color=506487&title_color=F19FAC">
 </p>
+
+<!-- Now Playing -->
+**Now Playing** on Spotify
+
+<a href="https://status.nmoo.dev/now-playing?open">
+    <img src="https://status.nmoo.dev/now-playing" width="256" height="64" alt="Now Playing">
+</a>
 
 
 <!--
