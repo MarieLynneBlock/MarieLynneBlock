@@ -13,11 +13,11 @@
 <p align = "center">
   <img src = "https://github.com/MarieLynneBlock/MarieLynneBlock/blob/master/img/readme_aboutme-MarieLynneBlock.png">
 </p>
-&nbsp;
-&nbsp;
+  
+  
 I am a strong T-shaped developer with a creative side and a passion for design, UX/UI. My mission is to build a connection between the product and the users as well as connecting developers and business.
-&nbsp;
-&nbsp;
+  
+  
 :sunny: by day\
 • Full-Stack, Enterprise software developer\
 • With experience in international and multilingual environments, and strong communication skills\
