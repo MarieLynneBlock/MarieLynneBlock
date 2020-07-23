@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-![banner](MarieLynneBlock/Marie-Lynne Block.png)
+![banner](/img/Banner-MarieLynneBlock.png)
 
 <!--
 **MarieLynneBlock/MarieLynneBlock** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
