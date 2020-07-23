@@ -15,12 +15,14 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-
+<!-- OLD Stats Dashboard -->
+<!--
 ![github stats](https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&hide=["issues"]&show_icons=true&theme=dracula)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&theme=dracula?hide_langs_below=12)](https://github.com/MarieLynneBlock)
-<!--[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=ElectronicMusicTools&theme=dracula)](https://github.com/MarieLynneBlock/ElectronicMusicTools)-->
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=ElectronicMusicTools&theme=dracula)](https://github.com/MarieLynneBlock/ElectronicMusicTools)-->
 
+<!-- NEW Stats Dashboard -->
 <p align = "center">
   <img src = "https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&show_icons=true&theme=dracula&line_height=33">
-  <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&hide_langs_below=.25&theme=dracula">
+  <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&hide_langs_below=12&theme=dracula">
 </p>
