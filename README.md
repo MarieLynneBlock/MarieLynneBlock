@@ -58,4 +58,11 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
+
+
+
+- :nerd_face: **stack**
+  * professional: Java 6 & Java 8, Java EE 7, Weblogic 11 & 12, Struts 1.2, JavaScript, HTML, CSS and SQL // .NET & OutSystems
+  * free time: MEAN and MERN stack, 
+
 -->
