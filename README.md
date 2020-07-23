@@ -35,13 +35,6 @@ I am a strong T-shaped developer with a creative side and a passion for design, 
   <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&hide_langs_below=12&theme=dracula&bg_color=506487&title_color=F19FAC">
 </p>
 
-<!-- Now Playing -->
-**Now Playing** on Spotify
-
-<a href="https://status.nmoo.dev/now-playing?open">
-    <img src="https://status.nmoo.dev/now-playing" width="256" height="64" alt="Now Playing">
-</a>
-
 
 <!--
 **MarieLynneBlock/MarieLynneBlock** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
