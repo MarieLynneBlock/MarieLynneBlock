@@ -23,6 +23,6 @@ Here are some ideas to get you started:
 
 <!-- NEW Stats Dashboard -->
 <p align = "center">
-  <img src = "https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&show_icons=true&theme=dracula&line_height=33">
+  <img src = "https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&show_icons=true&theme=dracula&line_height=30&bg_color=506487&title_color=F19FAC">
   <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&hide_langs_below=12&theme=dracula&bg_color=F19FAC">
 </p>
