@@ -17,5 +17,5 @@ Here are some ideas to get you started:
 
 
 ![github stats](https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&hide=["issues"]&show_icons=true&theme=dracula)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=ElectronicMusicTools&theme=dracula)](https://github.com/MarieLynneBlock/ElectronicMusicTools)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock)](https://github.com/MarieLynneBlock)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&theme=dracula)](https://github.com/MarieLynneBlock)
+<!--[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=ElectronicMusicTools&theme=dracula)](https://github.com/MarieLynneBlock/ElectronicMusicTools)-->
