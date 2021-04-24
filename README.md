@@ -14,6 +14,12 @@ I am a strong T-shaped developer with a creative side and a passion for design, 
 
 <br/>
 
+If you like what I do, maybe consider buying me a coffee/tea 🥺👉👈
+
+<a href="https://www.buymeacoffee.com/IniMiniMunchkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a>
+
+<br/>
+
 :sunny: by day\
 • Full-Stack, Enterprise software developer\
 • With experience in international and multilingual environments, and strong communication skills\
