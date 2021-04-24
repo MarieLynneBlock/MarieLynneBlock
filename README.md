@@ -1,3 +1,5 @@
+## Hey there!! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+
 <!-- Banner -->
 <p align = "center">
   <img src = "https://github.com/MarieLynneBlock/MarieLynneBlock/blob/master/img/readme_banner-MarieLynneBlock.png">
