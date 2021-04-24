@@ -1,16 +1,4 @@
 ## Hey there!! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
-
-<!-- Banner -->
-<p align = "center">
-  <img src = "https://github.com/MarieLynneBlock/MarieLynneBlock/blob/master/img/readme_banner-MarieLynneBlock.png">
-</p>
-
-<br/><br/>
-
-<!-- About me -->
-<p align = "center">
-  <img src = "https://github.com/MarieLynneBlock/MarieLynneBlock/blob/master/img/readme_aboutme-MarieLynneBlock.png">
-</p>
     
 I am a strong T-shaped developer with a creative side and a passion for design, UX/UI. My mission is to build a connection between the product and the users as well as connecting developers and business.
 
