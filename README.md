@@ -37,7 +37,7 @@ TL;TR:
 
 <br/>
 
-<img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif" width="48px" height="40px"> If you like what I do, maybe consider buying me a coffee/tea. You can do this completely corona safe here:   <a href="https://www.buymeacoffee.com/IniMiniMunchkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="125px" height="40px" ></a>
+<img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif" width="48px" height="40px"> If you like what I do, maybe consider buying me a coffee/tea. You can do this completely corona safe here: &nbsp; &nbsp; <a href="https://www.buymeacoffee.com/IniMiniMunchkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="125px" height="30px" ></a>
 
 
 <!--
