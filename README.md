@@ -1,9 +1,12 @@
 ## Hey there!! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
     
-I am a strong T-shaped developer with a creative side and a passion for design, UX/UI. My mission is to build a connection between the product and the users as well as connecting developers and business.
+I am a strong T-shaped full-stack developer a creative side, using my professional experience to experiment with computer music, sound AI/ML, generative art and animation.
+
 
 <br/>
 
+<img src="https://giphy.com/embed/O8NzKq2a8i3EJxb3pJ" width="48" height="48">
+<a href="https://giphy.com/stickers/coffee-breakfast-latte-O8NzKq2a8i3EJxb3pJ">via GIPHY</a></p>
 If you like what I do, maybe consider buying me a coffee/tea 🥺👉👈
 
 <a href="https://www.buymeacoffee.com/IniMiniMunchkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a>
