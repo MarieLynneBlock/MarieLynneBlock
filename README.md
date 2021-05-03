@@ -2,11 +2,6 @@
     
 I am a strong T-shaped full-stack developer a creative side, using my professional experience to experiment with computer music, sound AI/ML, generative art and animation.
 
-
-<br/>
-
-<img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif" width="48px" height="40"> If you like what I do, maybe consider buying me a coffee/tea. You can do this completely corona safe here: <a href="https://www.buymeacoffee.com/IniMiniMunchkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="100" ></a>
-
 <br/>
 
 :sunny: by day\
@@ -38,6 +33,11 @@ TL;TR:
   <img src = "https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&show_icons=true&theme=dracula&line_height=40&bg_color=506487&title_color=F19FAC">
   <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&hide_langs_below=12.5&theme=dracula&bg_color=506487&title_color=F19FAC">
 </p>
+
+
+<br/>
+
+<img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif" width="48px" height="40"> If you like what I do, maybe consider buying me a coffee/tea. You can do this completely corona safe here: <a href="https://www.buymeacoffee.com/IniMiniMunchkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="125" ></a>
 
 
 <!--
