@@ -1,11 +1,11 @@
-## Hey there!! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+## Hey there!! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">
     
 I am a strong T-shaped full-stack developer a creative side, using my professional experience to experiment with computer music, sound AI/ML, generative art and animation.
 
 
 <br/>
 
-<img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif">
+<img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif" width="30px">
 <a href="https://giphy.com/stickers/coffee-breakfast-latte-O8NzKq2a8i3EJxb3pJ">via GIPHY</a></p>
 If you like what I do, maybe consider buying me a coffee/tea 🥺👉👈
 
