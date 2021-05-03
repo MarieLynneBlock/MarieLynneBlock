@@ -5,19 +5,15 @@ I am a strong T-shaped full-stack developer a creative side, using my profession
 <br/>
 
 :sunny: by day\
-• Full-Stack, Enterprise software developer\
-• With experience in international and multilingual environments, and strong communication skills\
-• Does not shirk technical analyses and data driven decision making\
+• Full-stack software developer with an understanding of DevSecOps principles and experience in AI, ML, Big Data\
+• Experience in international and multilingual environments, strong communication skills. (I enjoy discovering new languages; nice bonus: it improves travelling and reading experiences, two things I love doing!)\
 • Agile: experience with Scrum, Lean, Kanban and XP\
-• A strong interest in product management, using my technical background to bring added value to business processes\
-• Finds interaction between creativity, innovation and technology essential
 
 :first_quarter_moon_with_face: by night\
 • Creative jack-of-all-trades with a strong interest in multimedia\
-• A musician that loves challenge and originality, moreover has an interest in sound engineering\
+• A musician & sound engineer\
 • Likes photography and videography (especially mirrorless technology)\
 • Enjoys working with pen and paper as much as experimenting with generative art\
-• Loves learning new languages and, consequently, loves traveling
 
 </br>
 
@@ -37,7 +33,7 @@ TL;TR:
 
 <br/>
 
-<img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif" width="48px" height="40px"> If you like what I do, maybe consider buying me a coffee/tea. You can do this completely corona safe here: &nbsp; &nbsp; <a href="https://www.buymeacoffee.com/IniMiniMunchkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="125px" height="30px" ></a>
+<img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif" width="48px" height="40px"> If you like what I do, maybe consider buying me a coffee/tea. You can do this completely corona safe here: &nbsp; &nbsp; <a href="https://www.buymeacoffee.com/IniMiniMunchkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="125px" height="40px" ></a>
 
 
 <!--
