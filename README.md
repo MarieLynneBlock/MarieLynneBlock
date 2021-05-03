@@ -5,9 +5,7 @@ I am a strong T-shaped full-stack developer a creative side, using my profession
 
 <br/>
 
-<img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif" width="30px">
-<a href="https://giphy.com/stickers/coffee-breakfast-latte-O8NzKq2a8i3EJxb3pJ">via GIPHY</a></p>
-If you like what I do, maybe consider buying me a coffee/tea 🥺👉👈
+<img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif" width="30px"> If you like what I do, maybe consider buying me a coffee/tea
 
 <a href="https://www.buymeacoffee.com/IniMiniMunchkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="150" ></a>
 
