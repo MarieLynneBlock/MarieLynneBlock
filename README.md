@@ -7,13 +7,13 @@ I am a strong T-shaped full-stack developer a creative side, using my profession
 :sunny: by day\
 • Full-stack software developer with an understanding of DevSecOps principles and experience in AI, ML, Big Data\
 • Experience in international and multilingual environments, strong communication skills. (I enjoy discovering new languages; nice bonus: it improves travelling and reading experiences, two things I love doing!)\
-• Agile: experience with Scrum, Lean, Kanban and XP\
+• Agile: experience with Scrum, Lean, Kanban and XP
 
 :first_quarter_moon_with_face: by night\
 • Creative jack-of-all-trades with a strong interest in multimedia\
 • A musician & sound engineer\
 • Likes photography and videography (especially mirrorless technology)\
-• Enjoys working with pen and paper as much as experimenting with generative art\
+• Enjoys working with pen and paper as much as experimenting with generative art
 
 </br>
 
