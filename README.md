@@ -18,9 +18,10 @@ I am a strong T-shaped full-stack developer a creative side, using my profession
 </br>
 
 TL;TR:
-- :construction_worker: I’m currently working on software and AI for medical applications and administration, due to the developments in the spread of the corona virus :microbe:, building proactive measures in order to help health care providers streamline their work and offer patients the best possible care.
-- :mortar_board: I’m currently learning OutSystems, .NET (professional) and audio programming in JavaScript (in my free time)
-- 👯 I’m looking to collaborate on creative projects
+- 🔭 I’m currently working on AI / ML microservices universe for Document Management
+- 🌱 I’m currently learning more about Neural Networks and AWS Deep Learning Algorithms
+- 👯 I’m looking to collaborate on creative (audio-visual) projects
+
 
 </br></br>
 
