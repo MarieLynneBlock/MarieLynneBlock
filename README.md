@@ -18,7 +18,7 @@ I am a strong T-shaped full-stack developer a creative side, using my profession
 </br>
 
 TL;TR:
-- 🔭 I’m currently working on AI / ML microservices universe for Document Management
+- 🔭 I’m currently working on AI / ML microservices universe
 - 🌱 I’m currently learning more about Neural Networks and AWS Deep Learning Algorithms
 - 👯 I’m looking to collaborate on creative (audio-visual) projects
 
