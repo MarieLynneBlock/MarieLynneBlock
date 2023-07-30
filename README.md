@@ -44,7 +44,11 @@ TL;DR:
 
 <br/>
 
-<img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif" width="48px" height="40px"> If you like what I do, maybe consider buying me a coffee/tea. You can do this completely corona safe here: &nbsp; &nbsp; <a href="https://www.buymeacoffee.com/IniMiniMunchkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="125px" height="40px" ></a>
+If you like what I do, maybe consider supporting me (buy me a coffee):
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="IniMiniMunchkin" data-color="#2e3440" data-emoji="🚀"  data-font="Poppins" data-text="support my work" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+
+
+
 
 <p align="center">
   <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock">
