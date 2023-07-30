@@ -1,5 +1,13 @@
 ## Hey there!! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">
-    
+
+<!-- Stats Dashboard -->
+<p align="center">
+  <a href="https://git.io/streak-stats" target="_blank">
+    <img src="https://streak-stats.demolab.com?user=MarieLynneBlock&theme=nord&border_radius=5" />
+  </a>
+</p>
+
+### About me:     
 I am a strong T-shaped AI Expert with a hidden multifaceted full-stack software engineer/data scientist persona, using my professional experience to experiment with computer music, sound AI/ML, generative art and animation.
 
 <br/>
@@ -27,12 +35,6 @@ TL;DR:
 
 </br></br>
 
-<!-- Stats Dashboard -->
-<p align="center">
-  <a href="https://git.io/streak-stats" target="_blank">
-    <img src="https://streak-stats.demolab.com?user=MarieLynneBlock&theme=nord&border_radius=5" />
-  </a>
-</p>
 
 <!--
 <p align = "center">
