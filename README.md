@@ -1,13 +1,15 @@
 ## Hey there!! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">
     
-I am a strong T-shaped full-stack developer a creative side, using my professional experience to experiment with computer music, sound AI/ML, generative art and animation.
+I am a strong T-shaped AI Expert with a hidden multifaceted full-stack software engineer/data scientist persona, using my professional experience to experiment with computer music, sound AI/ML, generative art and animation.
 
 <br/>
 
 :sunny: by day\
-• Full-stack software developer with an understanding of DevSecOps principles and experience in AI, ML, Big Data\
+• AI Expert with an understanding of DevSecOps/MLOps principles, release management and experience in AI, ML, Big Data\
+• Working on Solution Architecture to provide seamless integrations and flexible code solutions\
+• Keeping an eye on the end product by providing product and project management support\
 • Experience in international and multilingual environments, strong communication skills. (I enjoy discovering new languages; nice bonus: it improves travelling and reading experiences, two things I love doing!)\
-• Agile: experience with Scrum, Lean, Kanban and XP
+• Agile: experience with Scrum, Lean, Kanban and XP aka: 🏃‍♂️ Sprint & Sync 🔄
 
 :first_quarter_moon_with_face: by night\
 • Creative jack-of-all-trades with a strong interest in multimedia\
