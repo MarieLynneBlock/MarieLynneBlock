@@ -47,10 +47,11 @@ TL;TR:
 <img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif" width="48px" height="40px"> If you like what I do, maybe consider buying me a coffee/tea. You can do this completely corona safe here: &nbsp; &nbsp; <a href="https://www.buymeacoffee.com/IniMiniMunchkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="125px" height="40px" ></a>
 
 <p align="center">
-  <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock%2F" target="_blank">
-    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock%2F&label=visitors%20today&labelColor=%23697689&countColor=%23ffd1dc&style=flat&labelStyle=none" />
+  <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock">
+    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock&label=visitors%20today&labelColor=%232d3440&countColor=%2380a0c0&style=flat-square" />
   </a>
 </p>
+
 
 
 <!--
