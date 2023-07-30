@@ -28,17 +28,29 @@ TL;TR:
 </br></br>
 
 <!-- Stats Dashboard -->
+<p align="center">
+  <a href="https://git.io/streak-stats" target="_blank">
+    <img src="https://streak-stats.demolab.com?user=MarieLynneBlock&theme=nord&border_radius=5" />
+  </a>
+</p>
+
+<!--
 <p align = "center">
   <img src = "https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&show_icons=true&theme=dracula&line_height=40&bg_color=506487&title_color=F19FAC">
   <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&hide_langs_below=12.5&theme=dracula&bg_color=506487&title_color=F19FAC">
 </p>
+-->
 
 
 <br/>
 
 <img src="https://media.giphy.com/media/O8NzKq2a8i3EJxb3pJ/giphy.gif" width="48px" height="40px"> If you like what I do, maybe consider buying me a coffee/tea. You can do this completely corona safe here: &nbsp; &nbsp; <a href="https://www.buymeacoffee.com/IniMiniMunchkin" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" width="125px" height="40px" ></a>
 
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock%2F&label=visitors%20today&labelColor=%23697689&countColor=%23ffd1dc&style=flat&labelStyle=none)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock%2F)
+<p align="center">
+  <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock%2F" target="_blank">
+    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock%2F&label=visitors%20today&labelColor=%23697689&countColor=%23ffd1dc&style=flat&labelStyle=none" />
+  </a>
+</p>
 
 
 <!--
