@@ -44,10 +44,11 @@ TL;DR:
 
 <br/>
 
+<!--
 If you like what I do, maybe consider supporting me (buy me a coffee):
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="IniMiniMunchkin" data-color="#2e3440" data-emoji="🚀"  data-font="Poppins" data-text="support my work" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
 
-
+-->
 
 <!-- todo fix
 <p align="center">
