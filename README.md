@@ -28,7 +28,8 @@ I am a strong T-shaped AI Expert with a hidden multifaceted full-stack software 
 </br>
 
 TL;DR:
-- 🔭 I’m currently working on AI / ML microservices universe
+- 🔭 I’m currently working on AI / ML microservices universe...
+- 📊 ...and connect the dots of huge piles of data to help businesses understand their clients
 - 🌱 I’m currently learning more about Neural Networks and AWS Deep Learning Algorithms
 - 👯 I’m looking to collaborate on creative (audio-visual) projects
 
