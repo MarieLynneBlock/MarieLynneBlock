@@ -25,7 +25,7 @@ I am a strong T-shaped AI Expert with a hidden multifaceted full-stack software 
 • Likes photography and videography (especially mirrorless technology)\
 • Enjoys working with pen and paper as much as experimenting with generative art
 (especially mirrorless technology)\
-• A mom of a toddler that tries to hijack the keyboard as soon as I start programming.
+• A mom of a toddler that tries to hijack the keyboard as soon as I start programming (succession of our future is guaranteed).
 
 </br>
 
