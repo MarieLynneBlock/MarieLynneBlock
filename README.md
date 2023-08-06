@@ -7,6 +7,14 @@
   </a>
 </p>
 
+<!-- Visitors badge -->
+<p align="center">
+  <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock">
+    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock&label=visitors%20today&labelColor=%232d3440&countColor=%2380a0c0&style=flat-square" />
+  </a>
+</p>
+
+
 ### About me:     
 I am a strong T-shaped AI Expert with a hidden multifaceted full-stack software engineer/data scientist persona, using my professional experience to experiment with computer music, sound AI/ML, generative art and animation.
 
@@ -54,13 +62,6 @@ If you like what I do, maybe consider supporting me (buy me a coffee):
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="IniMiniMunchkin" data-color="#2e3440" data-emoji="🚀"  data-font="Poppins" data-text="support my work" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
 
 -->
-
-
-<p align="center">
-  <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock">
-    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock&label=visitors%20today&labelColor=%232d3440&countColor=%2380a0c0&style=flat-square" />
-  </a>
-</p>
 
 
 <!--
