@@ -3,7 +3,7 @@
 <!-- Social Buttons -->
 <p align="center">
   <a href="https://www.linkedin.com/in/marielynneblock/">
-    <img src="img/readme_linkedin-button.png" alt="LinkedIn Link">
+    <img src="img/readme_social-linkedin.png" alt="LinkedIn Link">
   </a>
 </p>
 
