@@ -1,7 +1,11 @@
 ## Hej there!! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">
 
 <!-- Social Buttons -->
-
+<p align="center">
+  <a href="https://www.linkedin.com/in/marielynneblock/">
+    <img src="img/readme_linkedin-button.png" alt="LinkedIn Link">
+  </a>
+</p>
 
 <!-- Stats Dashboard -->
 <p align="center">
