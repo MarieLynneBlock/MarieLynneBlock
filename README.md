@@ -1,12 +1,5 @@
 ## Hej there!! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">
 
-<!-- Social Buttons -->
-<p align="center">
-  <a href="https://www.linkedin.com/in/marielynneblock/">
-    <img src="img/readme_social-linkedin.png" alt="LinkedIn Link">
-  </a>
-</p>
-
 <!-- Stats Dashboard -->
 <p align="center">
   <a href="https://git.io/streak-stats" target="_blank">
@@ -51,8 +44,15 @@ TL;DR:
 - 🚀 Taking courses in Product and Project Management, focusing on strengthening my Change Management skills
 - 👯 I’m looking to collaborate on creative (audio-visual) projects
 
+<br>
 
-</br></br>
+<!-- Social Buttons -->
+<p align="center">
+  <a href="https://www.linkedin.com/in/marielynneblock/">
+    <img src="img/readme_social-linkedin-round.png" alt="LinkedIn Link" width="75px">
+  </a>
+</p>
+
 
 
 <!--
