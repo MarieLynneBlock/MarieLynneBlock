@@ -49,7 +49,7 @@ TL;DR:
 <!-- Social Buttons -->
 <p align="center">
   <a href="https://www.linkedin.com/in/marielynneblock/">
-    <img src="img/readme_social-linkedin-round.png" alt="LinkedIn Link" width="75px">
+    <img src="img/readme_social-linkedin-round-logo.png" alt="LinkedIn Link" width="75px">
   </a>
 </p>
 
