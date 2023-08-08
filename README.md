@@ -7,6 +7,8 @@
   </a>
 </p>
 
+<!-- Language Dashboard (to style a new one) -->
+
 <!-- Visitors badge -->
 <p align="center">
   <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock">
