@@ -7,7 +7,6 @@
   </a>
 </p>
 
-<!-- Language Dashboard (to style a new one) -->
 
 <!-- Visitors badge -->
 <p align="center">
