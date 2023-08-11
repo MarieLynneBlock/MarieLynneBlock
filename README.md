@@ -44,9 +44,11 @@ TL;DR:
 - 📊 ...and connect the dots of huge piles of data to help businesses understand their clients
 - 🌱 I’m currently learning more about Neural Networks and AWS Deep Learning Algorithms
 - 🚀 Taking courses in Product and Project Management, focusing on strengthening my Change Management skills
+- 🐍 professional Python enchanter 
 - 👯 I’m looking to collaborate on creative (audio-visual) projects
 
 <br>
+</br>
 
 <!-- projects -->
 ### Projects:
