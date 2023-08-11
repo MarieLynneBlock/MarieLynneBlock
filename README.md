@@ -48,6 +48,15 @@ TL;DR:
 
 <br>
 
+<!-- projects -->
+### Projects:
+<p align="center">
+   🚧 but first this 🚧
+</p>
+Most of the code you stumble upon here is just me monkeying around... 🐒 Please don't take any of it as a showcase of my professional super powers. 🙈🙊🙉
+
+<br>
+
 <!-- Social Buttons -->
 <p align="center">
   <a href="https://www.linkedin.com/in/marielynneblock/">
