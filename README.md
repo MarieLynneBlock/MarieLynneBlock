@@ -60,11 +60,7 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
 
 #### current focus:
 ##### Education:
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management)](https://github.com/MarieLynneBlock/nanodegree_AI-product-management)
-
-
-
-
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management)](https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management&bg_color=30,#2E3440,#4C566A&title_color=#D8DEE9&text_color=#E5E9F0&icon_color=#88C0D0)
 
 </br>
 </br>
