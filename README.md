@@ -58,6 +58,14 @@ TL;DR:
 Most of the code you stumble upon here is just me monkeying around... 🐒
 My GitHub primarily reflects my experimentation with new technologies, hobby projects, and learning endeavors. Please view it as a glimpse into my exploration 🧪 rather than a testament to my professional abilities 🦸.
 
+#### current focus:
+##### Education:
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management)](https://github.com/MarieLynneBlock/nanodegree_AI-product-management)
+
+
+
+
+
 </br>
 </br>
 
