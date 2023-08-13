@@ -22,14 +22,16 @@ I am a strong T-shaped AI Expert with a hidden multifaceted full-stack software 
 
 <br/>
 
-:sunny: by day\
+###### :sunny: by day
 • AI Expert with an understanding of DevSecOps/MLOps principles, release management and experience in AI, ML, Big Data\
 • Working on Solution Architecture to provide seamless integrations and flexible code solutions\
 • Keeping an eye on the end product by providing product and project management support\
 • Experience in international and multilingual environments, strong communication skills. (I enjoy discovering new languages; nice bonus: it improves travelling and reading experiences, two things I love doing!)\
 • Agile: experience with Scrum, Lean, Kanban and XP aka: 🏃‍♂️ Sprint & Sync 🔄
 
-:first_quarter_moon_with_face: by night\
+<br> 
+
+###### :first_quarter_moon_with_face: by night
 • Creative jack-of-all-trades with a strong interest in multimedia\
 • A musician & sound engineer\
 • Likes photography and videography (especially mirrorless technology)\
