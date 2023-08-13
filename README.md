@@ -48,7 +48,6 @@ TL;DR:
 - 👯 I’m looking to collaborate on creative (audio-visual) projects
 
 <br>
-</br>
 
 <!-- projects -->
 ### Projects:
@@ -62,10 +61,7 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
 ##### Education:
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0)](https://github.com/MarieLynneBlock/nanodegree_AI-product-management)
 
-
-
-</br>
-</br>
+<br>
 
 <!-- Social Buttons -->
 <p align="center">
@@ -74,8 +70,6 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
   </a>
 </p>
 
-
-
 <!--
 <p align = "center">
   <img src = "https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&show_icons=true&theme=dracula&line_height=40&bg_color=506487&title_color=F19FAC">
@@ -83,7 +77,7 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
 </p>
 -->
 
-<br/>
+<br>
 
 <!--
 If you like what I do, maybe consider supporting me (buy me a coffee):
