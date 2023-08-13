@@ -45,7 +45,7 @@ TL;DR:
 - 🌱 I’m currently learning more about Neural Networks and AWS Deep Learning Algorithms
 - 🚀 Taking courses in Product and Project Management, focusing on strengthening my Change Management skills
 - 🐍 professional Python enchanter and 🐼 pandas trainer
-- 👯 I’m looking to collaborate on creative (audio-visual) projects
+- 👯 I’m looking to collaborate on creative (audio-visual) and music/sound-AI projects
 
 <br>
 
