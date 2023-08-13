@@ -55,7 +55,7 @@ TL;DR:
 <p align="center">
    🚧 but first this 🚧
 </p>
-Most of the code you stumble upon here is just me monkeying around... 🐒
+Most of the code you stumble upon here is just me monkeying around... 🐒 <br>
 My GitHub primarily reflects my experimentation with new technologies, hobby projects, and learning endeavors. Please view it as a glimpse into my exploration 🧪 rather than a testament to my professional abilities 🦸.
 
 #### current focus:
