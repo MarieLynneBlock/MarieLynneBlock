@@ -59,7 +59,22 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
 
 #### current focus:
 ##### Education:
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0)](https://github.com/MarieLynneBlock/nanodegree_AI-product-management)
+
+<!-- repositories where I work on at the moment based on courses or books -->
+<table align="center">
+  <tr>
+    <td>
+      <a href="https://github.com/MarieLynneBlock/nanodegree_AI-product-management">
+         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="Nanodegree AI Product Management">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/MarieLynneBlock/nanodegree_data-product-management">
+         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="Nanodegree Data Product Management">
+      </a>
+    </td>
+  </tr>
+</table>
 
 <br>
 
