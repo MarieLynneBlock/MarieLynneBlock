@@ -37,7 +37,7 @@ I am a strong T-shaped AI Expert with a hidden multifaceted full-stack software 
 • A musician & sound engineer\
 • Likes photography and videography (especially mirrorless technology)\
 • Enjoys working with pen and paper as much as experimenting with generative art\
-• A mom of a toddler that tries to hijack the keyboard as soon as I start programming (succession of our future is guaranteed).
+• A mom of a toddler that tries to hijack the keyboard as soon as I start programming (succession is guaranteed).
 
 </br>
 
