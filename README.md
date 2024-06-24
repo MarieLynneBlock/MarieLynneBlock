@@ -80,6 +80,11 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
          <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_generative-ai&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="Nanodegree Generative AI">
       </a>
     </td>
+     <td>
+      <a href="https://github.com/MarieLynneBlock/AI-in-healthcare_KULeuvenX">
+         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=AI-in-healthcare_KULeuvenX&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="AI in Healthcare KULeuvenX">
+      </a>
+    </td>
   </tr>
 </table>
 
