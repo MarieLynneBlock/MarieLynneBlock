@@ -60,7 +60,7 @@ Most of the code you stumble upon here is just me monkeying around... 🐒 <br>
 My GitHub primarily reflects my experimentation with new technologies, hobby projects, and learning endeavors. Please view it as a glimpse into my exploration 🧪 rather than a testament to my professional abilities 🦸.
 
 #### current focus:
-##### Education:
+##### Continuous Education:
 
 <!-- repositories where I work on at the moment based on courses or books -->
 <table align="center">
@@ -86,6 +86,18 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
       </a>
     </td>
   </tr>
+</table>
+
+##### Academic:
+
+<table>
+   <tr>
+    <td>
+      <a href="https://github.com/MarieLynneBlock/AI-for-music-and-audio_Berklee">
+         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=AI-for-music-and-audio_Berklee&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="AI-for-music-and-audio_Berklee">
+      </a>
+    </td>
+   </tr>
 </table>
 
 <br>
