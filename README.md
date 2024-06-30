@@ -88,6 +88,7 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
   </tr>
 </table>
 
+<!---
 ##### Academic:
 
 <table>
@@ -99,6 +100,7 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
     </td>
    </tr>
 </table>
+-->
 
 <br>
 
