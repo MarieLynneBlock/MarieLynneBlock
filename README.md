@@ -19,7 +19,7 @@
 
 
 ### About me:     
-I am a strong T-shaped AI Expert with a hidden multifaceted full-stack software engineer/data scientist persona, using my professional experience to experiment with computer music, sound AI/ML, generative art and animation.
+I am a strong T-shaped AI Expert with a hidden full-stack software engineer/data scientist persona, using my professional experience to experiment with computer music, sound AI/ML, generative art and animation.
 
 <br/>
 
@@ -44,6 +44,7 @@ I am a strong T-shaped AI Expert with a hidden multifaceted full-stack software 
 TL;DR:
 - 🔭 I’m currently working on AI / ML microservices universe...
 - 📊 ...and connect the dots of huge piles of data to help businesses understand their clients
+- 🎵 Processing audio content using Machine Learning/Neural Networks (AI-Driven Music Production & Generative AI)
 - 🌱 I’m currently learning more about Neural Networks and AWS Deep Learning Algorithms
 - 🚀 Taking courses in Product and Project Management, focusing on strengthening my Change Management skills
 - 🐍 Professional Python enchanter and 🐼 Pandas trainer
