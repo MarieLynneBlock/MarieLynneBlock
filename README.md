@@ -29,6 +29,7 @@
 ![R Badge](https://img.shields.io/badge/-R-3B4252?style=flat&logo=r&logoColor=BF616A)
 ![Java Badge](https://img.shields.io/badge/-Java-3B4252?style=flat&logo=openjdk&logoColor=D08770)
 ![Lua Badge](https://img.shields.io/badge/-Lua-3B4252?style=flat&logo=lua&logoColor=D08770)
+![ChucK Badge](https://img.shields.io/badge/-ChucK-3B4252?style=flat&logo=chuck&logoColor=81A1C1)
 ![Scala Badge](https://img.shields.io/badge/-Scala-3B4252?style=flat&logo=scala&logoColor=8FBCBB)
 ![Rust Badge](https://img.shields.io/badge/-Rust-3B4252?style=flat&logo=rust&logoColor=A3BE8C)
 ![C# Badge](https://img.shields.io/badge/-C%23-3B4252?style=flat&logo=sharp&logoColor=88C0D0)
@@ -42,6 +43,7 @@
 
 > ![JSON Badge](https://img.shields.io/badge/-JSON-3B4252?style=flat&logo=json&logoColor=D08770)
 > ![Swagger Badge](https://img.shields.io/badge/-Swagger-3B4252?style=flat&logo=swagger&logoColor=B48EAD)
+> ![YAML Badge](https://img.shields.io/badge/-YAML-3B4252?style=flat&logo=yaml&logoColor=88C0D0)
 > ![Terraform Badge](https://img.shields.io/badge/-Terraform-3B4252?style=flat&logo=terraform&logoColor=81A1C1)
 > ![TOML Badge](https://img.shields.io/badge/-TOML-3B4252?style=flat&logo=toml&logoColor=D08770)
 
@@ -55,6 +57,18 @@
 > ![Celery Badge](https://img.shields.io/badge/-Celery-3B4252?style=flat&logo=celery&logoColor=5E81AC)
 > ![Snyk Badge](https://img.shields.io/badge/-Snyk-3B4252?style=flat&logo=snyk&logoColor=5E81AC)
 > ![Cookiecutter Badge](https://img.shields.io/badge/-Cookiecutter-3B4252?style=flat&logo=cookiecutter&logoColor=BF616A)
+
+> ![Tidyverse Badge](https://img.shields.io/badge/-Tidyverse-3B4252?style=flat&logo=tidyverse&logoColor=88C0D0)
+> ![GModels Badge](https://img.shields.io/badge/-GModels-3B4252?style=flat&logo=themodelsresource&logoColor=81A1C1)
+> ![XGBoost Badge](https://img.shields.io/badge/-XGBoost-3B4252?style=flat&logo=xgboost&logoColor=B48EAD)
+> ![OneR Badge](https://img.shields.io/badge/-OneR-3B4252?style=flat&logo=oner&logoColor=5E81AC)
+> ![Ranger Badge](https://img.shields.io/badge/-Ranger-3B4252?style=flat&logo=ranger&logoColor=BF616A)
+> ![IML Badge](https://img.shields.io/badge/-IML-3B4252?style=flat&logo=iml&logoColor=D08770)
+> ![TM Badge](https://img.shields.io/badge/-TM-3B4252?style=flat&logo=tm&logoColor=A3BE8C)
+> ![PDP Badge](https://img.shields.io/badge/-PDP-3B4252?style=flat&logo=pdp&logoColor=8FBCBB)
+> ![H2O Badge](https://img.shields.io/badge/-H2O-3B4252?style=flat&logo=h2o&logoColor=88C0D0)
+> ![VIP Badge](https://img.shields.io/badge/-VIP-3B4252?style=flat&logo=vip&logoColor=81A1C1)
+
 
 > ![Gradle Badge](https://img.shields.io/badge/-Gradle-3B4252?style=flat&logo=gradle&logoColor=A3BE8C)
 > ![Spring Badge](https://img.shields.io/badge/-Spring-3B4252?style=flat&logo=spring&logoColor=A3BE8C)
@@ -170,6 +184,8 @@
 ##### IDES & Collab Spaces
 ![IntelliJ IDEA Badge](https://img.shields.io/badge/-IntelliJ%20IDEA-3B4252?style=flat&logo=intellijidea&logoColor=A3BE8C)
 ![PyCharm Badge](https://img.shields.io/badge/-PyCharm-3B4252?style=flat&logo=pycharm&logoColor=A3BE8C)
+![VSCode Badge](https://img.shields.io/badge/-VSCode-3B4252?style=flat&logo=visualstudiocode&logoColor=88C0D0)
+![Atom Badge](https://img.shields.io/badge/-Atom-3B4252?style=flat&logo=atom&logoColor=5E81AC)
 ![RStudio IDE Badge](https://img.shields.io/badge/-RStudio%20IDE-3B4252?style=flat&logo=rstudioide&logoColor=D08770)
 ![WebStorm Badge](https://img.shields.io/badge/-WebStorm-3B4252?style=flat&logo=webstorm&logoColor=BF616A)
 ![CLion Badge](https://img.shields.io/badge/-CLion-3B4252?style=flat&logo=clion&logoColor=BF616A)
@@ -182,6 +198,7 @@
 
 
 ##### Business Process Management & Orchestration / Release Management
+![OutSystems Badge](https://img.shields.io/badge/-OutSystems-3B4252?style=flat&logo=outsystems&logoColor=BF616A)
 ![Camunda Badge](https://img.shields.io/badge/-Camunda-3B4252?style=flat&logo=camunda&logoColor=5E81AC)
 ![UiPath Badge](https://img.shields.io/badge/-UiPath-3B4252?style=flat&logo=uipath&logoColor=B48EAD)
 ![Lucid Badge](https://img.shields.io/badge/-Lucid-3B4252?style=flat&logo=lucid&logoColor=A3BE8C)
@@ -192,6 +209,7 @@
 ![Atlassian Badge](https://img.shields.io/badge/-Atlassian-3B4252?style=flat&logo=atlassian&logoColor=88C0D0)
 ![Confluence Badge](https://img.shields.io/badge/-Confluence-3B4252?style=flat&logo=confluence&logoColor=81A1C1)
 ![UML Badge](https://img.shields.io/badge/-UML-3B4252?style=flat&logo=uml&logoColor=8FBCBB)
+![CmapTools Badge](https://img.shields.io/badge/-CmapTools-3B4252?style=flat&logo=cmaptools&logoColor=81A1C1)
 
 
 ##### Photography/Videography & Design
@@ -209,11 +227,17 @@
 ![Sketch Badge](https://img.shields.io/badge/-Sketch-3B4252?style=flat&logo=sketch&logoColor=81A1C1)
 ![DJI Badge](https://img.shields.io/badge/-DJI-3B4252?style=flat&logo=dji&logoColor=A3BE8C)
 ![GIMP Badge](https://img.shields.io/badge/-GIMP-3B4252?style=flat&logo=gimp&logoColor=88C0D0)
+![Final Cut Pro Badge](https://img.shields.io/badge/-Final%20Cut%20Pro-3B4252?style=flat&logo=finalcutpro&logoColor=5E81AC)
 
 
 ##### Audio, Music Production and Sound Design
+![Logic Pro Badge](https://img.shields.io/badge/-Logic%20Pro-3B4252?style=flat&logo=logicpro&logoColor=A3BE8C)
 ![ProTools Badge](https://img.shields.io/badge/-ProTools-3B4252?style=flat&logo=protools&logoColor=8FBCBB)
 ![Steinberg Badge](https://img.shields.io/badge/-Steinberg-3B4252?style=flat&logo=steinberg&logoColor=81A1C1)
+![Ableton Live Badge](https://img.shields.io/badge/-Ableton%20Live-3B4252?style=flat&logo=abletonlive&logoColor=B48EAD)
+![iZotope Badge](https://img.shields.io/badge/-iZotope-3B4252?style=flat&logo=izotope&logoColor=D08770)
+![Moises Badge](https://img.shields.io/badge/-Moises-3B4252?style=flat&logo=moises&logoColor=8FBCBB)
+![Audulus Badge](https://img.shields.io/badge/-Audulus-3B4252?style=flat&logo=audulus&logoColor=88C0D0)
 ![Ardour Badge](https://img.shields.io/badge/-Ardour-3B4252?style=flat&logo=ardour&logoColor=81A1C1)
 ![Audacity Badge](https://img.shields.io/badge/-Audacity-3B4252?style=flat&logo=audacity&logoColor=5E81AC)
 ![JUCE Badge](https://img.shields.io/badge/-JUCE-3B4252?style=flat&logo=juce&logoColor=A3BE8C)
