@@ -52,6 +52,10 @@ TL;DR:
 
 <br>
 
+📩 **contact me**: when you can teach me something new, interested in collaborating, or when you are curious about one of my projects!
+
+<br>
+
 <!-- projects -->
 ### Projects:
 <p align="center">
