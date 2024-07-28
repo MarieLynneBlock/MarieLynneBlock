@@ -264,6 +264,8 @@
 
 
 FIND ME HERE:
+[![Bandcamp](https://img.shields.io/badge/-Bandcamp-3B4252?style=flat&logo=bandcamp&logoColor=BF616A)](https://bandcamp.com/marielynneblock)
+
 ![Hugging Face Badge](https://img.shields.io/badge/-Hugging%20Face-3B4252?style=flat&logo=huggingface&logoColor=D08770)
 ![Instagram Badge](https://img.shields.io/badge/-Instagram-3B4252?style=flat&logo=instagram&logoColor=B48EAD)
 ![YouTube Badge](https://img.shields.io/badge/-YouTube-3B4252?style=flat&logo=youtube&logoColor=81A1C1)
