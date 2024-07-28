@@ -385,40 +385,33 @@
 ---
 
 ### About me:     
-I am a strong T-shaped AI Expert with a hidden full-stack software engineer/data scientist persona, using my professional experience to experiment with computer music, sound AI/ML, generative art and animation.
+I'm Marie-Lynne, a enthusiastic advocate of the STEAM: 🔬 Science, 💡 Technology, 🏗 Engineering, 🎨 Art, and 📈 Math.\
+As an software developer, AI builder and data scientist, I thrive at the exciting crossroads of technology and creativity. My core mission is the seamless integration of AI with human experiences, emphasising ethics and interactivity. Additionally, I use AI to enhance my creative processes to expand my horizons and explore new possibilities.
 
-<br/>
-
-###### :sunny: by day
-• AI Expert with an understanding of DevSecOps/MLOps principles, release management and experience in AI, ML, Big Data\
-• Working on Solution Architecture to provide seamless integrations and flexible code solutions\
-• Keeping an eye on the end product by providing product and project management support\
-• Experience in international and multilingual environments, strong communication skills. (I enjoy discovering new languages; nice bonus: it improves travelling and reading experiences, two things I love doing!)\
-• Agile: experience with Scrum, Lean, Kanban and XP aka: 🏃‍♂️ Sprint & Sync 🔄
-
-<br> 
-
-###### :first_quarter_moon_with_face: by night
-• Creative jack-of-all-trades with a strong interest in multimedia\
-• A musician & sound engineer\
-• Likes photography and videography (especially mirrorless technology)\
-• Enjoys working with pen and paper as much as experimenting with generative art\
-• A mom of a toddler that tries to hijack the keyboard as soon as I start programming (succession is guaranteed).
-
-</br>
-
-TL;DR:
-- 🔭 I’m currently working on AI / ML microservices universe...
-- 📊 ...and connect the dots of huge piles of data to help businesses understand their clients
-- 🎵 Processing audio content using Machine Learning/Neural Networks (Intelligent Music Production & Generative AI)
-- 🌱 I’m currently learning more about Neural Networks and AWS Deep Learning Algorithms
-- 🚀 Taking courses in Product and Project Management, focusing on strengthening my Change Management skills
-- 🐍 Professional Python enchanter and 🐼 Pandas trainer
-- 👯 I’m looking to collaborate on creative (audio-visual) and music/sound-AI projects
+My ultimate goal is to use AI responsibly, encouraging its use to create positive and impactful changes in the world.
 
 <br>
 
-📩 **contact me**: when you can teach me something new, interested in collaborating, or when you are curious about one of my projects!
+#### Professional Persona:
+
+- **AI Craftsmanship:** Developing AI-driven solutions that are not only efficient but also ethically aligned.
+- **Problem Solver:** Finding different view points and creative solutions makes me happy.
+- **Team Player:** Using Agile methodologies such as Scrum, Lean, Kanban, and XP to enhance team dynamics and project outcomes.
+- **Tech Explorer:** Constantly learning and experimenting to push the boundaries of AI and Machine Learning, especially in human-machine interaction.
+
+
+#### Creative Spirit:
+
+- **Music and Art:** Using my technical skills to dive into computer music, sound AI/ML, and generative art, crafting experiences that resonate. However I still love my classical instruments or pen and paper as much as I like playing around with AI.
+- **Language Enthusiast:** Fluent in several languages my linguistic skills enrich my professional interactions, travels, and reading experiences.
+
+<br>
+
+🖇️ Let’s Connect! I am always eager to learn something new, collaborate on exciting projects, or discuss any of my works. Don't hesitate to reach out if you’re curious or have something interesting to share!
+
+<br/>
+
+📩 **you can find me here**:
 
 You can find me here:
 FIND ME HERE:
