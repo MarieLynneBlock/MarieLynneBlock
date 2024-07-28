@@ -23,7 +23,7 @@
 ---
 
 <h3>
-  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/toolkit.gif" width="50" align="middle"> My Toolbox
+  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/toolkit.gif" width="65" align="middle"> My Toolbox
 </h3>
 
 
