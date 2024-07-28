@@ -254,53 +254,6 @@
 ![Raspberry Pi Badge](https://img.shields.io/badge/-Raspberry%20Pi-3B4252?style=flat&logo=raspberrypi&logoColor=81A1C1)
 
 
-
-
-
-FIND ME HERE:
-[![LinkedIn Badge](https://img.shields.io/badge/-LinkedIn-3B4252?style=flat&logo=linkedin&logoColor=5E81AC)](https://www.linkedin.com/in/marielynneblock/)
-[![Bandcamp](https://img.shields.io/badge/-Bandcamp-3B4252?style=flat&logo=bandcamp&logoColor=BF616A)](https://bandcamp.com/marielynneblock)
-
-![Hugging Face Badge](https://img.shields.io/badge/-Hugging%20Face-3B4252?style=flat&logo=huggingface&logoColor=D08770)
-![Instagram Badge](https://img.shields.io/badge/-Instagram-3B4252?style=flat&logo=instagram&logoColor=B48EAD)
-![YouTube Badge](https://img.shields.io/badge/-YouTube-3B4252?style=flat&logo=youtube&logoColor=81A1C1)
-![LinkedIn Badge](https://img.shields.io/badge/-LinkedIn-3B4252?style=flat&logo=linkedin&logoColor=5E81AC)
-![Linktree Badge](https://img.shields.io/badge/-Linktree-3B4252?style=flat&logo=linktree&logoColor=BF616A)
-![Medium Badge](https://img.shields.io/badge/-Medium-3B4252?style=flat&logo=medium&logoColor=88C0D0)
-![SoundCloud Badge](https://img.shields.io/badge/-SoundCloud-3B4252?style=flat&logo=soundcloud&logoColor=BF616A)
-![Spotify Badge](https://img.shields.io/badge/-Spotify-3B4252?style=flat&logo=spotify&logoColor=D08770)
-![Stack Overflow Badge](https://img.shields.io/badge/-Stack%20Overflow-3B4252?style=flat&logo=stackoverflow&logoColor=8FBCBB)
-![Steam Badge](https://img.shields.io/badge/-Steam-3B4252?style=flat&logo=steam&logoColor=88C0D0)
-![Strava Badge](https://img.shields.io/badge/-Strava-3B4252?style=flat&logo=strava&logoColor=5E81AC)
-![TikTok Badge](https://img.shields.io/badge/-TikTok-3B4252?style=flat&logo=tiktok&logoColor=BF616A)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--
 
 ### Full Stack Projects
@@ -351,6 +304,33 @@ TL;DR:
 <br>
 
 📩 **contact me**: when you can teach me something new, interested in collaborating, or when you are curious about one of my projects!
+
+You can find me here:
+FIND ME HERE:
+###### Programming & AI
+> [![LinkedIn Badge](https://img.shields.io/badge/-LinkedIn-3B4252?style=flat&logo=linkedin&logoColor=5E81AC)](https://www.linkedin.com/in/marielynneblock/)
+> [![Hugging Face Badge](https://img.shields.io/badge/-Hugging%20Face-3B4252?style=flat&logo=huggingface&logoColor=EBCB8B)](https://huggingface.co/MarieLynneBlock)
+
+##### Music
+[![Bandcamp](https://img.shields.io/badge/-Bandcamp-3B4252?style=flat&logo=bandcamp&logoColor=BF616A)](https://bandcamp.com/marielynneblock)
+
+
+###### Social
+
+
+![Instagram Badge](https://img.shields.io/badge/-Instagram-3B4252?style=flat&logo=instagram&logoColor=B48EAD)
+![YouTube Badge](https://img.shields.io/badge/-YouTube-3B4252?style=flat&logo=youtube&logoColor=81A1C1)
+
+![Linktree Badge](https://img.shields.io/badge/-Linktree-3B4252?style=flat&logo=linktree&logoColor=BF616A)
+![Medium Badge](https://img.shields.io/badge/-Medium-3B4252?style=flat&logo=medium&logoColor=88C0D0)
+![SoundCloud Badge](https://img.shields.io/badge/-SoundCloud-3B4252?style=flat&logo=soundcloud&logoColor=BF616A)
+![Spotify Badge](https://img.shields.io/badge/-Spotify-3B4252?style=flat&logo=spotify&logoColor=D08770)
+![Stack Overflow Badge](https://img.shields.io/badge/-Stack%20Overflow-3B4252?style=flat&logo=stackoverflow&logoColor=8FBCBB)
+![Steam Badge](https://img.shields.io/badge/-Steam-3B4252?style=flat&logo=steam&logoColor=88C0D0)
+![Strava Badge](https://img.shields.io/badge/-Strava-3B4252?style=flat&logo=strava&logoColor=5E81AC)
+![TikTok Badge](https://img.shields.io/badge/-TikTok-3B4252?style=flat&logo=tiktok&logoColor=BF616A)
+
+
 
 <br>
 
