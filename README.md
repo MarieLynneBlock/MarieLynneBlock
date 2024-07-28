@@ -22,7 +22,10 @@
 
 ---
 
-### <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/toolkit.gif" width="65"> My Toolbox
+<h3>
+  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/toolkit.gif" width="50" align="middle"> My Toolbox
+</h3>
+
 
 <details>
   <summary><strong> Languages & Libraries </strong> <sub> (click to expand) </sub></summary>
