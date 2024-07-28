@@ -101,7 +101,9 @@
 > ![Heroku Badge](https://img.shields.io/badge/-Heroku-3B4252?style=flat&logo=heroku&logoColor=81A1C1)
 > ![Jekyll Badge](https://img.shields.io/badge/-Jekyll-3B4252?style=flat&logo=jekyll&logoColor=5E81AC)
 
+<br>
 </details>
+
 
 
 <details>
@@ -118,12 +120,14 @@
 ![Pandas Badge](https://img.shields.io/badge/-Pandas-3B4252?style=flat&logo=pandas&logoColor=B48EAD)
 ![NumPy Badge](https://img.shields.io/badge/-NumPy-3B4252?style=flat&logo=numpy&logoColor=8FBCBB)
 ![OpenCV Badge](https://img.shields.io/badge/-OpenCV-3B4252?style=flat&logo=opencv&logoColor=D08770)
+![NLTK Badge](https://img.shields.io/badge/-NLTK-3B4252?style=flat&logo=nltk&logoColor=88C0D0)
 ![Seaborn Badge](https://img.shields.io/badge/-Seaborn-3B4252?style=flat&logo=seaborn&logoColor=81A1C1)
 ![Keras Badge](https://img.shields.io/badge/-Keras-3B4252?style=flat&logo=keras&logoColor=A3BE8C)
 ![Jupyter Badge](https://img.shields.io/badge/-Jupyter-3B4252?style=flat&logo=jupyter&logoColor=D08770)
 ![Tableau Badge](https://img.shields.io/badge/-Tableau-3B4252?style=flat&logo=tableau&logoColor=88C0D0)
 ![OpenAI Badge](https://img.shields.io/badge/-OpenAI-3B4252?style=flat&logo=openai&logoColor=BF616A)
 
+<br>
 </details>
 
 
@@ -142,6 +146,7 @@
 ![Apache Parquet Badge](https://img.shields.io/badge/-Apache%20Parquet-3B4252?style=flat&logo=apacheparquet&logoColor=8FBCBB)
 ![Apache Spark Badge](https://img.shields.io/badge/-Apache%20Spark-3B4252?style=flat&logo=apachespark&logoColor=88C0D0)
 
+<br>
 </details>
 
 
@@ -173,6 +178,7 @@
 > ![Processing Badge](https://img.shields.io/badge/-Processing%20Foundation-3B4252?style=flat&logo=processingfoundation&logoColor=D08770)
 > ![D3.js Badge](https://img.shields.io/badge/-D3.js-3B4252?style=flat&logo=d3dotjs&logoColor=A3BE8C)
 
+<br>
 </details>
 
 
@@ -184,8 +190,11 @@
 ![Pytest Badge](https://img.shields.io/badge/-Pytest-3B4252?style=flat&logo=pytest&logoColor=88C0D0)
 ![Selenium Badge](https://img.shields.io/badge/-Selenium-3B4252?style=flat&logo=selenium&logoColor=81A1C1)
 ![JUnit 5 Badge](https://img.shields.io/badge/-JUnit%205-3B4252?style=flat&logo=junit5&logoColor=8FBCBB)
+![Cucumber Badge](https://img.shields.io/badge/-Cucumber-3B4252?style=flat&logo=cucumber&logoColor=88C0D0)
 ![Mocha Badge](https://img.shields.io/badge/-Mocha-3B4252?style=flat&logo=mocha&logoColor=D08770)
+![NUnit Badge](https://img.shields.io/badge/-NUnit-3B4252?style=flat&logo=nunit&logoColor=88C0D0)
 
+<br>
 </details>
 
 
@@ -198,6 +207,7 @@
 ![OpenSearch Badge](https://img.shields.io/badge/-OpenSearch-3B4252?style=flat&logo=opensearch&logoColor=A3BE8C)
 ![Kibana Badge](https://img.shields.io/badge/-Kibana-3B4252?style=flat&logo=kibana&logoColor=88C0D0)
 
+<br>
 </details>
 
 
@@ -214,6 +224,7 @@
 ![Slack Badge](https://img.shields.io/badge/-Slack-3B4252?style=flat&logo=slack&logoColor=B48EAD)
 ![Discord Bagde](https://img.shields.io/badge/-Discord-3B4252?style=flat&logo=discord&logoColor=BF616A)
 
+<br>
 </details>
 
 
@@ -235,11 +246,13 @@
 ![Xcode Badge](https://img.shields.io/badge/-Xcode-3B4252?style=flat&logo=xcode&logoColor=A3BE8C)
 ![Google Colab Badge](https://img.shields.io/badge/-Google%20Colab-3B4252?style=flat&logo=googlecolab&logoColor=D08770)
 
+<br>
 </details>
 
 
 <details>
-  <summary><strong> Business Process Management & Orchestration (click to expand)</summary>
+  <summary><strong> Business Process Management & Orchestration </strong> <sub> (click to expand) </sub></summary>
+  <br>
 
 ![UML Badge](https://img.shields.io/badge/-UML-3B4252?style=flat&logo=uml&logoColor=8FBCBB)
 ![OutSystems Badge](https://img.shields.io/badge/-OutSystems-3B4252?style=flat&logo=outsystems&logoColor=BF616A)
@@ -254,10 +267,12 @@
 ![Figma Badge](https://img.shields.io/badge/-Figma-3B4252?style=flat&logo=figma&logoColor=D08770)
 ![Trello Badge](https://img.shields.io/badge/-Trello-3B4252?style=flat&logo=trello&logoColor=A3BE8C)
 
+<br>
 </details>
 
 <details>
-  <summary><strong> Photography/Videography & Design (click to expand)</summary>
+  <summary><strong> Photography/Videography & Design </strong> <sub> (click to expand) </sub></summary>
+  <br>
 
 ![Fujifilm Badge](https://img.shields.io/badge/-Fujifilm-3B4252?style=flat&logo=fujifilm&logoColor=8FBCBB)
 ![Adobe Badge](https://img.shields.io/badge/-Adobe-3B4252?style=flat&logo=adobe&logoColor=5E81AC)
@@ -275,12 +290,14 @@
 ![GIMP Badge](https://img.shields.io/badge/-GIMP-3B4252?style=flat&logo=gimp&logoColor=88C0D0)
 ![Final Cut Pro Badge](https://img.shields.io/badge/-Final%20Cut%20Pro-3B4252?style=flat&logo=finalcutpro&logoColor=5E81AC)
 
+<br>
 </details>
 
 
 
 <details>
-  <summary><strong> MIR, Audio, Music Production and Sound Design (click to expand)</summary>
+  <summary><strong> MIR, Audio, Music Production and Sound Design </strong> <sub> (click to expand) </sub></summary>
+  <br>
 
 ![Logic Pro Badge](https://img.shields.io/badge/-Logic%20Pro-3B4252?style=flat&logo=logicpro&logoColor=A3BE8C)
 ![ProTools Badge](https://img.shields.io/badge/-ProTools-3B4252?style=flat&logo=protools&logoColor=8FBCBB)
@@ -305,12 +322,20 @@
 ![Wwise Badge](https://img.shields.io/badge/-Wwise-3B4252?style=flat&logo=wwise&logoColor=D08770)
 ![Yamaha Corporation Badge](https://img.shields.io/badge/-Yamaha%20Corporation-3B4252?style=flat&logo=yamahacorporation&logoColor=B48EAD)
 
+<br>
 </details>
 
 
+<details>
+  <summary><strong> Microcontrollers & IoT </strong> <sub> (click to expand) </sub></summary>
+  <br>
 
+![Raspberry Pi Badge](https://img.shields.io/badge/-Raspberry%20Pi-3B4252?style=flat&logo=raspberrypi&logoColor=BF616A)
+![Arduino Badge](https://img.shields.io/badge/-Arduino-3B4252?style=flat&logo=arduino&logoColor=A3BE8C)
 
-![Raspberry Pi Badge](https://img.shields.io/badge/-Raspberry%20Pi-3B4252?style=flat&logo=raspberrypi&logoColor=81A1C1)
+<br>
+</details
+
 
 
 <!--
