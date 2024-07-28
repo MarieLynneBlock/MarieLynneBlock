@@ -40,23 +40,36 @@
 ![Julia Badge](https://img.shields.io/badge/-Julia-3B4252?style=flat&logo=julia&logoColor=5E81AC)
 ![Kotlin Badge](https://img.shields.io/badge/-Kotlin-3B4252?style=flat&logo=kotlin&logoColor=BF616A)
 
-![JSON Badge](https://img.shields.io/badge/-JSON-3B4252?style=flat&logo=json&logoColor=D08770)
+> ![JSON Badge](https://img.shields.io/badge/-JSON-3B4252?style=flat&logo=json&logoColor=D08770)
+> ![Swagger Badge](https://img.shields.io/badge/-Swagger-3B4252?style=flat&logo=swagger&logoColor=B48EAD)
+> ![Terraform Badge](https://img.shields.io/badge/-Terraform-3B4252?style=flat&logo=terraform&logoColor=81A1C1)
+> ![TOML Badge](https://img.shields.io/badge/-TOML-3B4252?style=flat&logo=toml&logoColor=D08770)
 
-![Conda Badge](https://img.shields.io/badge/-Conda-3B4252?style=flat&logo=anaconda&logoColor=A3BE8C)
-![Django Badge](https://img.shields.io/badge/-Django-3B4252?style=flat&logo=django&logoColor=D08770)
-![FastAPI Badge](https://img.shields.io/badge/-FastAPI-3B4252?style=flat&logo=fastapi&logoColor=BF616A)
-![Flask Badge](https://img.shields.io/badge/-Flask-3B4252?style=flat&logo=flask&logoColor=A3BE8C)
-![Gunicorn Badge](https://img.shields.io/badge/-Gunicorn-3B4252?style=flat&logo=gunicorn&logoColor=8FBCBB)
-![Celery Badge](https://img.shields.io/badge/-Celery-3B4252?style=flat&logo=celery&logoColor=5E81AC)
-![Cookiecutter Badge](https://img.shields.io/badge/-Cookiecutter-3B4252?style=flat&logo=cookiecutter&logoColor=BF616A)
+> ![Conda Badge](https://img.shields.io/badge/-Conda-3B4252?style=flat&logo=anaconda&logoColor=A3BE8C)
+> ![Poetry Badge](https://img.shields.io/badge/-Poetry-3B4252?style=flat&logo=poetry&logoColor=5E81AC)
+> ![PyPI Badge](https://img.shields.io/badge/-PyPI-3B4252?style=flat&logo=pypi&logoColor=B48EAD)
+> ![Django Badge](https://img.shields.io/badge/-Django-3B4252?style=flat&logo=django&logoColor=D08770)
+> ![FastAPI Badge](https://img.shields.io/badge/-FastAPI-3B4252?style=flat&logo=fastapi&logoColor=BF616A)
+> ![Flask Badge](https://img.shields.io/badge/-Flask-3B4252?style=flat&logo=flask&logoColor=A3BE8C)
+> ![Gunicorn Badge](https://img.shields.io/badge/-Gunicorn-3B4252?style=flat&logo=gunicorn&logoColor=8FBCBB)
+> ![Celery Badge](https://img.shields.io/badge/-Celery-3B4252?style=flat&logo=celery&logoColor=5E81AC)
+> ![Snyk Badge](https://img.shields.io/badge/-Snyk-3B4252?style=flat&logo=snyk&logoColor=5E81AC)
+> ![Cookiecutter Badge](https://img.shields.io/badge/-Cookiecutter-3B4252?style=flat&logo=cookiecutter&logoColor=BF616A)
 
-![Gradle Badge](https://img.shields.io/badge/-Gradle-3B4252?style=flat&logo=gradle&logoColor=A3BE8C)
-![Hibernate Badge](https://img.shields.io/badge/-Hibernate-3B4252?style=flat&logo=hibernate&logoColor=5E81AC)
+> ![Gradle Badge](https://img.shields.io/badge/-Gradle-3B4252?style=flat&logo=gradle&logoColor=A3BE8C)
+> ![Spring Badge](https://img.shields.io/badge/-Spring-3B4252?style=flat&logo=spring&logoColor=A3BE8C)
+> ![Spring Boot Badge](https://img.shields.io/badge/-Spring%20Boot-3B4252?style=flat&logo=springboot&logoColor=B48EAD)
+> ![Hibernate Badge](https://img.shields.io/badge/-Hibernate-3B4252?style=flat&logo=hibernate&logoColor=5E81AC)
+> ![Vaadin Badge](https://img.shields.io/badge/-Vaadin-3B4252?style=flat&logo=vaadin&logoColor=81A1C1)
+> ![Quarkus Badge](https://img.shields.io/badge/-Quarkus-3B4252?style=flat&logo=quarkus&logoColor=88C0D0)
+
 
 ##### Infrastucture and DevOps:
 ![Kubernetes Badge](https://img.shields.io/badge/-Kubernetes-3B4252?style=flat&logo=kubernetes&logoColor=5E81AC)
 ![Ingress Badge](https://img.shields.io/badge/-Ingress-3B4252?style=flat&logo=ingress&logoColor=88C0D0)
+![Red Hat OpenShift Badge](https://img.shields.io/badge/-Red%20Hat%20OpenShift-3B4252?style=flat&logo=redhatopenshift&logoColor=5E81AC)
 ![Docker Badge](https://img.shields.io/badge/-Docker-3B4252?style=flat&logo=docker&logoColor=B48EAD)
+![Podman Badge](https://img.shields.io/badge/-Podman-3B4252?style=flat&logo=podman&logoColor=81A1C1)
 
 ###### Configuration:
 
@@ -68,12 +81,17 @@
 ![TensorFlow Badge](https://img.shields.io/badge/-TensorFlow-3B4252?style=flat&logo=tensorflow&logoColor=D08770)
 ![MLflow Badge](https://img.shields.io/badge/-MLflow-3B4252?style=flat&logo=mlflow&logoColor=BF616A)
 ![Scikit-Learn Badge](https://img.shields.io/badge/-Scikit--Learn-3B4252?style=flat&logo=scikit-learn&logoColor=88C0D0)
-![Keras Badge](https://img.shields.io/badge/-Keras-3B4252?style=flat&logo=keras&logoColor=A3BE8C)
+![SciPy Badge](https://img.shields.io/badge/-SciPy-3B4252?style=flat&logo=scipy&logoColor=88C0D0)
+![SymPy Badge](https://img.shields.io/badge/-SymPy-3B4252?style=flat&logo=sympy&logoColor=8FBCBB)
+![Matplotlib Badge](https://img.shields.io/badge/-Matplotlib-3B4252?style=flat&logo=matplotlib&logoColor=88C0D0)
 ![Pandas Badge](https://img.shields.io/badge/-Pandas-3B4252?style=flat&logo=pandas&logoColor=B48EAD)
 ![NumPy Badge](https://img.shields.io/badge/-NumPy-3B4252?style=flat&logo=numpy&logoColor=8FBCBB)
-![Jupyter Badge](https://img.shields.io/badge/-Jupyter-3B4252?style=flat&logo=jupyter&logoColor=D08770)
-![Matplotlib Badge](https://img.shields.io/badge/-Matplotlib-3B4252?style=flat&logo=matplotlib&logoColor=88C0D0)
+![OpenCV Badge](https://img.shields.io/badge/-OpenCV-3B4252?style=flat&logo=opencv&logoColor=D08770)
 ![Seaborn Badge](https://img.shields.io/badge/-Seaborn-3B4252?style=flat&logo=seaborn&logoColor=81A1C1)
+![Keras Badge](https://img.shields.io/badge/-Keras-3B4252?style=flat&logo=keras&logoColor=A3BE8C)
+![Jupyter Badge](https://img.shields.io/badge/-Jupyter-3B4252?style=flat&logo=jupyter&logoColor=D08770)
+![Tableau Badge](https://img.shields.io/badge/-Tableau-3B4252?style=flat&logo=tableau&logoColor=88C0D0)
+![OpenAI Badge](https://img.shields.io/badge/-OpenAI-3B4252?style=flat&logo=openai&logoColor=BF616A)
 
 
 ##### Database & Storage Solutions
@@ -89,14 +107,18 @@
 ![Apache Spark Badge](https://img.shields.io/badge/-Apache%20Spark-3B4252?style=flat&logo=apachespark&logoColor=88C0D0)
 
 
-##### Web Development
+##### Web Development & Visualisations
 ![HTML Badge](https://img.shields.io/badge/-HTML-3B4252?style=flat&logo=html5&logoColor=A3BE8C)
 ![CSS Badge](https://img.shields.io/badge/-CSS-3B4252?style=flat&logo=css3&logoColor=B48EAD)
 ![JavaScript Badge](https://img.shields.io/badge/-JavaScript-3B4252?style=flat&logo=javascript&logoColor=5E81AC)
 ![React Badge](https://img.shields.io/badge/-React-3B4252?style=flat&logo=react&logoColor=BF616A)
 ![Angular Badge](https://img.shields.io/badge/-Angular-3B4252?style=flat&logo=angular&logoColor=81A1C1)
+![Three.js Badge](https://img.shields.io/badge/-Three.js-3B4252?style=flat&logo=threedotjs&logoColor=5E81AC)
+![p5.js Badge](https://img.shields.io/badge/-p5.js-3B4252?style=flat&logo=p5dotjs&logoColor=88C0D0)
+![Processing Foundation Badge](https://img.shields.io/badge/-Processing%20Foundation-3B4252?style=flat&logo=processingfoundation&logoColor=D08770)
 ![TypeScript Badge](https://img.shields.io/badge/-TypeScript-3B4252?style=flat&logo=typescript&logoColor=EBCB8B)
 ![Node.js Badge](https://img.shields.io/badge/-Node.js-3B4252?style=flat&logo=node.js&logoColor=BF616A)
+![npm Badge](https://img.shields.io/badge/-npm-3B4252?style=flat&logo=npm&logoColor=81A1C1)
 ![Bootstrap Badge](https://img.shields.io/badge/-Bootstrap-3B4252?style=flat&logo=bootstrap&logoColor=8FBCBB)
 ![Sass Badge](https://img.shields.io/badge/-Sass-3B4252?style=flat&logo=sass&logoColor=88C0D0)
 ![Vue.js Badge](https://img.shields.io/badge/-Vue.js-3B4252?style=flat&logo=vue.js&logoColor=5E81AC)
@@ -118,6 +140,7 @@
 ##### Monitoring
 ![Grafana Badge](https://img.shields.io/badge/-Grafana-3B4252?style=flat&logo=grafana&logoColor=B48EAD)
 ![Elasticsearch Badge](https://img.shields.io/badge/-Elasticsearch-3B4252?style=flat&logo=elasticsearch&logoColor=88C0D0)
+![OpenSearch Badge](https://img.shields.io/badge/-OpenSearch-3B4252?style=flat&logo=opensearch&logoColor=A3BE8C)
 ![Kibana Badge](https://img.shields.io/badge/-Kibana-3B4252?style=flat&logo=kibana&logoColor=88C0D0)
 
 
@@ -132,6 +155,7 @@
 ![Git Badge](https://img.shields.io/badge/-Git-3B4252?style=flat&logo=git&logoColor=5E81AC)
 ![GitHub Badge](https://img.shields.io/badge/-GitHub-3B4252?style=flat&logo=github&logoColor=8FBCBB)
 ![GitLab Badge](https://img.shields.io/badge/-GitLab-3B4252?style=flat&logo=gitlab&logoColor=D08770)
+![Subversion Badge](https://img.shields.io/badge/-Subversion-3B4252?style=flat&logo=subversion&logoColor=D08770)
 ![GitKraken Badge](https://img.shields.io/badge/-GitKraken-3B4252?style=flat&logo=gitkraken&logoColor=81A1C1)
 ![Jenkins Badge](https://img.shields.io/badge/-Jenkins-3B4252?style=flat&logo=jenkins&logoColor=BF616A)
 ![Jekyll Badge](https://img.shields.io/badge/-Jekyll-3B4252?style=flat&logo=jekyll&logoColor=5E81AC)
@@ -145,20 +169,29 @@
 
 ##### IDES & Collab Spaces
 ![IntelliJ IDEA Badge](https://img.shields.io/badge/-IntelliJ%20IDEA-3B4252?style=flat&logo=intellijidea&logoColor=A3BE8C)
+![PyCharm Badge](https://img.shields.io/badge/-PyCharm-3B4252?style=flat&logo=pycharm&logoColor=A3BE8C)
+![RStudio IDE Badge](https://img.shields.io/badge/-RStudio%20IDE-3B4252?style=flat&logo=rstudioide&logoColor=D08770)
+![WebStorm Badge](https://img.shields.io/badge/-WebStorm-3B4252?style=flat&logo=webstorm&logoColor=BF616A)
 ![CLion Badge](https://img.shields.io/badge/-CLion-3B4252?style=flat&logo=clion&logoColor=BF616A)
 ![Eclipse IDE Badge](https://img.shields.io/badge/-Eclipse%20IDE-3B4252?style=flat&logo=eclipseide&logoColor=8FBCBB)
+![ReSharper Badge](https://img.shields.io/badge/-ReSharper-3B4252?style=flat&logo=resharper&logoColor=BF616A)
 ![GoLand Badge](https://img.shields.io/badge/-GoLand-3B4252?style=flat&logo=goland&logoColor=BF616A)
+![Sublime Text Badge](https://img.shields.io/badge/-Sublime%20Text-3B4252?style=flat&logo=sublimetext&logoColor=BF616A)
+![Xcode Badge](https://img.shields.io/badge/-Xcode-3B4252?style=flat&logo=xcode&logoColor=A3BE8C)
 ![Google Colab Badge](https://img.shields.io/badge/-Google%20Colab-3B4252?style=flat&logo=googlecolab&logoColor=D08770)
 
 
 ##### Business Process Management & Orchestration / Release Management
 ![Camunda Badge](https://img.shields.io/badge/-Camunda-3B4252?style=flat&logo=camunda&logoColor=5E81AC)
+![UiPath Badge](https://img.shields.io/badge/-UiPath-3B4252?style=flat&logo=uipath&logoColor=B48EAD)
 ![Lucid Badge](https://img.shields.io/badge/-Lucid-3B4252?style=flat&logo=lucid&logoColor=A3BE8C)
 ![Miro Badge](https://img.shields.io/badge/-Miro-3B4252?style=flat&logo=miro&logoColor=5E81AC)
 ![Figma Badge](https://img.shields.io/badge/-Figma-3B4252?style=flat&logo=figma&logoColor=D08770)
 ![Jira Badge](https://img.shields.io/badge/-Jira-3B4252?style=flat&logo=jira&logoColor=BF616A)
+![Trello Badge](https://img.shields.io/badge/-Trello-3B4252?style=flat&logo=trello&logoColor=A3BE8C)
 ![Atlassian Badge](https://img.shields.io/badge/-Atlassian-3B4252?style=flat&logo=atlassian&logoColor=88C0D0)
 ![Confluence Badge](https://img.shields.io/badge/-Confluence-3B4252?style=flat&logo=confluence&logoColor=81A1C1)
+![UML Badge](https://img.shields.io/badge/-UML-3B4252?style=flat&logo=uml&logoColor=8FBCBB)
 
 
 ##### Photography/Videography & Design
@@ -173,12 +206,14 @@
 ![Affinity Badge](https://img.shields.io/badge/-Affinity-3B4252?style=flat&logo=affinity&logoColor=81A1C1)
 ![Blender Badge](https://img.shields.io/badge/-Blender-3B4252?style=flat&logo=blender&logoColor=88C0D0)
 ![Canva Badge](https://img.shields.io/badge/-Canva-3B4252?style=flat&logo=canva&logoColor=81A1C1)
+![Sketch Badge](https://img.shields.io/badge/-Sketch-3B4252?style=flat&logo=sketch&logoColor=81A1C1)
 ![DJI Badge](https://img.shields.io/badge/-DJI-3B4252?style=flat&logo=dji&logoColor=A3BE8C)
 ![GIMP Badge](https://img.shields.io/badge/-GIMP-3B4252?style=flat&logo=gimp&logoColor=88C0D0)
 
 
 ##### Audio, Music Production and Sound Design
 ![ProTools Badge](https://img.shields.io/badge/-ProTools-3B4252?style=flat&logo=protools&logoColor=8FBCBB)
+![Steinberg Badge](https://img.shields.io/badge/-Steinberg-3B4252?style=flat&logo=steinberg&logoColor=81A1C1)
 ![Ardour Badge](https://img.shields.io/badge/-Ardour-3B4252?style=flat&logo=ardour&logoColor=81A1C1)
 ![Audacity Badge](https://img.shields.io/badge/-Audacity-3B4252?style=flat&logo=audacity&logoColor=5E81AC)
 ![JUCE Badge](https://img.shields.io/badge/-JUCE-3B4252?style=flat&logo=juce&logoColor=A3BE8C)
@@ -189,6 +224,19 @@
 ![Bitwig Badge](https://img.shields.io/badge/-Bitwig-3B4252?style=flat&logo=bitwig&logoColor=B48EAD)
 ![FMOD Badge](https://img.shields.io/badge/-FMOD-3B4252?style=flat&logo=fmod&logoColor=B48EAD)
 ![MIDI Badge](https://img.shields.io/badge/-MIDI-3B4252?style=flat&logo=midi&logoColor=81A1C1)
+![Octave Badge](https://img.shields.io/badge/-Octave-3B4252?style=flat&logo=octave&logoColor=5E81AC)
+![Suno Badge](https://img.shields.io/badge/-Suno-3B4252?style=flat&logo=suno&logoColor=A3BE8C)
+![Unreal Engine Badge](https://img.shields.io/badge/-Unreal%20Engine-3B4252?style=flat&logo=unrealengine&logoColor=88C0D0)
+![Wwise Badge](https://img.shields.io/badge/-Wwise-3B4252?style=flat&logo=wwise&logoColor=D08770)
+![Yamaha Corporation Badge](https://img.shields.io/badge/-Yamaha%20Corporation-3B4252?style=flat&logo=yamahacorporation&logoColor=B48EAD)
+
+
+
+
+![Raspberry Pi Badge](https://img.shields.io/badge/-Raspberry%20Pi-3B4252?style=flat&logo=raspberrypi&logoColor=81A1C1)
+
+
+
 
 
 FIND ME HERE:
@@ -198,6 +246,16 @@ FIND ME HERE:
 ![LinkedIn Badge](https://img.shields.io/badge/-LinkedIn-3B4252?style=flat&logo=linkedin&logoColor=5E81AC)
 ![Linktree Badge](https://img.shields.io/badge/-Linktree-3B4252?style=flat&logo=linktree&logoColor=BF616A)
 ![Medium Badge](https://img.shields.io/badge/-Medium-3B4252?style=flat&logo=medium&logoColor=88C0D0)
+![SoundCloud Badge](https://img.shields.io/badge/-SoundCloud-3B4252?style=flat&logo=soundcloud&logoColor=BF616A)
+![Spotify Badge](https://img.shields.io/badge/-Spotify-3B4252?style=flat&logo=spotify&logoColor=D08770)
+![Stack Overflow Badge](https://img.shields.io/badge/-Stack%20Overflow-3B4252?style=flat&logo=stackoverflow&logoColor=8FBCBB)
+![Steam Badge](https://img.shields.io/badge/-Steam-3B4252?style=flat&logo=steam&logoColor=88C0D0)
+![Strava Badge](https://img.shields.io/badge/-Strava-3B4252?style=flat&logo=strava&logoColor=5E81AC)
+![TikTok Badge](https://img.shields.io/badge/-TikTok-3B4252?style=flat&logo=tiktok&logoColor=BF616A)
+
+
+
+
 
 
 
