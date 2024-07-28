@@ -1,6 +1,7 @@
 ![GitHub ReadMe Header](https://github.com/MarieLynneBlock/MarieLynneBlock/blob/master/img/header_lsystem-aurora.png)
 ## Hej there!! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">
 
+
 <!-- Stats Dashboard -->
 <p align="center">
   <a href="https://git.io/streak-stats" target="_blank">
@@ -8,7 +9,9 @@
   </a>
 </p>
 
+
 <!-- todo: design top language Dashboard -->
+
 
 <!-- Visitors badge -->
 <p align="center">
@@ -17,6 +20,98 @@
   </a>
 </p>
 
+---
+
+### My Toolbox:
+
+##### Languages
+![Python Badge](https://img.shields.io/badge/-Python-3B4252?style=flat&logo=python&logoColor=8FBCBB)
+![R Badge](https://img.shields.io/badge/-R-3B4252?style=flat&logo=r&logoColor=BF616A)
+![Java Badge](https://img.shields.io/badge/-Java-3B4252?style=flat&logo=openjdk&logoColor=D08770)
+![Scala Badge](https://img.shields.io/badge/-Scala-3B4252?style=flat&logo=scala&logoColor=EBCB8B)
+![Rust Badge](https://img.shields.io/badge/-Rust-3B4252?style=flat&logo=rust&logoColor=A3BE8C)
+![C# Badge](https://img.shields.io/badge/-C%23-3B4252?style=flat&logo=sharp&logoColor=8FBCBB)
+![C++ Badge](https://img.shields.io/badge/-C++-3B4252?style=flat&logo=cplusplus&logoColor=88C0D0)
+![.NET Badge](https://img.shields.io/badge/-.NET-3B4252?style=flat&logo=dotnet&logoColor=88C0D0)
+
+
+##### AI & Machine Learning
+![PyTorch Badge](https://img.shields.io/badge/-PyTorch-3B4252?style=flat&logo=pytorch&logoColor=BF616A)
+![TensorFlow Badge](https://img.shields.io/badge/-TensorFlow-3B4252?style=flat&logo=tensorflow&logoColor=88C0D0)
+![Conda Badge](https://img.shields.io/badge/-Conda-3B4252?style=flat&logo=anaconda&logoColor=A3BE8C)
+![Scikit-Learn Badge](https://img.shields.io/badge/-Scikit--Learn-3B4252?style=flat&logo=scikit-learn&logoColor=D08770)
+![Keras Badge](https://img.shields.io/badge/-Keras-3B4252?style=flat&logo=keras&logoColor=A3BE8C)
+![Pandas Badge](https://img.shields.io/badge/-Pandas-3B4252?style=flat&logo=pandas&logoColor=B48EAD)
+![NumPy Badge](https://img.shields.io/badge/-NumPy-3B4252?style=flat&logo=numpy&logoColor=8FBCBB)
+![Jupyter Badge](https://img.shields.io/badge/-Jupyter-3B4252?style=flat&logo=jupyter&logoColor=B48EAD)
+![Matplotlib Badge](https://img.shields.io/badge/-Matplotlib-3B4252?style=flat&logo=matplotlib&logoColor=88C0D0)
+![Seaborn Badge](https://img.shields.io/badge/-Seaborn-3B4252?style=flat&logo=seaborn&logoColor=81A1C1)
+
+
+##### Data
+![MySQL Badge](https://img.shields.io/badge/-MySQL-3B4252?style=flat&logo=mysql&logoColor=88C0D0)
+![PostgreSQL Badge](https://img.shields.io/badge/-PostgreSQL-3B4252?style=flat&logo=postgresql&logoColor=81A1C1)
+![SQLite Badge](https://img.shields.io/badge/-SQLite-3B4252?style=flat&logo=sqlite&logoColor=B48EAD)
+
+
+##### Web Development
+![JavaScript Badge](https://img.shields.io/badge/-JavaScript-3B4252?style=flat&logo=javascript&logoColor=5E81AC)
+![React Badge](https://img.shields.io/badge/-React-3B4252?style=flat&logo=react&logoColor=BF616A)
+![TypeScript Badge](https://img.shields.io/badge/-TypeScript-3B4252?style=flat&logo=typescript&logoColor=D08770)
+![HTML Badge](https://img.shields.io/badge/-HTML-3B4252?style=flat&logo=html5&logoColor=A3BE8C)
+![CSS Badge](https://img.shields.io/badge/-CSS-3B4252?style=flat&logo=css3&logoColor=B48EAD)
+![Bootstrap Badge](https://img.shields.io/badge/-Bootstrap-3B4252?style=flat&logo=bootstrap&logoColor=8FBCBB)
+![Sass Badge](https://img.shields.io/badge/-Sass-3B4252?style=flat&logo=sass&logoColor=88C0D0)
+![Angular Badge](https://img.shields.io/badge/-Angular-3B4252?style=flat&logo=angular&logoColor=81A1C1)
+![Vue.js Badge](https://img.shields.io/badge/-Vue.js-3B4252?style=flat&logo=vue.js&logoColor=5E81AC)
+![Node.js Badge](https://img.shields.io/badge/-Node.js-3B4252?style=flat&logo=node.js&logoColor=BF616A)
+![jQuery Badge](https://img.shields.io/badge/-jQuery-3B4252?style=flat&logo=jquery&logoColor=D08770)
+
+
+##### Cloud Platforms
+![AWS Badge](https://img.shields.io/badge/-AWS-3B4252?style=flat&logo=amazonwebservices&logoColor=D08770)
+![Google Cloud Badge](https://img.shields.io/badge/-Google%20Cloud-3B4252?style=flat&logo=googlecloud&logoColor=BF616A)
+![Azure Badge](https://img.shields.io/badge/-Azure-3B4252?style=flat&logo=microsoftazure&logoColor=D08770)
+
+
+##### Tools
+
+
+
+
+
+
+
+
+
+
+
+<!--
+### Technologies
+
+![AWS](https://img.shields.io/badge/-AWS-000?&logo=Amazon-AWS&logoColor=F90)
+![Docker](https://img.shields.io/badge/-Docker-000?&logo=Docker)
+![Kubernetes](https://img.shields.io/badge/-Kubernetes-000?&logo=Kubernetes)
+![Linux](https://img.shields.io/badge/-Linux-000?&logo=Linux)
+![Node.js](https://img.shields.io/badge/-Node.js-000?&logo=node.js)
+![PyTorch](https://img.shields.io/badge/-PyTorch-000?&logo=PyTorch)
+![React](https://img.shields.io/badge/-React-000?&logo=React)
+![Redis](https://img.shields.io/badge/-Redis-000?&logo=Redis)
+![Spring](https://img.shields.io/badge/-Spring-000?&logo=Spring)
+![TensorFlow](https://img.shields.io/badge/-TensorFlow-000?&logo=TensorFlow)
+
+### Full Stack Projects
+
+[![](https://img.shields.io/badge/-🧬%20My%20Website-000)](https://github.com/adamalston/v2)
+[![](https://img.shields.io/badge/-🦠%20COVID‑19%20Dashboard-000)](https://github.com/adamalston/COVID-19-Dashboard)
+[![](https://img.shields.io/badge/-📝%20Summarizer-000)](https://github.com/adamalston/Summarizer)
+[![](https://img.shields.io/badge/-🔬%20Overwatch-000)](https://github.com/adamalston/overwatch)
+[![](https://img.shields.io/badge/-🛰%20KubeSat-000)](https://github.com/adamalston/kubesat)
+[![](https://img.shields.io/badge/-🔊%20Voice%20Poker-000)](https://github.com/adamalston/Poker)
+[![](https://img.shields.io/badge/-🗺%20PokémonGo%20Map-000)](https://github.com/adamalston/PokemonGo-Map)
+-->
+
+---
 
 ### About me:     
 I am a strong T-shaped AI Expert with a hidden full-stack software engineer/data scientist persona, using my professional experience to experiment with computer music, sound AI/ML, generative art and animation.
