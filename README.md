@@ -103,8 +103,8 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
       </a>
     </td>
     <td>
-      <a href="https://github.com/MarieLynneBlock/nanodegree_data-product-management">
-         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="Nanodegree Data Product Management">
+      <a href="https://github.com/MarieLynneBlock/generative-art-and-computational-creativity_SFU">
+         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=ngenerative-art-and-computational-creativity_SFU&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="Professional Programme Generative Art and Computational Creativity by SFU">
       </a>
     </td>
    <td>
