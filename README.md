@@ -22,7 +22,7 @@
 
 ---
 
-### My Toolbox:
+### <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/toolkit.gif" width="65"> My Toolbox
 
 <details>
   <summary><strong> Languages & Libraries </strong> <sub> (click to expand) </sub></summary>
