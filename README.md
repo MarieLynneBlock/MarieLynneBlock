@@ -90,19 +90,20 @@
 
 
 ##### Web Development
-![JavaScript Badge](https://img.shields.io/badge/-JavaScript-3B4252?style=flat&logo=javascript&logoColor=5E81AC)
-![React Badge](https://img.shields.io/badge/-React-3B4252?style=flat&logo=react&logoColor=BF616A)
-![TypeScript Badge](https://img.shields.io/badge/-TypeScript-3B4252?style=flat&logo=typescript&logoColor=EBCB8B)
 ![HTML Badge](https://img.shields.io/badge/-HTML-3B4252?style=flat&logo=html5&logoColor=A3BE8C)
 ![CSS Badge](https://img.shields.io/badge/-CSS-3B4252?style=flat&logo=css3&logoColor=B48EAD)
+![JavaScript Badge](https://img.shields.io/badge/-JavaScript-3B4252?style=flat&logo=javascript&logoColor=5E81AC)
+![React Badge](https://img.shields.io/badge/-React-3B4252?style=flat&logo=react&logoColor=BF616A)
+![Angular Badge](https://img.shields.io/badge/-Angular-3B4252?style=flat&logo=angular&logoColor=81A1C1)
+![TypeScript Badge](https://img.shields.io/badge/-TypeScript-3B4252?style=flat&logo=typescript&logoColor=EBCB8B)
+![Node.js Badge](https://img.shields.io/badge/-Node.js-3B4252?style=flat&logo=node.js&logoColor=BF616A)
 ![Bootstrap Badge](https://img.shields.io/badge/-Bootstrap-3B4252?style=flat&logo=bootstrap&logoColor=8FBCBB)
 ![Sass Badge](https://img.shields.io/badge/-Sass-3B4252?style=flat&logo=sass&logoColor=88C0D0)
-![Angular Badge](https://img.shields.io/badge/-Angular-3B4252?style=flat&logo=angular&logoColor=81A1C1)
 ![Vue.js Badge](https://img.shields.io/badge/-Vue.js-3B4252?style=flat&logo=vue.js&logoColor=5E81AC)
-![Node.js Badge](https://img.shields.io/badge/-Node.js-3B4252?style=flat&logo=node.js&logoColor=BF616A)
 ![jQuery Badge](https://img.shields.io/badge/-jQuery-3B4252?style=flat&logo=jquery&logoColor=D08770)
 ![D3.js Badge](https://img.shields.io/badge/-D3.js-3B4252?style=flat&logo=d3dotjs&logoColor=A3BE8C)
 ![Ember.js Badge](https://img.shields.io/badge/-Ember.js-3B4252?style=flat&logo=emberdotjs&logoColor=81A1C1)
+![Next.js Badge](https://img.shields.io/badge/-Next.js-3B4252?style=flat&logo=nextdotjs&logoColor=88C0D0)
 ![Knex.js Badge](https://img.shields.io/badge/-Knex.js-3B4252?style=flat&logo=knexdotjs&logoColor=81A1C1)
 
 
