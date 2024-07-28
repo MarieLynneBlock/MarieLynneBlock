@@ -61,7 +61,7 @@ Most of the code you stumble upon here is just me monkeying around... 🐒 <br>
 My GitHub primarily reflects my experimentation with new technologies, hobby projects, and learning endeavors. Please view it as a glimpse into my exploration 🧪 rather than a testament to my professional abilities 🦸.
 
 #### current focus:
-##### Continuous Education in my current field of employment:
+##### Continuous education in my current field of employment:
 
 <!-- repositories where I work on at the moment based on courses or books -->
 <table align="center">
