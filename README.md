@@ -57,6 +57,7 @@
 
 ![Kubernetes Badge](https://img.shields.io/badge/-Kubernetes-3B4252?style=flat&logo=kubernetes&logoColor=5E81AC)
 ![Ingress Badge](https://img.shields.io/badge/-Ingress-3B4252?style=flat&logo=ingress&logoColor=88C0D0)
+![JSON Badge](https://img.shields.io/badge/-JSON-3B4252?style=flat&logo=json&logoColor=D08770)
 
 
 
@@ -108,6 +109,7 @@
 ![Postman Badge](https://img.shields.io/badge/-Postman-3B4252?style=flat&logo=postman&logoColor=D08770)
 ![Pytest Badge](https://img.shields.io/badge/-Pytest-3B4252?style=flat&logo=pytest&logoColor=88C0D0)
 ![Selenium Badge](https://img.shields.io/badge/-Selenium-3B4252?style=flat&logo=selenium&logoColor=81A1C1)
+![JUnit 5 Badge](https://img.shields.io/badge/-JUnit%205-3B4252?style=flat&logo=junit5&logoColor=8FBCBB)
 
 
 ##### Cloud Platforms
@@ -124,6 +126,7 @@
 ![GitLab Badge](https://img.shields.io/badge/-GitLab-3B4252?style=flat&logo=gitlab&logoColor=D08770)
 ![GitKraken Badge](https://img.shields.io/badge/-GitKraken-3B4252?style=flat&logo=gitkraken&logoColor=81A1C1)
 ![Jenkins Badge](https://img.shields.io/badge/-Jenkins-3B4252?style=flat&logo=jenkins&logoColor=BF616A)
+![Jekyll Badge](https://img.shields.io/badge/-Jekyll-3B4252?style=flat&logo=jekyll&logoColor=5E81AC)
 ![HashiCorp Badge](https://img.shields.io/badge/-HashiCorp-3B4252?style=flat&logo=hashicorp&logoColor=88C0D0)
 ![Heroku Badge](https://img.shields.io/badge/-Heroku-3B4252?style=flat&logo=heroku&logoColor=81A1C1)
 ![Homebrew Badge](https://img.shields.io/badge/-Homebrew-3B4252?style=flat&logo=homebrew&logoColor=BF616A)
@@ -168,6 +171,7 @@
 ![ProTools Badge](https://img.shields.io/badge/-ProTools-3B4252?style=flat&logo=protools&logoColor=8FBCBB)
 ![Ardour Badge](https://img.shields.io/badge/-Ardour-3B4252?style=flat&logo=ardour&logoColor=81A1C1)
 ![Audacity Badge](https://img.shields.io/badge/-Audacity-3B4252?style=flat&logo=audacity&logoColor=5E81AC)
+![JUCE Badge](https://img.shields.io/badge/-JUCE-3B4252?style=flat&logo=juce&logoColor=A3BE8C)
 ![Audio-Technica Badge](https://img.shields.io/badge/-Audio%20Technica-3B4252?style=flat&logo=audiotechnica&logoColor=BF616A)
 ![Bandcamp Badge](https://img.shields.io/badge/-Bandcamp-3B4252?style=flat&logo=bandcamp&logoColor=D08770)
 ![BandLab Badge](https://img.shields.io/badge/-BandLab-3B4252?style=flat&logo=bandlab&logoColor=A3BE8C)
