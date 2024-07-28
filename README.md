@@ -61,7 +61,7 @@ Most of the code you stumble upon here is just me monkeying around... 🐒 <br>
 My GitHub primarily reflects my experimentation with new technologies, hobby projects, and learning endeavors. Please view it as a glimpse into my exploration 🧪 rather than a testament to my professional abilities 🦸.
 
 #### current focus:
-##### Continuous Education:
+##### Continuous Education in my current field of employment:
 
 <!-- repositories where I work on at the moment based on courses or books -->
 <table align="center">
@@ -88,6 +88,34 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
     </td>
   </tr>
 </table>
+
+##### Exploration of my personal interests:
+
+<table align="center">
+  <tr>
+    <td>
+      <a href="https://github.com/MarieLynneBlock/music-information-retrieval_UVAC">
+         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=music-information-retrieval_UVAC&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="Professional Programme: Music Information Retrieval">
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/MarieLynneBlock/nanodegree_data-product-management">
+         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="Nanodegree Data Product Management">
+      </a>
+    </td>
+   <td>
+      <a href="https://github.com/MarieLynneBlock/nanodegree_generative-AI">
+         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_generative-AI&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="Nanodegree Generative AI">
+      </a>
+    </td>
+     <td>
+      <a href="https://github.com/MarieLynneBlock/AI-in-healthcare_KULeuvenX">
+         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=AI-in-healthcare_KULeuvenX&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="AI in Healthcare KULeuvenX">
+      </a>
+    </td>
+  </tr>
+</table>
+
 
 <!---
 ##### Academic:
