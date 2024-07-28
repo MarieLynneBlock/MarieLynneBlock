@@ -203,9 +203,10 @@
   <br>
 
 ![Grafana Badge](https://img.shields.io/badge/-Grafana-3B4252?style=flat&logo=grafana&logoColor=B48EAD)
+![Prometheus Badge](https://img.shields.io/badge/-Prometheus-3B4252?style=flat&logo=prometheus&logoColor=E6522C)
 ![Elasticsearch Badge](https://img.shields.io/badge/-Elasticsearch-3B4252?style=flat&logo=elasticsearch&logoColor=88C0D0)
-![OpenSearch Badge](https://img.shields.io/badge/-OpenSearch-3B4252?style=flat&logo=opensearch&logoColor=A3BE8C)
 ![Kibana Badge](https://img.shields.io/badge/-Kibana-3B4252?style=flat&logo=kibana&logoColor=88C0D0)
+![OpenSearch Badge](https://img.shields.io/badge/-OpenSearch-3B4252?style=flat&logo=opensearch&logoColor=A3BE8C)
 
 <br>
 </details>
@@ -229,7 +230,7 @@
 
 
 <details>
-  <summary><strong> IDEs & Collab Spaces </strong> <sub> (click to expand) </sub></summary>
+  <summary><strong> IDEs & Collaboration Platforms </strong> <sub> (click to expand) </sub></summary>
   <br>
 
 ![IntelliJ IDEA Badge](https://img.shields.io/badge/-IntelliJ%20IDEA-3B4252?style=flat&logo=intellijidea&logoColor=A3BE8C)
@@ -244,7 +245,9 @@
 ![GoLand Badge](https://img.shields.io/badge/-GoLand-3B4252?style=flat&logo=goland&logoColor=BF616A)
 ![Sublime Text Badge](https://img.shields.io/badge/-Sublime%20Text-3B4252?style=flat&logo=sublimetext&logoColor=BF616A)
 ![Xcode Badge](https://img.shields.io/badge/-Xcode-3B4252?style=flat&logo=xcode&logoColor=A3BE8C)
+
 ![Google Colab Badge](https://img.shields.io/badge/-Google%20Colab-3B4252?style=flat&logo=googlecolab&logoColor=D08770)
+![GitHub Codespaces Badge](https://img.shields.io/badge/-GitHub%20Codespaces-3B4252?style=flat&logo=github&logoColor=8FBCBB)
 
 <br>
 </details>
@@ -252,20 +255,25 @@
 
 <details>
   <summary><strong> Business Process Management & Orchestration </strong> <sub> (click to expand) </sub></summary>
-  <br>
 
-![UML Badge](https://img.shields.io/badge/-UML-3B4252?style=flat&logo=uml&logoColor=8FBCBB)
-![OutSystems Badge](https://img.shields.io/badge/-OutSystems-3B4252?style=flat&logo=outsystems&logoColor=BF616A)
-![Camunda Badge](https://img.shields.io/badge/-Camunda-3B4252?style=flat&logo=camunda&logoColor=5E81AC)
-![UiPath Badge](https://img.shields.io/badge/-UiPath-3B4252?style=flat&logo=uipath&logoColor=B48EAD)
-![Miro Badge](https://img.shields.io/badge/-Miro-3B4252?style=flat&logo=miro&logoColor=5E81AC)
-![Visio Badge](https://img.shields.io/badge/-Visio-3B4252?style=flat&logo=microsoftvisio&logoColor=88C0D0)
-![CmapTools Badge](https://img.shields.io/badge/-CmapTools-3B4252?style=flat&logo=cmaptools&logoColor=81A1C1)
-![Lucid Badge](https://img.shields.io/badge/-Lucid-3B4252?style=flat&logo=lucid&logoColor=A3BE8C)
-![Jira Badge](https://img.shields.io/badge/-Jira-3B4252?style=flat&logo=jira&logoColor=BF616A)
-![Confluence Badge](https://img.shields.io/badge/-Confluence-3B4252?style=flat&logo=confluence&logoColor=81A1C1)
-![Figma Badge](https://img.shields.io/badge/-Figma-3B4252?style=flat&logo=figma&logoColor=D08770)
-![Trello Badge](https://img.shields.io/badge/-Trello-3B4252?style=flat&logo=trello&logoColor=A3BE8C)
+###### Core BPM & Workflow Automation
+> ![OutSystems Badge](https://img.shields.io/badge/-OutSystems-3B4252?style=flat&logo=outsystems&logoColor=BF616A)
+> ![Camunda Badge](https://img.shields.io/badge/-Camunda-3B4252?style=flat&logo=camunda&logoColor=5E81AC)
+> ![UiPath Badge](https://img.shields.io/badge/-UiPath-3B4252?style=flat&logo=uipath&logoColor=B48EAD)
+
+
+###### Project Management & Collaboration
+> ![Jira Badge](https://img.shields.io/badge/-Jira-3B4252?style=flat&logo=jira&logoColor=BF616A)
+> ![Confluence Badge](https://img.shields.io/badge/-Confluence-3B4252?style=flat&logo=confluence&logoColor=81A1C1)
+> ![Trello Badge](https://img.shields.io/badge/-Trello-3B4252?style=flat&logo=trello&logoColor=A3BE8C)
+
+###### Design & Diagramming
+> ![UML Badge](https://img.shields.io/badge/-UML-3B4252?style=flat&logo=uml&logoColor=8FBCBB)
+> ![CmapTools Badge](https://img.shields.io/badge/-CmapTools-3B4252?style=flat&logo=cmaptools&logoColor=81A1C1)
+> ![Visio Badge](https://img.shields.io/badge/-Visio-3B4252?style=flat&logo=microsoftvisio&logoColor=88C0D0)
+> ![Miro Badge](https://img.shields.io/badge/-Miro-3B4252?style=flat&logo=miro&logoColor=5E81AC)
+> ![Lucid Badge](https://img.shields.io/badge/-Lucid-3B4252?style=flat&logo=lucid&logoColor=A3BE8C)
+> ![Figma Badge](https://img.shields.io/badge/-Figma-3B4252?style=flat&logo=figma&logoColor=D08770)
 
 <br>
 </details>
