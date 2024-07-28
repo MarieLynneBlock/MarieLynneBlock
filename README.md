@@ -203,7 +203,7 @@
   <br>
 
 ![Grafana Badge](https://img.shields.io/badge/-Grafana-3B4252?style=flat&logo=grafana&logoColor=B48EAD)
-![Prometheus Badge](https://img.shields.io/badge/-Prometheus-3B4252?style=flat&logo=prometheus&logoColor=E6522C)
+![Prometheus Badge](https://img.shields.io/badge/-Prometheus-3B4252?style=flat&logo=prometheus&logoColor=D08770)
 ![Elasticsearch Badge](https://img.shields.io/badge/-Elasticsearch-3B4252?style=flat&logo=elasticsearch&logoColor=88C0D0)
 ![Kibana Badge](https://img.shields.io/badge/-Kibana-3B4252?style=flat&logo=kibana&logoColor=88C0D0)
 ![OpenSearch Badge](https://img.shields.io/badge/-OpenSearch-3B4252?style=flat&logo=opensearch&logoColor=A3BE8C)
@@ -274,29 +274,35 @@
 > ![Miro Badge](https://img.shields.io/badge/-Miro-3B4252?style=flat&logo=miro&logoColor=5E81AC)
 > ![Lucid Badge](https://img.shields.io/badge/-Lucid-3B4252?style=flat&logo=lucid&logoColor=A3BE8C)
 > ![Figma Badge](https://img.shields.io/badge/-Figma-3B4252?style=flat&logo=figma&logoColor=D08770)
+> ![XD Badge](https://img.shields.io/badge/-XD-3B4252?style=flat&logo=adobexd&logoColor=88C0D0)
 
 <br>
 </details>
 
 <details>
   <summary><strong> Photography/Videography & Design </strong> <sub> (click to expand) </sub></summary>
-  <br>
 
-![Fujifilm Badge](https://img.shields.io/badge/-Fujifilm-3B4252?style=flat&logo=fujifilm&logoColor=8FBCBB)
-![Adobe Badge](https://img.shields.io/badge/-Adobe-3B4252?style=flat&logo=adobe&logoColor=5E81AC)
-![After Effects Badge](https://img.shields.io/badge/-After%20Effects-3B4252?style=flat&logo=adobeaftereffects&logoColor=BF616A)
-![Illustrator Badge](https://img.shields.io/badge/-Illustrator-3B4252?style=flat&logo=adobeillustrator&logoColor=D08770)
-![Lightroom Badge](https://img.shields.io/badge/-Lightroom-3B4252?style=flat&logo=adobelightroom&logoColor=A3BE8C)
-![Lightroom Classic Badge](https://img.shields.io/badge/-Lightroom%20Classic-3B4252?style=flat&logo=adobelightroomclassic&logoColor=B48EAD)
-![Photoshop Badge](https://img.shields.io/badge/-Photoshop-3B4252?style=flat&logo=adobephotoshop&logoColor=8FBCBB)
-![XD Badge](https://img.shields.io/badge/-XD-3B4252?style=flat&logo=adobexd&logoColor=88C0D0)
-![Affinity Badge](https://img.shields.io/badge/-Affinity-3B4252?style=flat&logo=affinity&logoColor=81A1C1)
-![Blender Badge](https://img.shields.io/badge/-Blender-3B4252?style=flat&logo=blender&logoColor=88C0D0)
-![Canva Badge](https://img.shields.io/badge/-Canva-3B4252?style=flat&logo=canva&logoColor=81A1C1)
-![Sketch Badge](https://img.shields.io/badge/-Sketch-3B4252?style=flat&logo=sketch&logoColor=81A1C1)
-![DJI Badge](https://img.shields.io/badge/-DJI-3B4252?style=flat&logo=dji&logoColor=A3BE8C)
-![GIMP Badge](https://img.shields.io/badge/-GIMP-3B4252?style=flat&logo=gimp&logoColor=88C0D0)
-![Final Cut Pro Badge](https://img.shields.io/badge/-Final%20Cut%20Pro-3B4252?style=flat&logo=finalcutpro&logoColor=5E81AC)
+###### Photography & Photo Editing
+> ![Fujifilm Badge](https://img.shields.io/badge/-Fujifilm-3B4252?style=flat&logo=fujifilm&logoColor=8FBCBB)
+> ![Adobe Badge](https://img.shields.io/badge/-Adobe-3B4252?style=flat&logo=adobe&logoColor=5E81AC)
+> ![Lightroom Badge](https://img.shields.io/badge/-Lightroom-3B4252?style=flat&logo=adobelightroom&logoColor=A3BE8C)
+> ![Lightroom Classic Badge](https://img.shields.io/badge/-Lightroom%20Classic-3B4252?style=flat&logo=adobelightroomclassic&logoColor=B48EAD)
+> ![Photoshop Badge](https://img.shields.io/badge/-Photoshop-3B4252?style=flat&logo=adobephotoshop&logoColor=8FBCBB)
+> ![Affinity Badge](https://img.shields.io/badge/-Affinity-3B4252?style=flat&logo=affinity&logoColor=81A1C1)
+> ![DJI Badge](https://img.shields.io/badge/-DJI-3B4252?style=flat&logo=dji&logoColor=A3BE8C)
+
+###### Video Production
+> ![Final Cut Pro Badge](https://img.shields.io/badge/-Final%20Cut%20Pro-3B4252?style=flat&logo=finalcutpro&logoColor=5E81AC)
+> ![After Effects Badge](https://img.shields.io/badge/-After%20Effects-3B4252?style=flat&logo=adobeaftereffects&logoColor=BF616A)
+
+
+###### Graphics & Design
+> ![Illustrator Badge](https://img.shields.io/badge/-Illustrator-3B4252?style=flat&logo=adobeillustrator&logoColor=D08770)
+> ![Blender Badge](https://img.shields.io/badge/-Blender-3B4252?style=flat&logo=blender&logoColor=88C0D0)
+> ![GIMP Badge](https://img.shields.io/badge/-GIMP-3B4252?style=flat&logo=gimp&logoColor=88C0D0)
+> ![Canva Badge](https://img.shields.io/badge/-Canva-3B4252?style=flat&logo=canva&logoColor=81A1C1)
+> ![Cinema 4D Badge](https://img.shields.io/badge/-Cinema%204D-3B4252?style=flat&logo=cinema4d&logoColor=BF616A)
+
 
 <br>
 </details>
@@ -304,31 +310,48 @@
 
 
 <details>
-  <summary><strong> MIR, Audio, Music Production and Sound Design </strong> <sub> (click to expand) </sub></summary>
+  <summary><strong> Music Technology & Audio Engineering </strong> <sub> (click to expand) </sub></summary>
   <br>
 
-![Logic Pro Badge](https://img.shields.io/badge/-Logic%20Pro-3B4252?style=flat&logo=logicpro&logoColor=A3BE8C)
 ![ProTools Badge](https://img.shields.io/badge/-ProTools-3B4252?style=flat&logo=protools&logoColor=8FBCBB)
+![Logic Pro Badge](https://img.shields.io/badge/-Logic%20Pro-3B4252?style=flat&logo=logicpro&logoColor=A3BE8C)
 ![Steinberg Badge](https://img.shields.io/badge/-Steinberg-3B4252?style=flat&logo=steinberg&logoColor=81A1C1)
 ![Ableton Live Badge](https://img.shields.io/badge/-Ableton%20Live-3B4252?style=flat&logo=abletonlive&logoColor=B48EAD)
 ![iZotope Badge](https://img.shields.io/badge/-iZotope-3B4252?style=flat&logo=izotope&logoColor=D08770)
 ![Moises Badge](https://img.shields.io/badge/-Moises-3B4252?style=flat&logo=moises&logoColor=8FBCBB)
-![Audulus Badge](https://img.shields.io/badge/-Audulus-3B4252?style=flat&logo=audulus&logoColor=88C0D0)
+![Bitwig Badge](https://img.shields.io/badge/-Bitwig-3B4252?style=flat&logo=bitwig&logoColor=B48EAD)
 ![Ardour Badge](https://img.shields.io/badge/-Ardour-3B4252?style=flat&logo=ardour&logoColor=81A1C1)
 ![Audacity Badge](https://img.shields.io/badge/-Audacity-3B4252?style=flat&logo=audacity&logoColor=5E81AC)
-![JUCE Badge](https://img.shields.io/badge/-JUCE-3B4252?style=flat&logo=juce&logoColor=A3BE8C)
-![Audio-Technica Badge](https://img.shields.io/badge/-Audio%20Technica-3B4252?style=flat&logo=audiotechnica&logoColor=BF616A)
-![MuseScore Badge](https://img.shields.io/badge/-MuseScore-3B4252?style=flat&logo=musescore&logoColor=B48EAD)
-![Bandcamp Badge](https://img.shields.io/badge/-Bandcamp-3B4252?style=flat&logo=bandcamp&logoColor=D08770)
 ![BandLab Badge](https://img.shields.io/badge/-BandLab-3B4252?style=flat&logo=bandlab&logoColor=A3BE8C)
-![Bitwig Badge](https://img.shields.io/badge/-Bitwig-3B4252?style=flat&logo=bitwig&logoColor=B48EAD)
-![FMOD Badge](https://img.shields.io/badge/-FMOD-3B4252?style=flat&logo=fmod&logoColor=B48EAD)
-![MIDI Badge](https://img.shields.io/badge/-MIDI-3B4252?style=flat&logo=midi&logoColor=81A1C1)
-![Octave Badge](https://img.shields.io/badge/-Octave-3B4252?style=flat&logo=octave&logoColor=5E81AC)
-![Suno Badge](https://img.shields.io/badge/-Suno-3B4252?style=flat&logo=suno&logoColor=A3BE8C)
-![Unreal Engine Badge](https://img.shields.io/badge/-Unreal%20Engine-3B4252?style=flat&logo=unrealengine&logoColor=88C0D0)
-![Wwise Badge](https://img.shields.io/badge/-Wwise-3B4252?style=flat&logo=wwise&logoColor=D08770)
-![Yamaha Corporation Badge](https://img.shields.io/badge/-Yamaha%20Corporation-3B4252?style=flat&logo=yamahacorporation&logoColor=B48EAD)
+
+
+###### Scoring & Composing
+> ![Finale Badge](https://img.shields.io/badge/-Finale-3B4252?style=flat&logo=finale&logoColor=B48EAD)
+> ![Sibelius Badge](https://img.shields.io/badge/-Sibelius-3B4252?style=flat&logo=sibelius&logoColor=FFFFFF)
+> ![MuseScore Badge](https://img.shields.io/badge/-MuseScore-3B4252?style=flat&logo=musescore&logoColor=B48EAD)
+
+###### Music Programming and Sound Design
+> ![JUCE Badge](https://img.shields.io/badge/-JUCE-3B4252?style=flat&logo=juce&logoColor=A3BE8C)
+> ![Max/MSP Badge](https://img.shields.io/badge/-Max%2FMSP-3B4252?style=flat&logo=max&logoColor=EBCB8B)
+> ![FMOD Badge](https://img.shields.io/badge/-FMOD-3B4252?style=flat&logo=fmod&logoColor=B48EAD)
+> ![Octave Badge](https://img.shields.io/badge/-Octave-3B4252?style=flat&logo=octave&logoColor=5E81AC)
+> ![Wwise Badge](https://img.shields.io/badge/-Wwise-3B4252?style=flat&logo=wwise&logoColor=D08770)
+> ![Unreal Engine Badge](https://img.shields.io/badge/-Unreal%20Engine-3B4252?style=flat&logo=unrealengine&logoColor=88C0D0)
+> ![SuperCollider Badge](https://img.shields.io/badge/-SuperCollider-3B4252?style=flat&logo=supercollider&logoColor=FF69B4)
+> ![Audulus Badge](https://img.shields.io/badge/-Audulus-3B4252?style=flat&logo=audulus&logoColor=88C0D0)
+> ![Pure Data Badge](https://img.shields.io/badge/-Pure%20Data-3B4252?style=flat&logo=puredata&logoColor=00FFFF)
+> ![Csound Badge](https://img.shields.io/badge/-Csound-3B4252?style=flat&logo=csound&logoColor=00FFFF)
+> ![Sonic Pi Badge](https://img.shields.io/badge/-Sonic%20Pi-3B4252?style=flat&logo=sonicpi&logoColor=FF69B4)
+
+###### Tools
+> ![MIDI Badge](https://img.shields.io/badge/-MIDI-3B4252?style=flat&logo=midi&logoColor=81A1C1)
+> ![Yamaha Corporation Badge](https://img.shields.io/badge/-Yamaha%20Corporation-3B4252?style=flat&logo=yamahacorporation&logoColor=B48EAD)
+> ![Audio-Technica Badge](https://img.shields.io/badge/-Audio%20Technica-3B4252?style=flat&logo=audiotechnica&logoColor=BF616A)
+
+###### AI
+> ![AIVA Badge](https://img.shields.io/badge/-AIVA-3B4252?style=flat&logo=aiva&logoColor=FF69B4)
+> ![Suno Badge](https://img.shields.io/badge/-Suno-3B4252?style=flat&logo=suno&logoColor=A3BE8C)
+> ![Udio Badge](https://img.shields.io/badge/-Udio-3B4252?style=flat&logo=udio&logoColor=00FFFF)
 
 <br>
 </details>
