@@ -25,7 +25,7 @@
 ### My Toolbox:
 
 <details>
-  <summary><strong>Languages & Libraries</strong> (click to expand)</summary>
+  <summary><strong> Languages & Libraries </strong> <sub> (click to expand) </sub></summary>
   <br>
   
 ![Python Badge](https://img.shields.io/badge/-Python-3B4252?style=flat&logo=python&logoColor=EBCB8B)
@@ -85,7 +85,7 @@
 > ![Vaadin Badge](https://img.shields.io/badge/-Vaadin-3B4252?style=flat&logo=vaadin&logoColor=81A1C1)
 > ![Quarkus Badge](https://img.shields.io/badge/-Quarkus-3B4252?style=flat&logo=quarkus&logoColor=88C0D0)
 
-##### Infrastucture and DevOps:
+##### Infrastucture and DevOps
 > ![Kubernetes Badge](https://img.shields.io/badge/-Kubernetes-3B4252?style=flat&logo=kubernetes&logoColor=5E81AC)
 > ![Ingress Badge](https://img.shields.io/badge/-Ingress-3B4252?style=flat&logo=ingress&logoColor=88C0D0)
 > ![Red Hat OpenShift Badge](https://img.shields.io/badge/-Red%20Hat%20OpenShift-3B4252?style=flat&logo=redhatopenshift&logoColor=5E81AC)
@@ -102,7 +102,8 @@
 
 
 <details>
-  <summary><strong> AI & Machine Learning (click to expand)</summary>
+  <summary><strong> AI & Machine Learning </strong> <sub> (click to expand) </sub></summary>
+  <br>
     
 ![PyTorch Badge](https://img.shields.io/badge/-PyTorch-3B4252?style=flat&logo=pytorch&logoColor=BF616A)
 ![TensorFlow Badge](https://img.shields.io/badge/-TensorFlow-3B4252?style=flat&logo=tensorflow&logoColor=D08770)
@@ -124,7 +125,8 @@
 
 
 <details>
-  <summary><strong> Database & Storage Solutions (click to expand)</summary>
+  <summary><strong> Database & Storage Solutions </strong> <sub> (click to expand) </sub></summary>
+  <br>
     
 ![MySQL Badge](https://img.shields.io/badge/-MySQL-3B4252?style=flat&logo=mysql&logoColor=88C0D0)
 ![PostgreSQL Badge](https://img.shields.io/badge/-PostgreSQL-3B4252?style=flat&logo=postgresql&logoColor=81A1C1)
@@ -141,7 +143,7 @@
 
 
 <details>
-  <summary><strong>Web Development, Interactive Development & Visualisations</strong> (click to expand)</summary>
+  <summary><strong> Web Development, Interactive Application & Visualisations </strong> <sub> (click to expand) </sub></summary>
   <br>
   
 ![HTML Badge](https://img.shields.io/badge/-HTML-3B4252?style=flat&logo=html5&logoColor=A3BE8C)
@@ -172,7 +174,8 @@
 
 
 <details>
-  <summary><strong> Testing (click to expand)</summary>
+  <summary><strong> Testing </strong> <sub> (click to expand) </sub></summary>
+  <br>
     
 ![Postman Badge](https://img.shields.io/badge/-Postman-3B4252?style=flat&logo=postman&logoColor=D08770)
 ![Pytest Badge](https://img.shields.io/badge/-Pytest-3B4252?style=flat&logo=pytest&logoColor=88C0D0)
@@ -184,7 +187,8 @@
 
 
 <details>
-  <summary><strong> Monitoring (click to expand)</summary>
+  <summary><strong> Monitoring </strong> <sub> (click to expand) </sub></summary>
+  <br>
 
 ![Grafana Badge](https://img.shields.io/badge/-Grafana-3B4252?style=flat&logo=grafana&logoColor=B48EAD)
 ![Elasticsearch Badge](https://img.shields.io/badge/-Elasticsearch-3B4252?style=flat&logo=elasticsearch&logoColor=88C0D0)
@@ -195,7 +199,8 @@
 
 
 <details>
-  <summary><strong> Development Tools (click to expand)</summary>
+  <summary><strong> Development Tools </strong> <sub>(click to expand)</sub></summary>
+  <br>
 
 ![Git Badge](https://img.shields.io/badge/-Git-3B4252?style=flat&logo=git&logoColor=5E81AC)
 ![GitHub Badge](https://img.shields.io/badge/-GitHub-3B4252?style=flat&logo=github&logoColor=8FBCBB)
@@ -210,7 +215,8 @@
 
 
 <details>
-  <summary><strong> IDEs & Collab Spaces (click to expand)</summary>
+  <summary><strong> IDEs & Collab Spaces </strong> <sub> (click to expand) </sub></summary>
+  <br>
 
 ![IntelliJ IDEA Badge](https://img.shields.io/badge/-IntelliJ%20IDEA-3B4252?style=flat&logo=intellijidea&logoColor=A3BE8C)
 ![PyCharm Badge](https://img.shields.io/badge/-PyCharm-3B4252?style=flat&logo=pycharm&logoColor=A3BE8C)
