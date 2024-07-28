@@ -24,7 +24,9 @@
 
 ### My Toolbox:
 
-#### Languages & Libraries
+<details>
+  <summary><strong>Languages & Libraries</strong> (click to expand)</summary>
+
 ![Python Badge](https://img.shields.io/badge/-Python-3B4252?style=flat&logo=python&logoColor=EBCB8B)
 ![R Badge](https://img.shields.io/badge/-R-3B4252?style=flat&logo=r&logoColor=BF616A)
 ![Java Badge](https://img.shields.io/badge/-Java-3B4252?style=flat&logo=openjdk&logoColor=D08770)
@@ -95,8 +97,12 @@
 > ![Heroku Badge](https://img.shields.io/badge/-Heroku-3B4252?style=flat&logo=heroku&logoColor=81A1C1)
 > ![Jekyll Badge](https://img.shields.io/badge/-Jekyll-3B4252?style=flat&logo=jekyll&logoColor=5E81AC)
 
+</details>
 
-#### AI & Machine Learning
+
+<details>
+  <summary><strong> AI & Machine Learning (click to expand)</summary>
+    
 ![PyTorch Badge](https://img.shields.io/badge/-PyTorch-3B4252?style=flat&logo=pytorch&logoColor=BF616A)
 ![TensorFlow Badge](https://img.shields.io/badge/-TensorFlow-3B4252?style=flat&logo=tensorflow&logoColor=D08770)
 ![MLflow Badge](https://img.shields.io/badge/-MLflow-3B4252?style=flat&logo=mlflow&logoColor=BF616A)
@@ -113,8 +119,12 @@
 ![Tableau Badge](https://img.shields.io/badge/-Tableau-3B4252?style=flat&logo=tableau&logoColor=88C0D0)
 ![OpenAI Badge](https://img.shields.io/badge/-OpenAI-3B4252?style=flat&logo=openai&logoColor=BF616A)
 
+</details>
 
-#### Database & Data- and Storage Solutions
+
+<details>
+  <summary><strong> Database & Data- and Storage Solutions (click to expand)</summary>
+    
 ![MySQL Badge](https://img.shields.io/badge/-MySQL-3B4252?style=flat&logo=mysql&logoColor=88C0D0)
 ![PostgreSQL Badge](https://img.shields.io/badge/-PostgreSQL-3B4252?style=flat&logo=postgresql&logoColor=81A1C1)
 ![SQLite Badge](https://img.shields.io/badge/-SQLite-3B4252?style=flat&logo=sqlite&logoColor=B48EAD)
@@ -126,8 +136,12 @@
 ![Apache Parquet Badge](https://img.shields.io/badge/-Apache%20Parquet-3B4252?style=flat&logo=apacheparquet&logoColor=8FBCBB)
 ![Apache Spark Badge](https://img.shields.io/badge/-Apache%20Spark-3B4252?style=flat&logo=apachespark&logoColor=88C0D0)
 
+</details>
 
-#### Web Development & Visualisations
+
+<details>
+  <summary><strong> Web Development & Visualisations (click to expand)</summary>
+
 ![HTML Badge](https://img.shields.io/badge/-HTML-3B4252?style=flat&logo=html5&logoColor=A3BE8C)
 ![CSS Badge](https://img.shields.io/badge/-CSS-3B4252?style=flat&logo=css3&logoColor=B48EAD)
 ![JavaScript Badge](https://img.shields.io/badge/-JavaScript-3B4252?style=flat&logo=javascript&logoColor=5E81AC)
@@ -148,23 +162,35 @@
 ![Next.js Badge](https://img.shields.io/badge/-Next.js-3B4252?style=flat&logo=nextdotjs&logoColor=88C0D0)
 ![Knex.js Badge](https://img.shields.io/badge/-Knex.js-3B4252?style=flat&logo=knexdotjs&logoColor=81A1C1)
 
+</details>
 
-#### Testing
+
+<details>
+  <summary><strong> Testing (click to expand)</summary>
+    
 ![Postman Badge](https://img.shields.io/badge/-Postman-3B4252?style=flat&logo=postman&logoColor=D08770)
 ![Pytest Badge](https://img.shields.io/badge/-Pytest-3B4252?style=flat&logo=pytest&logoColor=88C0D0)
 ![Selenium Badge](https://img.shields.io/badge/-Selenium-3B4252?style=flat&logo=selenium&logoColor=81A1C1)
 ![JUnit 5 Badge](https://img.shields.io/badge/-JUnit%205-3B4252?style=flat&logo=junit5&logoColor=8FBCBB)
 ![Mocha Badge](https://img.shields.io/badge/-Mocha-3B4252?style=flat&logo=mocha&logoColor=D08770)
 
+</details>
 
-#### Monitoring
+
+<details>
+  <summary><strong> Monitoring (click to expand)</summary>
+
 ![Grafana Badge](https://img.shields.io/badge/-Grafana-3B4252?style=flat&logo=grafana&logoColor=B48EAD)
 ![Elasticsearch Badge](https://img.shields.io/badge/-Elasticsearch-3B4252?style=flat&logo=elasticsearch&logoColor=88C0D0)
 ![OpenSearch Badge](https://img.shields.io/badge/-OpenSearch-3B4252?style=flat&logo=opensearch&logoColor=A3BE8C)
 ![Kibana Badge](https://img.shields.io/badge/-Kibana-3B4252?style=flat&logo=kibana&logoColor=88C0D0)
 
+</details>
 
-#### Development Tools
+
+<details>
+  <summary><strong> Development Tools (click to expand)</summary>
+
 ![Git Badge](https://img.shields.io/badge/-Git-3B4252?style=flat&logo=git&logoColor=5E81AC)
 ![GitHub Badge](https://img.shields.io/badge/-GitHub-3B4252?style=flat&logo=github&logoColor=8FBCBB)
 ![GitLab Badge](https://img.shields.io/badge/-GitLab-3B4252?style=flat&logo=gitlab&logoColor=D08770)
@@ -174,8 +200,12 @@
 ![Slack Badge](https://img.shields.io/badge/-Slack-3B4252?style=flat&logo=slack&logoColor=B48EAD)
 ![Discord Bagde](https://img.shields.io/badge/-Discord-3B4252?style=flat&logo=discord&logoColor=BF616A)
 
+</details>
 
-##### IDES & Collab Spaces
+
+<details>
+  <summary><strong> IDEs & Collab Spaces (click to expand)</summary>
+
 ![IntelliJ IDEA Badge](https://img.shields.io/badge/-IntelliJ%20IDEA-3B4252?style=flat&logo=intellijidea&logoColor=A3BE8C)
 ![PyCharm Badge](https://img.shields.io/badge/-PyCharm-3B4252?style=flat&logo=pycharm&logoColor=A3BE8C)
 ![VSCode Badge](https://img.shields.io/badge/-VSCode-3B4252?style=flat&logo=visualstudiocode&logoColor=88C0D0)
@@ -190,8 +220,12 @@
 ![Xcode Badge](https://img.shields.io/badge/-Xcode-3B4252?style=flat&logo=xcode&logoColor=A3BE8C)
 ![Google Colab Badge](https://img.shields.io/badge/-Google%20Colab-3B4252?style=flat&logo=googlecolab&logoColor=D08770)
 
+</details>
 
-##### Business Process Management & Orchestration
+
+<details>
+  <summary><strong> Business Process Management & Orchestration (click to expand)</summary>
+
 ![UML Badge](https://img.shields.io/badge/-UML-3B4252?style=flat&logo=uml&logoColor=8FBCBB)
 ![OutSystems Badge](https://img.shields.io/badge/-OutSystems-3B4252?style=flat&logo=outsystems&logoColor=BF616A)
 ![Camunda Badge](https://img.shields.io/badge/-Camunda-3B4252?style=flat&logo=camunda&logoColor=5E81AC)
@@ -205,8 +239,11 @@
 ![Figma Badge](https://img.shields.io/badge/-Figma-3B4252?style=flat&logo=figma&logoColor=D08770)
 ![Trello Badge](https://img.shields.io/badge/-Trello-3B4252?style=flat&logo=trello&logoColor=A3BE8C)
 
+</details>
 
-##### Photography/Videography & Design
+<details>
+  <summary><strong> Photography/Videography & Design (click to expand)</summary>
+
 ![Fujifilm Badge](https://img.shields.io/badge/-Fujifilm-3B4252?style=flat&logo=fujifilm&logoColor=8FBCBB)
 ![Adobe Badge](https://img.shields.io/badge/-Adobe-3B4252?style=flat&logo=adobe&logoColor=5E81AC)
 ![After Effects Badge](https://img.shields.io/badge/-After%20Effects-3B4252?style=flat&logo=adobeaftereffects&logoColor=BF616A)
@@ -223,8 +260,13 @@
 ![GIMP Badge](https://img.shields.io/badge/-GIMP-3B4252?style=flat&logo=gimp&logoColor=88C0D0)
 ![Final Cut Pro Badge](https://img.shields.io/badge/-Final%20Cut%20Pro-3B4252?style=flat&logo=finalcutpro&logoColor=5E81AC)
 
+</details>
 
-##### MIR, Audio, Music Production and Sound Design
+
+
+<details>
+  <summary><strong> MIR, Audio, Music Production and Sound Design (click to expand)</summary>
+
 ![Logic Pro Badge](https://img.shields.io/badge/-Logic%20Pro-3B4252?style=flat&logo=logicpro&logoColor=A3BE8C)
 ![ProTools Badge](https://img.shields.io/badge/-ProTools-3B4252?style=flat&logo=protools&logoColor=8FBCBB)
 ![Steinberg Badge](https://img.shields.io/badge/-Steinberg-3B4252?style=flat&logo=steinberg&logoColor=81A1C1)
@@ -247,6 +289,8 @@
 ![Unreal Engine Badge](https://img.shields.io/badge/-Unreal%20Engine-3B4252?style=flat&logo=unrealengine&logoColor=88C0D0)
 ![Wwise Badge](https://img.shields.io/badge/-Wwise-3B4252?style=flat&logo=wwise&logoColor=D08770)
 ![Yamaha Corporation Badge](https://img.shields.io/badge/-Yamaha%20Corporation-3B4252?style=flat&logo=yamahacorporation&logoColor=B48EAD)
+
+</details>
 
 
 
