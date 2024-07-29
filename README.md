@@ -459,6 +459,11 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 
 ![Linktree Badge](https://img.shields.io/badge/-Linktree-3B4252?style=flat&logo=linktree&logoColor=BF616A)
 
+
+<details>
+  <summary> Or find your favorite platform below <sub>(click to expand)</sub></summary>
+  <br>
+
 ###### Code
 > ![GitHub Badge](https://img.shields.io/badge/-GitHub%20%28personal%29-3B4252?style=flat&logo=github&logoColor=8FBCBB)
 > ![GitHub Badge](https://img.shields.io/badge/-GitHub%20%28creative%20coding%29-3B4252?style=flat&logo=github&logoColor=88C0D0)
@@ -494,6 +499,9 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 
 ###### For My Fellow Nerds
 > ![Steam Badge](https://img.shields.io/badge/-Steam-3B4252?style=flat&logo=steam&logoColor=88C0D0)
+
+<br>
+</details>
 
 
 <br>
