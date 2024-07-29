@@ -122,7 +122,6 @@
 </details>
 
 
-
 <details>
   <summary><strong> AI & Machine Learning </strong> <sub> (click to expand) </sub></summary>
   <br>
@@ -296,6 +295,7 @@
 <br>
 </details>
 
+
 <details>
   <summary><strong> Photography/Videography & Design </strong> <sub> (click to expand) </sub></summary>
 
@@ -320,10 +320,8 @@
 > ![Canva Badge](https://img.shields.io/badge/-Canva-3B4252?style=flat&logo=canva&logoColor=81A1C1)
 > ![Cinema 4D Badge](https://img.shields.io/badge/-Cinema%204D-3B4252?style=flat&logo=cinema4d&logoColor=BF616A)
 
-
 <br>
 </details>
-
 
 
 <details>
@@ -384,7 +382,9 @@
 <br>
 </details
 
+
 ---
+
 
 <h3>
   <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/about-me.gif" width="65" align="middle"> Meet the Maker (of this Repo)
@@ -411,10 +411,16 @@ My ultimate goal is to use AI responsibly, encouraging its use to create positiv
 - **Language Enthusiast:** Fluent in several languages my linguistic skills enrich my professional interactions, travels, and reading experiences.
 
 
-#### On a personal level:
+#### Personal Insights:
+- **Lifelong Learner and Educator:** Passionate about learning, but also sharing knowledge! I cherish opportunities to teach and inspire others.
+- **Avid Reader:** Books are my gateway to new ideas and perspectives. They broaden my understanding of the world and help me learn new languages.
+- **Family Life:** I’m a proud parent with a budding junior programmer. My little boy commandeers the keyboard whenever I code, and I have two feline assistants who think the best place for a nap is right on those keys...
 
-**Spotify: What's Playing Now?** \
-Here’s what’s currently playing as I code. Feel free to tune in and get a taste of my day-to-day vibes! 
+<br>
+
+#### What’s Playing Now?
+Here’s a glimpse into my current soundtrack as I code and create—feel free to tune in!
+
 <p align=right><sub> (and remember, support your artists!) </sub></p>
 
 
