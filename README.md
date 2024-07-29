@@ -563,12 +563,8 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&theme=nord" alt="Nanodegree Data Product Management">
   </a>
   
-  <a href="https://github.com/MarieLynneBlock/nanodegree_generative-AI">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_generative-AI&theme=nord" alt="Nanodegree Generative AI">
-  </a>
-  
-  <a href="https://github.com/MarieLynneBlock/AI-in-healthcare_KULeuvenX">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=AI-in-healthcare_KULeuvenX&theme=nord" alt="AI in Healthcare KULeuvenX">
+  <a href="https://github.com/MarieLynneBlock/generative-art-and-computational-creativity_SFU">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=generative-art-and-computational-creativity_SFU&theme=nord" alt="Professional Programme: Generative Art and Computational Creativity">
   </a>
 </div>
 
