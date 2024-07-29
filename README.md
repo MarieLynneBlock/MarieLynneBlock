@@ -389,8 +389,16 @@
 <h3>
   <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/about-me.gif" width="65" align="middle"> Meet the Maker (of this Repo)
 </h3>
-  
-I'm Marie-Lynne, a enthusiastic advocate of the STEAM: 🔬 Science, 💡 Technology, 🏗 Engineering, 🎨 Art, and 📈 Math.\
+
+<br>
+
+<p align="center" style="font-size:16px;">
+  I'm <uppercase>MARIE-LYNNE</uppercase>, a enthusiastic advocate of the <strong>STEAM</strong> 💨:<br>
+  🔬 <em>Science</em>  •  💡 <em>Technology</em>  •   🏗 <em>Engineering</em>  •  🎨 <em>Art</em>  •  📈 <em>Math</em>
+</p>
+
+<br>
+
 As an software developer, AI builder and data scientist, I thrive at the exciting crossroads of technology and creativity. My core mission is the seamless integration of AI with human experiences, emphasising ethics and interactivity. Additionally, I use AI to enhance my creative processes to expand my horizons and explore new possibilities.
 
 My ultimate goal is to use AI responsibly, encouraging its use to create positive and impactful changes in the world.
