@@ -445,7 +445,8 @@ My ultimate goal is to use AI responsibly, encouraging its use to create positiv
 
 #### Fun Facts:
 - **Theme Preference:** The preferred theme for my code editor, as showcased throughout this README, is the [Nord Theme](https://www.nordtheme.com).
-- **Matplotlib Sectret:** I feel a not-so-secret animosity for plots and graphs without defined styles! Consistent colours and clear visual themes just make data so much more engaging easier to understand.
+- **Matplotlib Sectret:** I feel a not-so-secret animosity for plots and graphs without defined styles! Consistent colours and clear visual themes just make data so much more engaging easier to understand. (The default Matplotlib theme could use a little spicing up! 🫣)
+- **Live Programming**: I would love to do some live music programming, however I cannot find the courage. Any tips or encouragement from fellow live coding musicians would be greatly appreciated!
 
 <br>
 
