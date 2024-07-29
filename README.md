@@ -380,11 +380,11 @@
 ![Arduino Badge](https://img.shields.io/badge/-Arduino-3B4252?style=flat&logo=arduino&logoColor=A3BE8C)
 
 <br>
-</details
+</details>
 
+<br>
 
 ---
-
 
 <h3>
   <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/about-me.gif" width="65" align="middle"> Meet the Maker (of this Repo)
@@ -421,7 +421,7 @@ My ultimate goal is to use AI responsibly, encouraging its use to create positiv
 <br>
 
 #### What’s Playing Now?
-Here’s a glimpse into my current soundtrack as I code and create—feel free to tune in!
+Here’s a glimpse into my current soundtrack as I code. Feel free to tune in!
 
 <p align=right><sub> (and remember, support your artists!) </sub></p>
 
