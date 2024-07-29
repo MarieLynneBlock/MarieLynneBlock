@@ -310,6 +310,7 @@
 
 ###### Photography & Photo Editing
 > ![Fujifilm Badge](https://img.shields.io/badge/-Fujifilm-3B4252?style=flat&logo=fujifilm&logoColor=8FBCBB)
+> ![GoPro Badge](https://img.shields.io/badge/-GoPro-3B4252?style=flat&logo=gopro&logoColor=88C0D0)
 > ![Adobe Badge](https://img.shields.io/badge/-Adobe-3B4252?style=flat&logo=adobe&logoColor=5E81AC)
 > ![Lightroom Badge](https://img.shields.io/badge/-Lightroom-3B4252?style=flat&logo=adobelightroom&logoColor=A3BE8C)
 > ![Lightroom Classic Badge](https://img.shields.io/badge/-Lightroom%20Classic-3B4252?style=flat&logo=adobelightroomclassic&logoColor=B48EAD)
