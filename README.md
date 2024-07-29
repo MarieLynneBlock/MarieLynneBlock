@@ -28,7 +28,7 @@
 <!-- Visitors badge -->
 <p align="center">
   <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock">
-    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock&label=visitors&labelColor=%232d3440&countColor=%2380a0c0&style=flat-square" width="200" height="30"/>
+    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock&label=visitors&labelColor=%232d3440&countColor=%2380a0c0&style=flat-square" />
   </a>
 </p>
 
