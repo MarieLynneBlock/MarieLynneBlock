@@ -405,16 +405,18 @@ My ultimate goal is to use AI responsibly, encouraging its use to create positiv
 - **Tech Explorer:** Constantly learning and experimenting to push the boundaries of AI and Machine Learning, especially in human-machine interaction.
 
 
-#### Creative Spirit:
+#### Creative Core:
 
 - **Music and Art:** Using my technical skills to dive into computer music, sound AI/ML, and generative art, crafting experiences that resonate. However I still love my classical instruments or pen and paper as much as I like playing around with AI.
-- **Language Enthusiast:** Fluent in several languages my linguistic skills enrich my professional interactions, travels, and reading experiences.
+- **Photography & Videography**: love to go out and shoot some pictures (especially in nature) or make video
+
 
 
 #### Personal Insights:
 - **Lifelong Learner and Educator:** Passionate about learning, but also sharing knowledge! I cherish opportunities to teach and inspire others.
 - **Avid Reader:** Books are my gateway to new ideas and perspectives. They broaden my understanding of the world and help me learn new languages.
 - **Family Life:** I’m a proud parent with a budding junior programmer. My little boy commandeers the keyboard whenever I code, and I have two feline assistants who think the best place for a nap is right on those keys...
+- **Language Enthusiast:** Fluent in several languages my linguistic skills enrich my professional interactions, travels, and reading experiences.
 
 <br>
 
