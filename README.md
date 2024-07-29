@@ -393,8 +393,8 @@
 <br>
 
 <p align="center" style="font-size:16px;">
-  I'm <uppercase>MARIE-LYNNE</uppercase>, a enthusiastic advocate of the <strong>STEAM</strong> 💨:<br>
-  🔬 <em>Science</em>  •  💡 <em>Technology</em>  •   🏗 <em>Engineering</em>  •  🎨 <em>Art</em>  •  📈 <em>Math</em>
+  I'm <strong>MARIE-LYNNE</strong>, a enthusiastic advocate of the <strong>STEAM</strong> 💨:<br>
+  🔬 <em>Science</em>   •  💡 <em>Technology</em>  •   🏗 <em>Engineering</em>  •  🎨 <em>Art</em>  •  📈 <em>Math</em>
 </p>
 
 <br>
