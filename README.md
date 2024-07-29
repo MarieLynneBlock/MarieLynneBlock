@@ -426,7 +426,7 @@ My ultimate goal is to use AI responsibly, encouraging its use to create positiv
 
 <br>
 
-#### What’s Playing Now?
+##### 🎵 What’s Playing Now?
 Here’s a glimpse into my current soundtrack as I code. Feel free to tune in!
 
 <p align=right><sub> (and remember, support your artists!) </sub></p>
@@ -439,49 +439,58 @@ Here’s a glimpse into my current soundtrack as I code. Feel free to tune in!
 </div>
 
 <br>
-<br>
 
-🖇️ Let’s Connect! I am always eager to learn something new, collaborate on exciting projects, or discuss any of my works. Don't hesitate to reach out if you’re curious or have something interesting to share!
+##### 🖇️ Let’s Connect!
+I am always eager to learn something new, collaborate on exciting projects, or discuss any of my works. Don't hesitate to reach out if you’re curious or have something interesting to share!
 
 <br/>
 
 📩 **you can find me here**:
 
-You can find me here:
-FIND ME HERE:
-###### Programming & AI
-> [![LinkedIn Badge](https://img.shields.io/badge/-LinkedIn-3B4252?style=flat&logo=linkedin&logoColor=5E81AC)](https://www.linkedin.com/in/marielynneblock/)
-> [![Hugging Face Badge](https://img.shields.io/badge/-Hugging%20Face-3B4252?style=flat&logo=huggingface&logoColor=EBCB8B)](https://huggingface.co/MarieLynneBlock)
-
-##### Music
-[![Bandcamp](https://img.shields.io/badge/-Bandcamp-3B4252?style=flat&logo=bandcamp&logoColor=BF616A)](https://bandcamp.com/marielynneblock)
-
-
-###### Social
-
-
-![Instagram Badge](https://img.shields.io/badge/-Instagram-3B4252?style=flat&logo=instagram&logoColor=B48EAD)
-![YouTube Badge](https://img.shields.io/badge/-YouTube-3B4252?style=flat&logo=youtube&logoColor=81A1C1)
+<br>
 
 ![Linktree Badge](https://img.shields.io/badge/-Linktree-3B4252?style=flat&logo=linktree&logoColor=BF616A)
-![Medium Badge](https://img.shields.io/badge/-Medium-3B4252?style=flat&logo=medium&logoColor=88C0D0)
-![SoundCloud Badge](https://img.shields.io/badge/-SoundCloud-3B4252?style=flat&logo=soundcloud&logoColor=BF616A)
-![Spotify Badge](https://img.shields.io/badge/-Spotify-3B4252?style=flat&logo=spotify&logoColor=D08770)
-![Stack Overflow Badge](https://img.shields.io/badge/-Stack%20Overflow-3B4252?style=flat&logo=stackoverflow&logoColor=8FBCBB)
-![Steam Badge](https://img.shields.io/badge/-Steam-3B4252?style=flat&logo=steam&logoColor=88C0D0)
-![Strava Badge](https://img.shields.io/badge/-Strava-3B4252?style=flat&logo=strava&logoColor=5E81AC)
-![TikTok Badge](https://img.shields.io/badge/-TikTok-3B4252?style=flat&logo=tiktok&logoColor=BF616A)
 
-<!-- Spotify --> 
-<div align=center>
-  
- [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=7dm9vs5mxucdihu106yjotae1&cover_image=true&theme=natemoo-re&show_offline=false&background_color=2e3440&interchange=false&bar_color=5e81ac&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view?uid=7dm9vs5mxucdihu106yjotae1&redirect=true)
+###### Code
+> ![GitHub Badge](https://img.shields.io/badge/-GitHub%20%28personal%29-3B4252?style=flat&logo=github&logoColor=8FBCBB)
+> ![GitHub Badge](https://img.shields.io/badge/-GitHub%20%28creative%20coding%29-3B4252?style=flat&logo=github&logoColor=88C0D0)
 
+> [![Hugging Face Badge](https://img.shields.io/badge/-Hugging%20Face-3B4252?style=flat&logo=huggingface&logoColor=EBCB8B)](https://huggingface.co/MarieLynneBlock)
+> ![Medium Badge](https://img.shields.io/badge/-Medium-3B4252?style=flat&logo=medium&logoColor=88C0D0)
+> ![Stack Overflow Badge](https://img.shields.io/badge/-Stack%20Overflow-3B4252?style=flat&logo=stackoverflow&logoColor=8FBCBB)
 
-</div>
+###### Music
+> [![Bandcamp](https://img.shields.io/badge/-Bandcamp-3B4252?style=flat&logo=bandcamp&logoColor=BF616A)](https://bandcamp.com/marielynneblock)
+> ![SoundCloud Badge](https://img.shields.io/badge/-SoundCloud-3B4252?style=flat&logo=soundcloud&logoColor=BF616A)
+> ![Spotify Badge](https://img.shields.io/badge/-Spotify-3B4252?style=flat&logo=spotify&logoColor=D08770)
+
+> ![YouTube Badge](https://img.shields.io/badge/-YouTube%20%28band%3A%20Two%20For%20The%20Price%20Of%20One%29-3B4252?style=flat&logo=youtube&logoColor=81A1C1)
+
+###### Social
+> [![LinkedIn Badge](https://img.shields.io/badge/-LinkedIn%20%28personal%29-3B4252?style=flat&logo=linkedin&logoColor=5E81AC)](https://www.linkedin.com/in/marielynneblock/)
+> [![LinkedIn Badge](https://img.shields.io/badge/-LinkedIn%20%28organisation%29-3B4252?style=flat&logo=linkedin&logoColor=5E81AC)](https://www.linkedin.com/in/marielynneblock/)
+
+> ![Instagram Badge](https://img.shields.io/badge/-Instagram%20%28personal%29-3B4252?style=flat&logo=instagram&logoColor=B48EAD)
+> ![Instagram Badge](https://img.shields.io/badge/-Instagram%20%28creative%20coding%29-3B4252?style=flat&logo=instagram&logoColor=B48EAD)
+> ![Instagram Badge](https://img.shields.io/badge/-Instagram%20%28photography%29-3B4252?style=flat&logo=instagram&logoColor=B48EAD)
+
+> ![YouTube Badge](https://img.shields.io/badge/-YouTube%20%28personal%29-3B4252?style=flat&logo=youtube&logoColor=81A1C1)
+> ![YouTube Badge](https://img.shields.io/badge/-YouTube%20%28The%20Munchkin%20Algorithm%29-3B4252?style=flat&logo=youtube&logoColor=81A1C1)
+> ![YouTube Badge](https://img.shields.io/badge/-YouTube%20%28band%3A%20Two%20For%20The%20Price%20Of%20One%29-3B4252?style=flat&logo=youtube&logoColor=81A1C1)
+
+> ![TikTok Badge](https://img.shields.io/badge/-TikTok-3B4252?style=flat&logo=tiktok&logoColor=BF616A)
+
+###### Sport
+> ![Strava Badge](https://img.shields.io/badge/-Strava-3B4252?style=flat&logo=strava&logoColor=5E81AC)
+> ![Fitbit Badge](https://img.shields.io/badge/-Fitbit-3B4252?style=flat&logo=fitbit&logoColor=8FBCBB)
+
+###### For My Fellow Nerds
+> ![Steam Badge](https://img.shields.io/badge/-Steam-3B4252?style=flat&logo=steam&logoColor=88C0D0)
 
 
 <br>
+
+---
 
 <!-- projects -->
 ### Projects:
