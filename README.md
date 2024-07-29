@@ -18,16 +18,16 @@
   </a> 
 </p>
 
+<!-- TODO: personalise
 <p align="center">
   <a href="https://github.com/marielynneblock/github-readme-stats">
-    <img height="250" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&theme=nord&langs_count=8&layout=donut-vertical&border_radius=0"/>
+    <img height="250" width="250" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&theme=nord&langs_count=8&layout=donut-vertical&border_radius=0"/>
   </a>
   <a href="https://github.com/marielynneblock/github-readme-stats">
-    <img height="250" src="https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&theme=nord&border_radius=0&card_width=400&ring_color=88C0D0&include_all_commits=true&rank_icon=percentile&show=reviews" />
+    <img height="250" src="https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&theme=nord&border_radius=0&card_width=190&ring_color=88C0D0&include_all_commits=true&rank_icon=percentile&show=reviews" />
   </a> 
 </p> 
-
-<!-- most use languages -->
+-->
 
 <!-- Visitors badge -->
 <p align="center">
