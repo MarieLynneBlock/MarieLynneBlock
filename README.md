@@ -527,7 +527,7 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 
 
 <h3>
-  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/postits.gif" width="65" align="middle"> Projects
+  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/lab.gif" width="65" align="middle"> Projects
 </h3>
 
 <p align="center">
@@ -564,11 +564,6 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
 <div align="center">
   <a href="https://github.com/MarieLynneBlock/music-information-retrieval_UVAC">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=music-information-retrieval_UVAC&theme=nord" alt="Professional Programme: Music Information Retrieval">
-  </a>
-
-  
-  <a href="https://github.com/MarieLynneBlock/nanodegree_data-product-management">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&theme=nord" alt="Nanodegree Data Product Management">
   </a>
   
   <a href="https://github.com/MarieLynneBlock/generative-art-and-computational-creativity_SFU">
