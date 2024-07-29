@@ -555,7 +555,7 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
 
 <div align="center">
   <a href="https://github.com/MarieLynneBlock/music-information-retrieval_UVAC">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=music-information-retrieval_UVAC&bg_color=2E3440&title_color=D8DEE9&text_color=E5E9F0&icon_color=88C0D0" alt="Professional Programme: Music Information Retrieval">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=music-information-retrieval_UVAC&theme=nord" alt="Professional Programme: Music Information Retrieval">
   </a>
 
   
