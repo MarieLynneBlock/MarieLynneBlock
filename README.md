@@ -571,11 +571,25 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
   </a>
 </div>
 
+<br>
+
 ---
 
 <h3>
-  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/postits.gif" width="65" align="middle"> Learning Roadmap
+  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/postits.gif" width="65" align="middle"> Note(worthy Projects)
 </h3>
+
+
+###### University of London: BSc. Creative Computing
+> [![](https://img.shields.io/badge/-🎓%20Bachelor%20Thesis%20Portfolio%20Website-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
+> [![](https://img.shields.io/badge/-🦾%20AI%20%Projects%20Portfolio%20-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
+> [![](https://img.shields.io/badge/-📝%20NLP%20%Projects%20Portfolio%20-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
+> [![](https://img.shields.io/badge/-🎧%20Audio%20%Projects%20Portfolio%20-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
+> [![](https://img.shields.io/badge/-🎬%20Graphics%20%Projects%20Portfolio%20-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
+> [![](https://img.shields.io/badge/-🎨%20Generative%20Art%20%Projects%20Portfolio%20-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
+
+
+
 
 <!-- TODO -->
 
