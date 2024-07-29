@@ -498,7 +498,7 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 > ![Fitbit Badge](https://img.shields.io/badge/-Fitbit-3B4252?style=flat&logo=fitbit&logoColor=8FBCBB)
 
 ###### For My Fellow Nerds
-> ![Steam Badge](https://img.shields.io/badge/-Steam-3B4252?style=flat&logo=steam&logoColor=88C0D0)
+> [![Steam Badge](https://img.shields.io/badge/-Steam-3B4252?style=flat&logo=steam&logoColor=88C0D0)](https://steamcommunity.com/id/KaptajnNord)
 
 <br>
 </details>
