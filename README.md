@@ -399,24 +399,30 @@ My ultimate goal is to use AI responsibly, encouraging its use to create positiv
 
 #### Professional Persona:
 
-- **AI Craftsmanship:** Developing AI-driven solutions that are not only efficient but also ethically aligned.
-- **Problem Solver:** Finding different view points and creative solutions makes me happy.
-- **Team Player:** Using Agile methodologies such as Scrum, Lean, Kanban, and XP to enhance team dynamics and project outcomes.
-- **Tech Explorer:** Constantly learning and experimenting to push the boundaries of AI and Machine Learning, especially in human-machine interaction.
+- **AI & Data:** I'm passionate about crafting AI-driven solutions that are not only efficient but adhere to the highest ethical standards. My knack for connecting the dots in vast data landscapes is driven by a commitment to meaningful, impactful results.
+- **Problem Solver:** I find joy in exploring diverse perspectives and crafting creative/unexpected solutions. Solving puzzles energises me and adds zest to my daily work.
+- **Team Player:** I enhance project outcomes by employing (if appropriate) Agile methodologies like Scrum, Lean, Kanban, and XP.
+- **Tech Explorer:** My career is a constant adventure in learning and pushing the boundaries of AI and Machine Learning, with a particular passion for enhancing human-machine interactions, incorporating other perspectives as much as possible.
+- **Healthcare Innovator**: With a deep interest in healthcare (I blame my parents and godparents for this - since they all work in the medical field), I focus on how AI and medical data can revolutionize patient care and provider services.
+- **NLP Aficionado**: My love for linguistics and languages naturally draws me towards NLP and OCR solutions, allowing me to blend technical challenges with my linguistic passions.
 
+<br>
 
 #### Creative Core:
 
-- **Music and Art:** Using my technical skills to dive into computer music, sound AI/ML, and generative art, crafting experiences that resonate. However I still love my classical instruments or pen and paper as much as I like playing around with AI.
-- **Photography & Videography**: love to go out and shoot some pictures (especially in nature) or make video
+- **Music and Art Enthusiast:** My technical skills extend into the realms of computer music, sound AI/ML, and generative art. While I adore experimenting with digital tools, I also cherish the tactile joy of classical instruments and traditional pen and paper.
+- **Photographer & Videographer**: Whether shooting pictures (outside) or creating engaging music videos, I love mirrorless technologies.
+- **Sound Engineer & Sound Designer**: My journey in programming began in the world of sound engineering and -design. It's a passion that continues to resonate with me. I extended this further in fields like MIR and DSP.
 
-
+<br>
 
 #### Personal Insights:
-- **Lifelong Learner and Educator:** Passionate about learning, but also sharing knowledge! I cherish opportunities to teach and inspire others.
-- **Avid Reader:** Books are my gateway to new ideas and perspectives. They broaden my understanding of the world and help me learn new languages.
+
+- **Lifelong Learner and Educator:** I love learning... and my hunger for knowledge is matched only by my enthusiasm for sharing it. I seize every opportunity to teach and inspire others.
+- **Avid Reader:** Books are my gateway to new ideas and perspectives. They broaden my understanding of the world as well as that they are instrumental in my ongoing quest to learn new languages.
 - **Family Life:** I’m a proud parent with a budding junior programmer. My little boy commandeers the keyboard whenever I code, and I have two feline assistants who think the best place for a nap is right on those keys...
-- **Language Enthusiast:** Fluent in several languages my linguistic skills enrich my professional interactions, travels, and reading experiences.
+- **Language Enthusiast:** Fluent in several languages my linguistic skills enrich my professional interactions, travels, and reading experiences. Every good adventure starts with new connections!
+- **Traveler**: My wanderlust is fueled by more than just a desire to see new places. Each journey offers a unique opportunity to immerse myself in different cultures, practice new and familiar languages.
 
 <br>
 
