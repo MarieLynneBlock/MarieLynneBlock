@@ -411,7 +411,7 @@ My ultimate goal is to use AI responsibly, encouraging its use to create positiv
 - **Problem Solver:** I find joy in exploring diverse perspectives and crafting creative/unexpected solutions. Solving puzzles energises me and adds zest to my daily work.
 - **Team Player:** I enhance project outcomes by employing (if appropriate) Agile methodologies like Scrum, Lean, Kanban, and XP.
 - **Tech Explorer:** My career is a constant adventure in learning and pushing the boundaries of AI and Machine Learning, with a particular passion for enhancing human-machine interactions, incorporating other perspectives as much as possible.
-- **Healthcare Innovator**: With a deep interest in healthcare (I blame my parents and godparents for this - since they all work in the medical field), I focus on how AI and medical data can revolutionize patient care and provider services.
+- **Healthcare Innovator**: With a deep interest in healthcare (I blame my parents and godparents for this — since they all work in the medical field), I focus on how AI and medical data can revolutionize patient care and provider services.
 - **NLP Aficionado**: My love for linguistics and languages naturally draws me towards NLP and OCR solutions, allowing me to blend technical challenges with my linguistic passions.
 
 <br>
