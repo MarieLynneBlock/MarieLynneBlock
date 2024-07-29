@@ -508,12 +508,15 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 
 ---
 
-<!-- projects -->
-### Projects:
+
+<h3>
+  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/postits.gif" width="65" align="middle"> Projects
+</h3>
+
 <p align="center">
-   <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/about-me.gif" width="40" align="middle">
-   BUT FIRST THIS
-  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/about-me.gif" width="40" align="middle">  
+  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/roadsign.gif" width="40" align="middle">
+  &nbsp;&nbsp;&nbsp; BUT FIRST THIS &nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/roadsign.gif" width="40" align="middle">  
 </p>
 Most of the code you stumble upon here is just me monkeying around... 🐒 <br>
 My GitHub primarily reflects my experimentation with new technologies, hobby projects, and learning endeavors. Please view it as a glimpse into my exploration 🧪 rather than a testament to my professional abilities 🦸.
@@ -574,8 +577,11 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
   </tr>
 </table>
 
-
 ---
+
+<h3>
+  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/postits.gif" width="65" align="middle"> Learning Roadmap
+</h3>
 
 <!-- TODO -->
 
