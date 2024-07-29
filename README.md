@@ -3,15 +3,27 @@
 
 
 <!-- Stats Dashboard -->
+
 <p align="center">
-  <a href="https://git.io/streak-stats" target="_blank">
-    <img src="https://streak-stats.demolab.com?user=MarieLynneBlock&theme=nord&border_radius=5" />
+  <a href="https://git.io/streak-stats">
+    <img src="https://streak-stats.demolab.com?user=MarieLynneBlock&theme=nord&border_radius=4.5&date_format=j%20M%5B%20Y%5D&mode=weekly&card_width=450&card_height=200" />
   </a>
+  
 </p>
 
+<!-- most use languages -->
+<!--
+<a href="https://github.com/marielynneblock/github-readme-stats">
+  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&theme=nord&langs_count=8&layout=compact" />
+</a>
+-->
 
-<!-- todo: design top language Dashboard -->
-
+<!-- github stats -->
+<!--
+  <a href="https://github.com/marielynneblock/github-readme-stats">
+    <img height="200" src="https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&theme=nord&show=reviews,prs_merged,prs_merged_percentage" />
+  </a> 
+-->
 
 <!-- Visitors badge -->
 <p align="center">
@@ -19,6 +31,7 @@
     <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock&label=visitors&labelColor=%232d3440&countColor=%2380a0c0&style=flat-square" width="200" height="30"/>
   </a>
 </p>
+
 
 ---
 
