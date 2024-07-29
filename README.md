@@ -384,27 +384,11 @@
 <br>
 </details
 
-
-
-<!--
-
-### Full Stack Projects
-
-[![](https://img.shields.io/badge/-🧬%20My%20Website-000)](https://github.com/adamalston/v2)
-[![](https://img.shields.io/badge/-🦠%20COVID‑19%20Dashboard-000)](https://github.com/adamalston/COVID-19-Dashboard)
-[![](https://img.shields.io/badge/-📝%20Summarizer-000)](https://github.com/adamalston/Summarizer)
-[![](https://img.shields.io/badge/-🔬%20Overwatch-000)](https://github.com/adamalston/overwatch)
-[![](https://img.shields.io/badge/-🛰%20KubeSat-000)](https://github.com/adamalston/kubesat)
-[![](https://img.shields.io/badge/-🔊%20Voice%20Poker-000)](https://github.com/adamalston/Poker)
-[![](https://img.shields.io/badge/-🗺%20PokémonGo%20Map-000)](https://github.com/adamalston/PokemonGo-Map)
--->
-
 ---
 
 <h3>
   <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/about-me.gif" width="65" align="middle"> Meet the Maker (of this Repo)
 </h3>
-
   
 I'm Marie-Lynne, a enthusiastic advocate of the STEAM: 🔬 Science, 💡 Technology, 🏗 Engineering, 🎨 Art, and 📈 Math.\
 As an software developer, AI builder and data scientist, I thrive at the exciting crossroads of technology and creativity. My core mission is the seamless integration of AI with human experiences, emphasising ethics and interactivity. Additionally, I use AI to enhance my creative processes to expand my horizons and explore new possibilities.
@@ -426,6 +410,21 @@ My ultimate goal is to use AI responsibly, encouraging its use to create positiv
 - **Music and Art:** Using my technical skills to dive into computer music, sound AI/ML, and generative art, crafting experiences that resonate. However I still love my classical instruments or pen and paper as much as I like playing around with AI.
 - **Language Enthusiast:** Fluent in several languages my linguistic skills enrich my professional interactions, travels, and reading experiences.
 
+
+#### On a personal level:
+
+**Spotify: What's Playing Now?** \
+Here’s what’s currently playing as I code. Feel free to tune in and get a taste of my day-to-day vibes! 
+<p align=right><sub> (and remember, support your artists!) </sub></p>
+
+
+<div align="center">
+  
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=7dm9vs5mxucdihu106yjotae1&cover_image=true&theme=natemoo-re&show_offline=false&background_color=2e3440&interchange=false&bar_color=5e81ac&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view?uid=7dm9vs5mxucdihu106yjotae1&redirect=true)
+
+</div>
+
+<br>
 <br>
 
 🖇️ Let’s Connect! I am always eager to learn something new, collaborate on exciting projects, or discuss any of my works. Don't hesitate to reach out if you’re curious or have something interesting to share!
@@ -535,63 +534,19 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
 </table>
 
 
-<!---
-##### Academic:
+---
 
-<table>
-   <tr>
-    <td>
-      <a href="https://github.com/MarieLynneBlock/AI-for-music-and-audio_Berklee">
-         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=AI-for-music-and-audio_Berklee&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="AI-for-music-and-audio_Berklee">
-      </a>
-    </td>
-   </tr>
-</table>
--->
-
-<br>
-
-<!-- Social Buttons -->
-<p align="center">
-  <a href="https://www.linkedin.com/in/marielynneblock/">
-    <img src="img/readme_social-linkedin-round-logo.png" alt="LinkedIn Link">
-  </a>
-</p>
+<!-- TODO -->
 
 <!--
-<p align = "center">
-  <img src = "https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&show_icons=true&theme=dracula&line_height=40&bg_color=506487&title_color=F19FAC">
-  <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&hide_langs_below=12.5&theme=dracula&bg_color=506487&title_color=F19FAC">
-</p>
+### Full Stack Projects
+
+[![](https://img.shields.io/badge/-🧬%20My%20Website-000)](https://github.com/adamalston/v2)
+[![](https://img.shields.io/badge/-🦠%20COVID‑19%20Dashboard-000)](https://github.com/adamalston/COVID-19-Dashboard)
+[![](https://img.shields.io/badge/-📝%20Summarizer-000)](https://github.com/adamalston/Summarizer)
+[![](https://img.shields.io/badge/-🔬%20Overwatch-000)](https://github.com/adamalston/overwatch)
+[![](https://img.shields.io/badge/-🛰%20KubeSat-000)](https://github.com/adamalston/kubesat)
+[![](https://img.shields.io/badge/-🔊%20Voice%20Poker-000)](https://github.com/adamalston/Poker)
+[![](https://img.shields.io/badge/-🗺%20PokémonGo%20Map-000)](https://github.com/adamalston/PokemonGo-Map)
 -->
 
-<br>
-
-<!--
-If you like what I do, maybe consider supporting me (buy me a coffee):
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="IniMiniMunchkin" data-color="#2e3440" data-emoji="🚀"  data-font="Poppins" data-text="support my work" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
-
--->
-
-
-<!--
-**MarieLynneBlock/MarieLynneBlock** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-
-
-- :nerd_face: **stack**
-  * professional: Java 6 & Java 8, Java EE 7, Weblogic 11 & 12, Struts 1.2, JavaScript, HTML, CSS and SQL // .NET & OutSystems
-  * free time: MEAN and MERN stack, 
-
--->
