@@ -532,34 +532,45 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
 
 #### current focus:
 ##### Continuous education in my current field of employment:
-
-<!-- repositories where I work on at the moment based on courses or books -->
-<table align="center">
-  <tr>
-    <td>
-      <a href="https://github.com/MarieLynneBlock/nanodegree_AI-product-management">
-         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="Nanodegree AI Product Management">
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/MarieLynneBlock/nanodegree_data-product-management">
-         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="Nanodegree Data Product Management">
-      </a>
-    </td>
-   <td>
-      <a href="https://github.com/MarieLynneBlock/nanodegree_generative-AI">
-         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_generative-AI&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="Nanodegree Generative AI">
-      </a>
-    </td>
-     <td>
-      <a href="https://github.com/MarieLynneBlock/AI-in-healthcare_KULeuvenX">
-         <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=AI-in-healthcare_KULeuvenX&bg_color=30,%232E3440,%234C566A&title_color=%23D8DEE9&text_color=%23E5E9F0&icon_color=%2388C0D0" alt="AI in Healthcare KULeuvenX">
-      </a>
-    </td>
-  </tr>
-</table>
+ 
+<div align="center">
+  <a href="https://github.com/MarieLynneBlock/nanodegree_AI-product-management">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management&theme=nord" alt="Nanodegree AI Product Management">
+  </a>
+  
+  <a href="https://github.com/MarieLynneBlock/nanodegree_data-product-management">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&theme=nord" alt="Nanodegree Data Product Management">
+  </a>
+  
+  <a href="https://github.com/MarieLynneBlock/nanodegree_generative-AI">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_generative-AI&theme=nord" alt="Nanodegree Generative AI">
+  </a>
+  
+  <a href="https://github.com/MarieLynneBlock/AI-in-healthcare_KULeuvenX">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=AI-in-healthcare_KULeuvenX&theme=nord" alt="AI in Healthcare KULeuvenX">
+  </a>
+</div>
 
 ##### Exploration of my personal interests:
+
+<div align="center">
+  <a href="https://github.com/MarieLynneBlock/music-information-retrieval_UVAC">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=music-information-retrieval_UVAC&bg_color=2E3440&title_color=D8DEE9&text_color=E5E9F0&icon_color=88C0D0" alt="Professional Programme: Music Information Retrieval">
+  </a>
+
+  
+  <a href="https://github.com/MarieLynneBlock/nanodegree_data-product-management">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&theme=nord" alt="Nanodegree Data Product Management">
+  </a>
+  
+  <a href="https://github.com/MarieLynneBlock/nanodegree_generative-AI">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_generative-AI&theme=nord" alt="Nanodegree Generative AI">
+  </a>
+  
+  <a href="https://github.com/MarieLynneBlock/AI-in-healthcare_KULeuvenX">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=AI-in-healthcare_KULeuvenX&theme=nord" alt="AI in Healthcare KULeuvenX">
+  </a>
+</div>
 
 <table align="center">
   <tr>
