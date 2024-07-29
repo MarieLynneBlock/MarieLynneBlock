@@ -4,35 +4,30 @@
 
 <!-- Stats Dashboard -->
 
+<!-- streak -->
 <p align="center">
   <a href="https://git.io/streak-stats">
     <img src="https://streak-stats.demolab.com?user=MarieLynneBlock&theme=nord&border_radius=4.5&date_format=j%20M%5B%20Y%5D&mode=weekly&card_width=450&card_height=200"/>
   </a>
 </p>
 
-<p align="center">  
-  <a href="https://github.com/marielynneblock/github-readme-stats">
-    <img height="251" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&theme=nord&langs_count=8&layout=donut-vertical&border_radius=5"/>
-  </a>
-  
-   <a href="https://git.io/streak-stats">
-     <img height=250 src="https://github-readme-activity-graph.vercel.app/graph?username=MarieLynneBlock&border_radius=5&custom_title=activity%20graph&hide_title=true&bg_color=2E3440&color=81A1C1&line=88C0D0&point=5E81AC&area_color=D8DEE9&title_color=81A1C1&area=true"/>
-   </a> 
+<!-- activity graph -->
+<p align="center">
+  <a href="https://git.io/streak-stats">
+    <img height=250 src="https://github-readme-activity-graph.vercel.app/graph?username=MarieLynneBlock&border_radius=0&custom_title=activity%20graph&hide_title=true&bg_color=2E3440&color=81A1C1&line=88C0D0&point=5E81AC&area_color=D8DEE9&title_color=81A1C1&area=true"/>
+  </a> 
 </p>
 
-<!-- most use languages -->
-<!--
-<a href="https://github.com/marielynneblock/github-readme-stats">
-  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&theme=nord&langs_count=8&layout=compact" />
-</a>
--->
-
-<!-- github stats -->
-<!--
+<p align="center">
   <a href="https://github.com/marielynneblock/github-readme-stats">
-    <img height="200" src="https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&theme=nord&show=reviews,prs_merged,prs_merged_percentage" />
+    <img height="250" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&theme=nord&langs_count=8&layout=donut-vertical&border_radius=0"/>
+  </a>
+  <a href="https://github.com/marielynneblock/github-readme-stats">
+    <img height="250" src="https://github-readme-stats.vercel.app/api?username=MarieLynneBlock&theme=nord&border_radius=0&card_width=400&ring_color=88C0D0&include_all_commits=true&rank_icon=percentile&show=reviews" />
   </a> 
--->
+</p> 
+
+<!-- most use languages -->
 
 <!-- Visitors badge -->
 <p align="center">
