@@ -525,9 +525,55 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 
 ---
 
+<h3>
+  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/postits.gif" width="65" align="middle"> Note(worthy Projects)
+</h3>
+
+<details>
+  <summary><strong> University of London: BSc. Creative Computing </strong> <sub> (click to expand) </sub></summary>
+  
+###### University of London: BSc. Creative Computing
+> [![](https://img.shields.io/badge/-🎓%20Bachelor%20Thesis%20Portfolio%20Website-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)  
+> [![](https://img.shields.io/badge/-🦾%20AI%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)  
+> [![](https://img.shields.io/badge/-📝%20NLP%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)  
+> [![](https://img.shields.io/badge/-🎧%20Audio%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)  
+> [![](https://img.shields.io/badge/-🎬%20Graphics%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)  
+> [![](https://img.shields.io/badge/-🎨%20Generative%20Art%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
+
+<br>
+</details>
+
+<details>
+  <summary><strong> Berklee College of Music: Summer University - AI for Music & Audio </strong> <sub> (click to expand) </sub></summary>
+  
+###### Audio Analysis & DSP
+> [![](https://img.shields.io/badge/-📈%20Notebooks%20For%20Sound%20Analysis-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)  
+> [![](https://img.shields.io/badge/-📉%20Notebooks%20Fors%20Sound%20Representation-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)  
+> [![](https://img.shields.io/badge/-📊%20Notebooks%20For%20Spectogram%20Representation-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
+
+###### Machine Learning
+> [![](https://img.shields.io/badge/-🎷%20MIR%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)  
+> [![](https://img.shields.io/badge/-🎺%20Genre%20Classification%20%28ML%29%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)   
+> [![](https://img.shields.io/badge/-🪗%20Audio%20Indentification%20%28ML%29%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)   
+> [![](https://img.shields.io/badge/-🎸%20Music%20Recommendation%20%28ML%29%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)   
+> [![](https://img.shields.io/badge/-🪕%20Processing%20Musical%20Content%20%28DL%29%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)     
+> [![](https://img.shields.io/badge/-🎻%20Intelligent%20Music%20Production%20%28IMP%29%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
+
+###### Music Generation
+> [![](https://img.shields.io/badge/-🎼%20Algorithmic%20Composition%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)   
+> [![](https://img.shields.io/badge/-🪈%20Text%20To%20Music%20%28DL/RNN%29%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)   
+> [![](https://img.shields.io/badge/-🎹%20Text%20To%20MIDI%20%28DL/RNN%29%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)   
+> [![](https://img.shields.io/badge/-🥁%20Generative%20AI%20for%20Music%20%28Including%20LLMs%29%20Projects%20Portfolio-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
+
+<br>
+</details>
+
+<br>
+
+---
 
 <h3>
-  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/lab.gif" width="65" align="middle"> Projects
+  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/lab.gif" width="65" align="middle"> My Learning Lab
 </h3>
 
 <p align="center">
@@ -538,70 +584,44 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 Most of the code you stumble upon here is just me monkeying around... 🐒 <br>
 My GitHub primarily reflects my experimentation with new technologies, hobby projects, and learning endeavors. Please view it as a glimpse into my exploration 🧪 rather than a testament to my professional abilities 🦸.
 
+
 #### current focus:
+
 ##### Continuous education in my current field of employment:
  
 <div align="center">
   <a href="https://github.com/MarieLynneBlock/nanodegree_AI-product-management">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management&theme=nord" alt="Nanodegree AI Product Management">
+    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management&theme=nord" alt="Nanodegree AI Product Management">
   </a>
   
   <a href="https://github.com/MarieLynneBlock/nanodegree_data-product-management">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&theme=nord" alt="Nanodegree Data Product Management">
-  </a>
-  
-  <a href="https://github.com/MarieLynneBlock/nanodegree_generative-AI">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_generative-AI&theme=nord" alt="Nanodegree Generative AI">
-  </a>
-  
-  <a href="https://github.com/MarieLynneBlock/AI-in-healthcare_KULeuvenX">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=AI-in-healthcare_KULeuvenX&theme=nord" alt="AI in Healthcare KULeuvenX">
+    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&theme=nord" alt="Nanodegree Data Product Management">
   </a>
 </div>
 
-##### Exploration of my personal interests:
-
 <div align="center">
-  <a href="https://github.com/MarieLynneBlock/music-information-retrieval_UVAC">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=music-information-retrieval_UVAC&theme=nord" alt="Professional Programme: Music Information Retrieval">
+  <a href="https://github.com/MarieLynneBlock/nanodegree_generative-AI">
+    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_generative-AI&theme=nord" alt="Nanodegree Generative AI">
   </a>
   
-  <a href="https://github.com/MarieLynneBlock/generative-art-and-computational-creativity_SFU">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=generative-art-and-computational-creativity_SFU&theme=nord" alt="Professional Programme: Generative Art and Computational Creativity">
+  <a href="https://github.com/MarieLynneBlock/AI-in-healthcare_KULeuvenX">
+    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=AI-in-healthcare_KULeuvenX&theme=nord" alt="AI in Healthcare KULeuvenX">
   </a>
 </div>
 
 <br>
 
----
+##### Exploration of my personal interests:
 
-<h3>
-  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/postits.gif" width="65" align="middle"> Note(worthy Projects)
-</h3>
+<div align="center">
+  <a href="https://github.com/MarieLynneBlock/music-information-retrieval_UVAC">
+    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=music-information-retrieval_UVAC&theme=nord" alt="Professional Programme: Music Information Retrieval">
+  </a>
+  
+  <a href="https://github.com/MarieLynneBlock/generative-art-and-computational-creativity_SFU">
+    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=generative-art-and-computational-creativity_SFU&theme=nord" alt="Professional Programme: Generative Art and Computational Creativity">
+  </a>
+</div>
 
-
-###### University of London: BSc. Creative Computing
-> [![](https://img.shields.io/badge/-🎓%20Bachelor%20Thesis%20Portfolio%20Website-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
-> [![](https://img.shields.io/badge/-🦾%20AI%20%Projects%20Portfolio%20-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
-> [![](https://img.shields.io/badge/-📝%20NLP%20%Projects%20Portfolio%20-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
-> [![](https://img.shields.io/badge/-🎧%20Audio%20%Projects%20Portfolio%20-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
-> [![](https://img.shields.io/badge/-🎬%20Graphics%20%Projects%20Portfolio%20-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
-> [![](https://img.shields.io/badge/-🎨%20Generative%20Art%20%Projects%20Portfolio%20-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
-
-
-
-
-<!-- TODO -->
-
-<!--
-### Full Stack Projects
-
-[![](https://img.shields.io/badge/-🧬%20My%20Website-000)](https://github.com/adamalston/v2)
-[![](https://img.shields.io/badge/-🦠%20COVID‑19%20Dashboard-000)](https://github.com/adamalston/COVID-19-Dashboard)
-[![](https://img.shields.io/badge/-📝%20Summarizer-000)](https://github.com/adamalston/Summarizer)
-[![](https://img.shields.io/badge/-🔬%20Overwatch-000)](https://github.com/adamalston/overwatch)
-[![](https://img.shields.io/badge/-🛰%20KubeSat-000)](https://github.com/adamalston/kubesat)
-[![](https://img.shields.io/badge/-🔊%20Voice%20Poker-000)](https://github.com/adamalston/Poker)
-[![](https://img.shields.io/badge/-🗺%20PokémonGo%20Map-000)](https://github.com/adamalston/PokemonGo-Map)
--->
+<br>
 
