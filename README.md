@@ -459,6 +459,13 @@ FIND ME HERE:
 ![Strava Badge](https://img.shields.io/badge/-Strava-3B4252?style=flat&logo=strava&logoColor=5E81AC)
 ![TikTok Badge](https://img.shields.io/badge/-TikTok-3B4252?style=flat&logo=tiktok&logoColor=BF616A)
 
+<!-- Spotify --> 
+<div align=center>
+  
+  [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=7dm9vs5mxucdihu106yjotae1&cover_image=true&theme=natemoo-re&show_offline=false&background_color=2e3440&interchange=false&bar_color=5e81ac&bar_color_cover=false)](https://github.com/kittinan/spotify-github-profile)
+
+
+</div>
 
 
 <br>
