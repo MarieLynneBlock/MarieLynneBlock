@@ -596,19 +596,19 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
  
 <div align="center">
   <a href="https://github.com/MarieLynneBlock/nanodegree_AI-product-management">
-    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management&theme=nord" alt="Nanodegree AI Product Management">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_AI-product-management&theme=nord" alt="Nanodegree AI Product Management">
   </a>
   
   <a href="https://github.com/MarieLynneBlock/nanodegree_data-product-management">
-    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&theme=nord" alt="Nanodegree Data Product Management">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&theme=nord" alt="Nanodegree Data Product Management">
   </a>
 
   <a href="https://github.com/MarieLynneBlock/nanodegree_generative-AI">
-    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_generative-AI&theme=nord" alt="Nanodegree Generative AI">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_generative-AI&theme=nord" alt="Nanodegree Generative AI">
   </a>
   
   <a href="https://github.com/MarieLynneBlock/AI-in-healthcare_KULeuvenX">
-    <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=AI-in-healthcare_KULeuvenX&theme=nord" alt="AI in Healthcare KULeuvenX">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=AI-in-healthcare_KULeuvenX&theme=nord" alt="AI in Healthcare KULeuvenX">
   </a>
 </div>
 
