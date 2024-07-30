@@ -1,21 +1,21 @@
 <svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <linearGradient id="auroraGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color:#BF616A; stop-opacity:1" />
-            <stop offset="25%" style="stop-color:#D08770; stop-opacity:1" />
-            <stop offset="50%" style="stop-color:#EBCB8B; stop-opacity:1" />
-            <stop offset="75%" style="stop-color:#A3BE8C; stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#B48EAD; stop-opacity:1" />
+            <stop offset="0%" style="stop-color:#A3BE8C; stop-opacity:1" />
+            <stop offset="25%" style="stop-color:#88C0D0; stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#81A1C1; stop-opacity:1" />
+            <stop offset="75%" style="stop-color:#B48EAD; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#BF616A; stop-opacity:1" />
         </linearGradient>
     </defs>
     <rect x="0" y="0" width="800" height="200" fill="#2E3440"/>
-    <path fill="url(#auroraGradient)" d="M0,100 Q400,-50 800,100 T1600,100">
+    <path fill="url(#auroraGradient)" d="M0,100 Q200,50 400,100 T800,100">
         <animate attributeName="d" dur="10s" repeatCount="indefinite"
-                 values="M0,100 Q400,-50 800,100 T1600,100;
-                         M0,150 Q400,100 800,150 T1600,150;
-                         M0,100 Q400,200 800,100 T1600,100;
-                         M0,150 Q400,100 800,150 T1600,150;
-                         M0,100 Q400,-50 800,100 T1600,100"
+                 values="M0,100 Q200,50 400,100 T800,100;
+                         M0,150 Q200,100 400,150 T800,150;
+                         M0,100 Q200,150 400,100 T800,100;
+                         M0,150 Q200,100 400,150 T800,150;
+                         M0,100 Q200,50 400,100 T800,100"
                  keyTimes="0;0.25;0.5;0.75;1" />
     </path>
 </svg>
