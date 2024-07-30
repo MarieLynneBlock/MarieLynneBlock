@@ -478,7 +478,7 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 
 
 <details>
-  <summary> Or find your favorite platform below <sub>(click to expand)</sub></summary>
+  <summary> Or find your favourite platform below <sub>(click to expand)</sub></summary>
   <br>
 
 ###### Code
@@ -530,7 +530,9 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 </h3>
 
 <details>
-  <summary><strong> University of London: BSc. Creative Computing </strong> <sub> (click to expand) </sub></summary>
+  <summary><strong> University of London: BSc. Creative Computing </strong> <sub> (click to expand) </sub>
+    <p align=right><sub>Waiting for my results ⏳</sub></p>
+  </summary>
   
 ###### University of London: BSc. Creative Computing
 > [![](https://img.shields.io/badge/-🎓%20Bachelor%20Thesis%20Portfolio%20Website-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)  
@@ -543,8 +545,11 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 <br>
 </details>
 
+
 <details>
-  <summary><strong> Berklee College of Music: Summer University - AI for Music & Audio </strong> <sub> (click to expand) </sub></summary>
+  <summary><strong> Berklee College of Music: Summer University - AI for Music & Audio </strong> <sub> (click to expand) </sub>
+    <p align=right><sub>graduated with a GPA of 4.0 (A) 👩‍🎓</sub></p>
+  </summary>
   
 ###### Audio Analysis & DSP
 > [![](https://img.shields.io/badge/-📈%20Notebooks%20For%20Sound%20Analysis-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)  
