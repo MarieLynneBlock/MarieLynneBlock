@@ -9,13 +9,32 @@
         </linearGradient>
     </defs>
     <rect x="0" y="0" width="800" height="200" fill="#2E3440"/>
-    <path fill="url(#auroraGradient)" d="M0,100 Q200,50 400,100 T800,100">
-        <animate attributeName="d" dur="10s" repeatCount="indefinite"
-                 values="M0,100 Q200,50 400,100 T800,100;
-                         M0,150 Q200,100 400,150 T800,150;
-                         M0,100 Q200,150 400,100 T800,100;
-                         M0,150 Q200,100 400,150 T800,150;
-                         M0,100 Q200,50 400,100 T800,100"
-                 keyTimes="0;0.25;0.5;0.75;1" />
+
+    <!-- Layer 1 -->
+    <path fill="none" stroke="url(#auroraGradient)" stroke-width="2" d="M0,100 Q50,120 100,100 T200,100 T300,100 T400,100 T500,100 T600,100 T700,100 T800,100">
+        <animate attributeName="d" dur="5s" repeatCount="indefinite"
+                 values="M0,100 Q50,120 100,100 T200,100 T300,100 T400,100 T500,100 T600,100 T700,100 T800,100;
+                         M0,120 Q50,140 100,120 T200,120 T300,120 T400,120 T500,120 T600,120 T700,120 T800,120;
+                         M0,80 Q50,100 100,80 T200,80 T300,80 T400,80 T500,80 T600,80 T700,80 T800,80;
+                         M0,100 Q50,120 100,100 T200,100 T300,100 T400,100 T500,100 T600,100 T700,100 T800,100"/>
+    </path>
+
+    <!-- Layer 2 -->
+    <path fill="none" stroke="url(#auroraGradient)" stroke-width="3" d="M0,110 Q60,130 120,110 T240,110 T360,110 T480,110 T600,110 T720,110 T800,110">
+        <animate attributeName="d" dur="7s" repeatCount="indefinite"
+                 values="M0,110 Q60,130 120,110 T240,110 T360,110 T480,110 T600,110 T720,110 T800,110;
+                         M0,130 Q60,150 120,130 T240,130 T360,130 T480,130 T600,130 T720,130 T800,130;
+                         M0,90 Q60,110 120,90 T240,90 T360,90 T480,90 T600,90 T720,90 T800,90;
+                         M0,110 Q60,130 120,110 T240,110 T360,110 T480,110 T600,110 T720,110 T800,110"/>
+    </path>
+
+    <!-- Layer 3 -->
+    <path fill="none" stroke="url(#auroraGradient)" stroke-width="1.5" d="M0,90 Q40,110 80,90 T160,90 T240,90 T320,90 T400,90 T480,90 T560,90 T640,90 T720,90 T800,90">
+        <animate attributeName="d" dur="6s" repeatCount="indefinite"
+                 values="M0,90 Q40,110 80,90 T160,90 T240,90 T320,90 T400,90 T480,90 T560,90 T640,90 T720,90 T800,90;
+                         M0,110 Q40,130 80,110 T160,110 T240,110 T320,110 T400,110 T480,110 T560,110 T640,110 T720,110 T800,110;
+                         M0,70 Q40,90 80,70 T160,70 T240,70 T320,70 T400,70 T480,70 T560,70 T640,70 T720,70 T800,70;
+                         M0,90 Q40,110 80,90 T160,90 T240,90 T320,90 T400,90 T480,90 T560,90 T640,90 T720,90 T800,90"/>
     </path>
 </svg>
+
