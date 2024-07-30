@@ -1,28 +1,21 @@
 <svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
-    
-    <!-- Background -->
-    <rect width="100%" height="100%" fill="#2E3440" />
-    
-    <!-- Circles with animation -->
-    <circle cx="400" cy="100" r="50" fill="#88C0D0">
-        <animateTransform attributeType="xml"
-                          attributeName="transform"
-                          type="rotate"
-                          from="0 400 100"
-                          to="360 400 100"
-                          dur="20s"
-                          repeatCount="indefinite"/>
-    </circle>
-    <circle cx="400" cy="100" r="80" fill="none" stroke="#81A1C1" stroke-width="5">
-        <animateTransform attributeType="xml"
-                          attributeName="transform"
-                          type="rotate"
-                          from="360 400 100"
-                          to="0 400 100"
-                          dur="40s"
-                          repeatCount="indefinite"/>
-    </circle>
-    <text x="50%" y="50%" fill="#ECEFF4" font-family="Arial" font-size="24" dominant-baseline="middle" text-anchor="middle">
-        Marie-Lynne Block
-    </text>
+    <defs>
+        <linearGradient id="auroraGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#BF616A; stop-opacity:1" />
+            <stop offset="25%" style="stop-color:#D08770; stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#EBCB8B; stop-opacity:1" />
+            <stop offset="75%" style="stop-color:#A3BE8C; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#B48EAD; stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="800" height="200" fill="#2E3440"/>
+    <path fill="url(#auroraGradient)" d="M0,100 Q400,-50 800,100 T1600,100">
+        <animate attributeName="d" dur="10s" repeatCount="indefinite"
+                 values="M0,100 Q400,-50 800,100 T1600,100;
+                         M0,150 Q400,100 800,150 T1600,150;
+                         M0,100 Q400,200 800,100 T1600,100;
+                         M0,150 Q400,100 800,150 T1600,150;
+                         M0,100 Q400,-50 800,100 T1600,100"
+                 keyTimes="0;0.25;0.5;0.75;1" />
+    </path>
 </svg>
