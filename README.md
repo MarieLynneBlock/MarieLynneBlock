@@ -602,9 +602,7 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
   <a href="https://github.com/MarieLynneBlock/nanodegree_data-product-management">
     <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_data-product-management&theme=nord" alt="Nanodegree Data Product Management">
   </a>
-</div>
 
-<div align="center">
   <a href="https://github.com/MarieLynneBlock/nanodegree_generative-AI">
     <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=nanodegree_generative-AI&theme=nord" alt="Nanodegree Generative AI">
   </a>
