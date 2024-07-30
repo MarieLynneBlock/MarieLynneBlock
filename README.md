@@ -629,4 +629,9 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
 </div>
 
 <br>
+<br>
+<br>
+<br>
+<br>
 
+<p align=center> <sub> Created with 🫀and 🧠 by Marie-Lynne Block &nbsp;&nbsp;&nbsp; ©2024 </sub> </p>
