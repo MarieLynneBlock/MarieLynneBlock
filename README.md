@@ -179,12 +179,12 @@
   <summary><strong> Web Development, Interactive Application & Visualisations </strong> <sub> (click to expand) </sub></summary>
   <br>
   
-![HTML Badge](https://img.shields.io/badge/-HTML-3B4252?style=flat&logo=html5&logoColor=A3BE8C)
-![CSS Badge](https://img.shields.io/badge/-CSS-3B4252?style=flat&logo=css3&logoColor=B48EAD)
-![JavaScript Badge](https://img.shields.io/badge/-JavaScript-3B4252?style=flat&logo=javascript&logoColor=5E81AC)
+![HTML Badge](https://img.shields.io/badge/-HTML-3B4252?style=flat&logo=html5&logoColor=D08770)
+![CSS Badge](https://img.shields.io/badge/-CSS-3B4252?style=flat&logo=css3&logoColor=81A1C1)
+![JavaScript Badge](https://img.shields.io/badge/-JavaScript-3B4252?style=flat&logo=javascript&logoColor=EBCB8B)
 ![TypeScript Badge](https://img.shields.io/badge/-TypeScript-3B4252?style=flat&logo=typescript&logoColor=EBCB8B)
-![Node.js Badge](https://img.shields.io/badge/-Node.js-3B4252?style=flat&logo=node.js&logoColor=BF616A)
-![npm Badge](https://img.shields.io/badge/-npm-3B4252?style=flat&logo=npm&logoColor=81A1C1)
+![Node.js Badge](https://img.shields.io/badge/-Node.js-3B4252?style=flat&logo=node.js&logoColor=A3BE8C)
+![npm Badge](https://img.shields.io/badge/-npm-3B4252?style=flat&logo=npm&logoColor=BF616A)
 
 ###### Frameworks & Libraries
 > ![React Badge](https://img.shields.io/badge/-React-3B4252?style=flat&logo=react&logoColor=BF616A)
