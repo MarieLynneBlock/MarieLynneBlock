@@ -578,7 +578,7 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 ---
 
 <h3>
-  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/lab.gif" width="65" align="middle"> My Learning Lab
+  <img src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/gifs/lab.gif" width="65" align="middle"> Learning Lab
 </h3>
 
 <p align="center">
