@@ -114,7 +114,7 @@
 > ![Vaadin Badge](https://img.shields.io/badge/-Vaadin-3B4252?style=flat&logo=vaadin&logoColor=81A1C1)
 > ![Quarkus Badge](https://img.shields.io/badge/-Quarkus-3B4252?style=flat&logo=quarkus&logoColor=88C0D0)
 
-##### Infrastucture and DevOps
+###### Infrastucture and DevOps
 > ![Kubernetes Badge](https://img.shields.io/badge/-Kubernetes-3B4252?style=flat&logo=kubernetes&logoColor=5E81AC)
 > ![Ingress Badge](https://img.shields.io/badge/-Ingress-3B4252?style=flat&logo=ingress&logoColor=88C0D0)
 > ![Red Hat OpenShift Badge](https://img.shields.io/badge/-Red%20Hat%20OpenShift-3B4252?style=flat&logo=redhatopenshift&logoColor=5E81AC)
