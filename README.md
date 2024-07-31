@@ -632,4 +632,4 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
 <br>
 <br>
 
-<p align=center> <sub> Created with 🫀and 🧠 by Marie-Lynne Block &nbsp;&nbsp;&nbsp; ©2024 </sub> </p>
+<p align=center> <sub> Created with 🫀 and 🧠 by Marie-Lynne Block &nbsp;&nbsp;&nbsp; ©2024 </sub> </p>
