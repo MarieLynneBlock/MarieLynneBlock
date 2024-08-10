@@ -552,7 +552,7 @@ I am always eager to learn something new, collaborate on exciting projects, or d
   </summary>
   
 ###### Audio Analysis & DSP
-> [![](https://img.shields.io/badge/-📈%20Notebooks%20For%20Sound%20Analysis-3B4252?style=flat)](https://github.com/MarieLynneBlock/sonic-alchemy-lab)
+> [![](https://img.shields.io/badge/-📈%20Notebooks%20For%20Sound%20Analysis-3B4252?style=flat)](https://github.com/MarieLynneBlock/sonic-alchemy-lab)        
 > [![](https://img.shields.io/badge/-📉%20Notebooks%20For%20Sound%20Representation-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)  
 > [![](https://img.shields.io/badge/-📊%20Notebooks%20For%20Spectogram%20Representation-3B4252?style=flat)](https://github.com/MarieLynneBlock/todo)
 
