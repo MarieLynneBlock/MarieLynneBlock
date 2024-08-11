@@ -27,7 +27,7 @@
 
 <br>
 
-<!-- TODO: personalise
+<!-- TODO: personalise and style
 <p align="center">
   <a href="https://github.com/marielynneblock/github-readme-stats">
     <img height="250" width="250" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MarieLynneBlock&theme=nord&langs_count=8&layout=donut-vertical&border_radius=0"/>
