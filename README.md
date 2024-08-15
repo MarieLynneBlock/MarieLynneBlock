@@ -531,7 +531,7 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 
 <details>
   <summary><strong> University of London: BSc. Creative Computing </strong> <sub> (click to expand) </sub>
-    <p align=right><sub>Waiting for my results ⏳</sub></p>
+    <p align=right><sub>waiting for my results ⏳</sub></p>
   </summary>
   
 ###### University of London: BSc. Creative Computing
@@ -572,6 +572,15 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 
 <br>
 </details>
+
+
+<details>
+  <summary><strong> OpenSource Contributions </strong> <sub> (click to expand) </sub>
+    <p align=right><sub>fun collaborations</sub></p>
+  </summary>
+
+###### Good Code Practices
+> [![](https://img.shields.io/badge/-🍪%20Cookiecutter%20Template%20for%20APIs-3B4252?style=flat)](https://github.com/ByteBuddies-HQ/api-bakery)
 
 <br>
 
