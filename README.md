@@ -531,7 +531,7 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 
 <details>
   <summary><strong> University of London: BSc. Creative Computing </strong> <sub> (click to expand) </sub>
-    <p align=right><sub>waiting for my results ⏳</sub></p>
+    <p align=right><sub>graduated with a GPA of 3.9 (A-) - magna cum laude 👩‍🎓</sub></p>
   </summary>
   
 ###### University of London: BSc. Creative Computing
@@ -548,7 +548,7 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 
 <details>
   <summary><strong> Berklee College of Music: Summer University - AI for Music & Audio </strong> <sub> (click to expand) </sub>
-    <p align=right><sub>graduated with a GPA of 4.0 (A) 👩‍🎓</sub></p>
+    <p align=right><sub>graduated with a GPA of 4.0 (A) - summa cum laude 👩‍🎓</sub></p>
   </summary>
   
 ###### Audio Analysis & DSP
