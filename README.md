@@ -579,12 +579,11 @@ I am always eager to learn something new, collaborate on exciting projects, or d
     <p align=right><sub>fun collaborations</sub></p>
   </summary>
 
-###### Good Code Practices
+###### Good Code Practices / Team Collab
 > [![](https://img.shields.io/badge/-🍪%20Cookiecutter%20Template%20for%20APIs-3B4252?style=flat)](https://github.com/ByteBuddies-HQ/api-bakery)
 
 <br>
 </details>
-
 
 ---
 
