@@ -575,6 +575,18 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 
 
 <details>
+  <summary><strong> MBA - Healthcare Management </strong> <sub> (click to expand) </sub>
+    <p align=right><sub>styding right now 📚</sub></p>
+  </summary>
+
+###### Healthcare Statistics
+> [![](https://img.shields.io/badge/-🦠%20Patient%20Care-3B4252?style=flat)](https://github.com/MarieLynneBlock)
+
+<br>
+</details>
+
+
+<details>
   <summary><strong> OpenSource Contributions </strong> <sub> (click to expand) </sub>
     <p align=right><sub>fun collaborations</sub></p>
   </summary>
