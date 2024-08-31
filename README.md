@@ -580,7 +580,7 @@ I am always eager to learn something new, collaborate on exciting projects, or d
   </summary>
 
 ###### Healthcare Statistics
-> [![](https://img.shields.io/badge/-🦠%20Illness%20Detection-3B4252?style=flat)](https://github.com/MarieLynneBlock)
+> [![](https://img.shields.io/badge/-🦠%20Illness%20Detection-3B4252?style=flat)](https://github.com/MarieLynneBlock)      
 > [![](https://img.shields.io/badge/-💊%20Medication%20Trial-3B4252?style=flat)](https://github.com/MarieLynneBlock)
 
 <br>
