@@ -618,7 +618,8 @@ I am always eager to learn something new, collaborate on exciting projects, or d
 Most of the code you stumble upon here is just me monkeying around... 🐒 <br>
 My GitHub primarily reflects my experimentation with new technologies, hobby projects, and learning endeavors. Please view it as a glimpse into my exploration 🧪 rather than a testament to my professional abilities 🦸.
 
-
+<!-- Discontinued service -->
+<!--
 #### current focus:
 
 ##### Continuous education in my current field of employment:
@@ -654,11 +655,12 @@ My GitHub primarily reflects my experimentation with new technologies, hobby pro
     <img height="150" src="https://github-readme-stats.vercel.app/api/pin/?username=MarieLynneBlock&repo=generative-art-and-computational-creativity_SFU&theme=nord" alt="Professional Programme: Generative Art and Computational Creativity">
   </a>
 </div>
+-->
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
 
 <p align=center> <sub> Created with 🫀 and 🧠 by Marie-Lynne Block &nbsp;&nbsp;&nbsp; ©2024 </sub> </p>
