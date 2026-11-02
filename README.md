@@ -7,12 +7,6 @@
 </a>
 
 <p align="center">
-  <sub>
-    ↑ that header is not a picture. It is the waveform of the loop <em>you</em> can edit further down — redrawn by this repo's own GitHub Actions every time someone adds a note.
-  </sub>
-</p>
-
-<p align="center">
   <a href="https://themunchkinalgorithm.world">🪼 themunchkinalgorithm.world</a> ·
   <a href="https://www.linkedin.com/in/marielynneblock/">💼 LinkedIn</a> ·
   <a href="https://huggingface.co/MarieLynneBlock">🤗 Hugging Face</a> ·

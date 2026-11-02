@@ -26,7 +26,6 @@ NAME = "Marie-Lynne Block"
 TAGLINES = [
     "AI expert & data scientist",
     "creative coder · sound designer",
-    "L-systems, live algorithms & latent spaces",
     "humanising the AI era, one commit at a time",
     "this header is drawn from the sequencer below ↓",
 ]
@@ -101,7 +100,6 @@ def render(env: np.ndarray, theme: Theme) -> str:
             "</text>"
         )
     parts.append(text(WIDTH - 40, HEIGHT - 18, "themunchkinalgorithm.world", theme.muted, 13, anchor="end"))
-    parts.append(text(40, HEIGHT - 18, "no static pixels · rendered by this repo's own actions", theme.muted, 13))
     parts.append("</svg>")
     return "".join(parts)
 
