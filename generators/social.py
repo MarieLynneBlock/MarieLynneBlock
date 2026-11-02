@@ -2,13 +2,25 @@
 
 from __future__ import annotations
 
-from nord import ASSETS, NORD0, NORD8, NORD9, NORD13, NORD15, Theme, esc, text, write_pair
+from nord import ASSETS, NORD0, NORD8, NORD9, NORD11, NORD12, NORD13, NORD14, NORD15, Theme, esc, text, write_pair
 
 BUTTONS = (
-    ("website", "themunchkinalgorithm.world", 280, NORD15),
+    ("website", "website", 116, NORD15),
     ("linkedin", "LinkedIn", 132, NORD9),
     ("huggingface", "Hugging Face", 164, NORD13),
     ("bandcamp", "Bandcamp", 140, NORD8),
+    ("vibe", "VI.BE", 108, NORD11),
+    ("soundcloud", "SoundCloud", 148, NORD12),
+    ("youtube", "YouTube", 124, NORD11),
+    ("instagram", "Instagram / Munchkin", 228, NORD15),
+    ("instagram-photography", "Instagram / Photography", 250, NORD15),
+    ("openprocessing", "OpenProcessing", 180, NORD14),
+)
+
+INSTAGRAM_ICON = (
+    '<rect x="4" y="4" width="16" height="16" rx="5"/>'
+    '<circle cx="12" cy="12" r="3.5"/>'
+    '<circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/>'
 )
 
 ICONS = {
@@ -29,6 +41,18 @@ ICONS = {
         '<rect x="3" y="12" width="4" height="8" rx="2"/>'
         '<rect x="17" y="12" width="4" height="8" rx="2"/>'
     ),
+    "vibe": '<path d="M14 4v11.2a3.2 3.2 0 1 1-2-3V7l8-2v8.2a3.2 3.2 0 1 1-2-3V4"/>',
+    "soundcloud": (
+        '<path d="M3 13v3m3-5v7m3-9v9m3-11v11"/>'
+        '<path d="M12 9a4 4 0 0 1 7 3h.5a3 3 0 0 1 0 6H12"/>'
+    ),
+    "youtube": (
+        '<rect x="3" y="6" width="18" height="12" rx="4"/>'
+        '<path d="M10 9l5 3-5 3z"/>'
+    ),
+    "instagram": INSTAGRAM_ICON,
+    "instagram-photography": INSTAGRAM_ICON,
+    "openprocessing": '<path d="M9 7 4 12l5 5m6-10 5 5-5 5M13 5l-2 14"/>',
 }
 
 
