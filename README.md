@@ -86,29 +86,29 @@ a story. Through hands-on workshops, I help curious humans become makers.
 For me, technology is a tool; human connection is the goal. The best algorithms have a heartbeat.
 
 Inspired by [my website](https://themunchkinalgorithm.world), this profile follows one rule: **no static pixels**.
-Wander through the commit forest, add a note to the sequencer, and make yourself at home in the code.
+Wander through the commit tree, add a note to the sequencer, and make yourself at home in the code.
 
 ---
 
 ## 🌿 The garden
 
-A real **forest of commits**, growing together in one landscape rather than a grid.
-Each tree represents a season in a year, with history running left to right and seasonal colours mixed through the forest.
-Tree height and foliage reflect my **public commit contributions across GitHub**, including repositories I contribute to.
-Empty seasons leave no tree; the forest refreshes nightly rather than inventing growth.
+A single **tree of commits**, grown from my **public commit contributions across GitHub**, including repositories I contribute to.
+Each active season-year grows a limb, with the oldest at the roots and the newest in the crown.
+Its foliage follows the seasons: winter frost, spring greens and blossoms, summer greens, and autumn colours.
+Empty seasons grow no foliage, and years without public commits leave knots. The tree refreshes nightly rather than inventing growth.
 It is generated entirely from history, with no visitor controls.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=af9e8b434ab516e5">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-light.svg?v=a0e57fa51db609e1">
-    <img alt="A continuous forest grown from public commit history, with seasonal trees from 2016 onwards" src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=af9e8b434ab516e5" width="900">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=493e9c7a96774ad4">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-light.svg?v=074d6c45bc3e4052">
+    <img alt="A commit tree with one limb per active season-year, oldest at the roots and newest in the crown. Seasonal foliage shows winter, spring, summer and autumn; empty years are knots." src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=493e9c7a96774ad4" width="900">
   </picture>
 </p>
 
 <p align="center">
 <!-- GARDEN:CREDITS:START -->
-<strong>1,948 public commit contributions | 2016-2026</strong><br><sub>Grown from public commit history · refreshed nightly</sub>
+<strong>1,948 public commit contributions | 2016-2026 season-years</strong><br><sub>Grown from public commit history · refreshed nightly</sub>
 <!-- GARDEN:CREDITS:END -->
 </p>
 
@@ -119,19 +119,21 @@ It is generated entirely from history, with no visitor controls.
   An L-system is a tiny grammar: start from an axiom (`X`), apply rewrite rules (`X → F+[[X]-X]-F[-FX]+X`, `F → FF`)
   a few times, then let a turtle draw the result — `F` steps forward, `+`/`-` turn, `[`/`]` push and pop a branch.
   Lindenmayer invented them in 1968 to describe algae; they also happen to make lovely plants and, if you map the
-  same symbols to pitches, lovely music. Here they draw the seasonal trees; more commits mean larger, denser trees.
-  Upright, balanced tree grammars keep the crowns tree-like rather than sprawling into bushes.
-  Exact seasonal counts and repository totals live in the public history cache and each tree's SVG title.
+  same symbols to pitches, lovely music. Here they draw the seasonal foliage attached to each year's limb.
+  Limb length and foliage size reflect activity on a logarithmic scale, with limb lengths adjusted to shape the crown.
+  Leaves are illustrative, not one per commit; foliage detail can simplify as history grows to keep the image manageable.
+  Exact seasonal counts and repository totals live in the public history cache; the SVG also contains season counts
+  as metadata, though GitHub's embedded image does not expose them as tooltips.
 
   **Seasons use UTC and Northern Hemisphere months.** Winter 2019 means December 2018 through February 2019;
   spring is March–May, summer June–August, autumn September–November. December starts the following year's winter.
-  All years from account creation are retained in the history cache; seasons without public commits leave no tree.
+  All years from account creation are retained; seasons without public commits leave no foliage, and empty years leave knots.
 
   Counts use GitHub's **commit contribution** rules (linked author email and eligible default/`gh-pages` branches),
   not every commit on every branch. Private activity, issues, reviews and pull-request counts are excluded.
   GitHub attribution rules, deleted repositories and API visibility can limit what history is available.
   A refresh fails explicitly if GitHub's 100-repositories-per-year query limit is reached, instead of silently
-  publishing an incomplete forest. In-progress seasons show only activity recorded so far.
+  publishing an incomplete tree. In-progress seasons show only activity recorded so far.
 
   The cached public data lives in [`generators/garden/history.json`](generators/garden/history.json); it contains
   seasonal totals and public repository counts. Tree structure and colour are generated deterministically from
@@ -139,7 +141,8 @@ It is generated entirely from history, with no visitor controls.
   Refresh with authenticated `gh` (or `GH_TOKEN`):
   `python generators/playground.py --refresh-history --render-only`.
   Rebuild offline: `python generators/playground.py --render-only`.
-  Sources: [`forest.py`](generators/garden/forest.py), [`lsystem.py`](generators/garden/lsystem.py).
+  Sources: [`forest.py`](generators/garden/forest.py), [`tree.py`](generators/garden/tree.py),
+  [`lsystem.py`](generators/garden/lsystem.py).
 </details>
 
 ---
@@ -328,14 +331,14 @@ I'm always up for learning something new, collaborating on odd projects or talki
   |---|---|---|
   | header waveform | [`generators/waveform/waveform.py`](generators/waveform/waveform.py) | whenever the sequencer changes |
   | social buttons | [`generators/social.py`](generators/social.py) | manually: `python generators/social.py` |
-  | commit forest | [`generators/garden/forest.py`](generators/garden/forest.py) · [`lsystem.py`](generators/garden/lsystem.py) | nightly history sync |
+  | commit tree | [`generators/garden/forest.py`](generators/garden/forest.py) · [`tree.py`](generators/garden/tree.py) · [`lsystem.py`](generators/garden/lsystem.py) | nightly history sync |
   | step-sequencer (SVG, WAV, MIDI) | [`generators/sequencer/sequencer.py`](generators/sequencer/sequencer.py) | visitor issues |
   | toolbox | [`generators/toolbox/toolbox.py`](generators/toolbox/toolbox.py) | on push to its config |
   | metrics | [lowlighter/metrics](https://github.com/lowlighter/metrics) | daily |
   | glue | [`generators/playground.py`](generators/playground.py) · [`.github/workflows/`](.github/workflows) | — |
 
   Every SVG exists in a dark and a light variant, picked with `<picture>` and `prefers-color-scheme`.
-  The header and forest generators update their image URL versions whenever their SVGs change, avoiding stale caches.
+  The header and tree generators update their image URL versions whenever their SVGs change, avoiding stale caches.
   When a social button's artwork changes, bump its asset key and README paths to avoid stale image caches;
   older assets remain available for existing links.
   Fork it, change the owner in `forest.py` and `playground.py`, refresh the history, and customise

@@ -1,4 +1,4 @@
-"""L-system grammars and drawing helpers for the commit-history forest."""
+"""L-system grammars and drawing helpers for the commit-history tree."""
 
 from __future__ import annotations
 
@@ -29,6 +29,8 @@ SEASON_PALETTES = {
 LIGHT_SEASON_PALETTES = {
     "spring": (["#688252", "#80618D", "#B36B85"], ["#688252", "#80618D", "#B36B85"]),
     "summer": (["#567A48", "#729355", "#3F7047"], ["#567A48", "#729355", "#3F7047"]),
+    "autumn": (["#A8563E", "#A04E59", "#916B24"], ["#A8563E", "#916B24", "#A04E59"]),
+    "winter": (["#426E91", "#53677F", "#527965"], ["#426E91", "#53677F", "#527965"]),
 }
 
 # Curated, well-behaved species. Each is (name, axiom, rules, angle, start_iterations).

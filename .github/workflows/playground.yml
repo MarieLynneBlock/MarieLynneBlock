@@ -1,7 +1,7 @@
 name: playground
 
 # Sequencer visitors interact through pre-filled issues.
-# Nightly runs refresh public commit history and rebuild the forest.
+# Nightly runs refresh public commit history and rebuild the tree.
 
 on:
   issues:
@@ -76,7 +76,7 @@ jobs:
           if [ "$EVENT_NAME" = "issues" ]; then
             msg="playground: $ISSUE_TITLE (#$ISSUE_NUMBER by @$ISSUE_AUTHOR)"
           else
-            msg="chore(garden): refresh commit forest"
+            msg="chore(garden): refresh commit tree"
           fi
           git commit -m "$msg"
           for attempt in 1 2 3; do
