@@ -27,21 +27,22 @@ OUT_STEM = ASSETS / "header" / "waveform"
 NAME_FONT = Path(__file__).resolve().parent / "fonts" / "name-rounded.woff2"
 
 WIDTH, HEIGHT = 1200, 300
-BARS = 160
+BARS = 120
 BAR_W = 5.0
 PEAK_R = BAR_W / 2
 PEAK_GAP = 4.0 + PEAK_R  # distance from bar end to dot centre
+DOT_EVERY = 8
 MAX_H = HEIGHT * 0.78
 H_CAP = HEIGHT - 2 * (PEAK_GAP + PEAK_R) - 8  # keep bars plus dots inside the frame
 # Meter ballistics, synced to the sequencer's notes.
-ATTACK = 0.04  # s for a bar to jump to a hit
-RELEASE = 0.22  # s exponential decay time constant
+ATTACK = 0.07  # s for a bar to respond to a hit
+RELEASE = 0.34  # s exponential decay time constant
 RELEASE_SPLINE = "0 .6 .4 1"  # ease-out approximating that decay between keyframes
-FLOOR = 0.7  # resting bar height as a fraction of the song envelope
-PEAK_HOLD = 0.35  # s a peak dot sticks before sinking
-PEAK_FALL = 140.0  # bar-height px/s the peak sinks (each dot moves half of that)
-PEAK_FADE = 1.2  # s an un-refreshed dot takes to fade out
-PEAK_OPACITY = 0.8
+FLOOR = 0.82  # resting bar height as a fraction of the song envelope
+PEAK_HOLD = 0.24  # s a peak dot sticks before sinking
+PEAK_FALL = 100.0  # bar-height px/s the peak sinks (each dot moves half of that)
+PEAK_FADE = 0.75  # s an un-refreshed dot takes to fade out
+PEAK_OPACITY = 0.48
 SIM_DT = 0.002
 SEED = 7  # fixed so regenerating without new notes yields the same SVG
 NAME = "Marie-Lynne Block"
@@ -94,7 +95,7 @@ def simulate(env: np.ndarray, loop: float, hits: list[tuple[float, int]]) -> tup
         # Higher notes push bars further right a bit, so the melody shows as a sweep.
         centre = (pitch + 0.5) / len(sequencer.PITCHES)
         gain = 0.5 * rng.random(BARS) + 0.5 * np.exp(-(((pos - centre) / 0.35) ** 2))
-        peaks.append(np.minimum(base * (0.9 + 0.4 * gain), H_CAP))
+        peaks.append(np.minimum(base * (0.95 + 0.12 * gain), H_CAP))
     hit_at = {round(t / SIM_DT): k for k, (t, _) in enumerate(hits)}
     n = round(loop / SIM_DT)
 
@@ -174,27 +175,27 @@ def render(env: np.ndarray, theme: Theme) -> str:
     dot_idx = [round(t / SIM_DT) for t in dot_keys]
     anim = f'dur="{_num(loop, 3)}s" repeatCount="indefinite"'
 
-    # Each bar is a round-capped half-bar plus its peak dot; a mirrored <use>
-    # draws the bottom half, which halves the animation data.
+    # Mirror only the bars; a sparse row of top-side dots keeps the meter legible.
     cap = BAR_W / 2
     parts.append(f'<g fill="url(#aurora)" stroke="url(#aurora)" stroke-width="{BAR_W}" stroke-linecap="round" opacity="0.9">')
     for i in range(BARS):
         cx = 40 + i * step + cap
         tips = [_num(cy - h / 2 + cap, 0) for h in bars[bar_idx, i]]
-        tops = [_num(cy - d / 2 - PEAK_GAP, 0) for d in dots[dot_idx, i]]
-        alphas = [_num(a, 1) for a in glow[dot_idx, i]]
         parts.append(
             f'<g id="b{i}"><line x1="{cx:.1f}" y1="{cy:g}" x2="{cx:.1f}" y2="{tips[0]}">'
             f'<animate attributeName="y2" values="{";".join(tips)}" keyTimes="{bar_kt}" calcMode="spline" keySplines="{bar_splines}" {anim}/>'
-            "</line>"
-            # Peak-hold dot, like a stereo meter: it jumps up with each hit, sticks for
-            # PEAK_HOLD, then sinks slowly and fades unless a new peak refreshes it.
-            f'<circle cx="{cx:.1f}" cy="{tops[0]}" r="{PEAK_R}" stroke="none" opacity="{alphas[0]}">'
-            f'<animate attributeName="cy" values="{";".join(tops)}" keyTimes="{dot_kt}" {anim}/>'
-            f'<animate attributeName="opacity" values="{";".join(alphas)}" keyTimes="{dot_kt}" {anim}/>'
-            "</circle></g>"
+            "</line></g>"
             f'<use href="#b{i}" transform="matrix(1 0 0 -1 0 {HEIGHT})"/>'
         )
+        if i % DOT_EVERY == 0:
+            tops = [_num(cy - d / 2 - PEAK_GAP, 0) for d in dots[dot_idx, i]]
+            alphas = [_num(a, 1) for a in glow[dot_idx, i]]
+            parts.append(
+                f'<circle cx="{cx:.1f}" cy="{tops[0]}" r="{PEAK_R}" fill="url(#aurora)" opacity="{alphas[0]}">'
+                f'<animate attributeName="cy" values="{";".join(tops)}" keyTimes="{dot_kt}" {anim}/>'
+                f'<animate attributeName="opacity" values="{";".join(alphas)}" keyTimes="{dot_kt}" {anim}/>'
+                "</circle>"
+            )
     parts.append("</g>")
     parts.append(f'<rect width="{WIDTH}" height="{HEIGHT}" rx="12" fill="url(#fade)"/>')
     # Soft backing so the name and taglines stay legible over the bars.
