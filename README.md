@@ -56,7 +56,7 @@ If nobody visits, a nightly *drift* keeps it slowly evolving.
 
 <p align="center">
 <!-- GARDEN:CREDITS:START -->
-<strong>Fractal Plant</strong> · generation 1 · spring · 0 interventions<br><sub>recent gardeners: <em>nobody yet — be the first!</em></sub>
+<strong>Fractal Plant</strong> · generation 1 · summer · 1 interventions<br><sub>recent gardeners: <a href="https://github.com/MarieLynneBlock">@MarieLynneBlock</a></sub><br><sub>latest: @MarieLynneBlock turned the season to summer</sub>
 <!-- GARDEN:CREDITS:END -->
 </p>
 

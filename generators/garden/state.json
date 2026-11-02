@@ -8,10 +8,19 @@
   "angle": 25.0,
   "iterations": 4,
   "generation": 1,
-  "season": "spring",
+  "season": "summer",
   "seed": 686579304,
   "lineage": [],
-  "gardeners": [],
-  "actions": {},
-  "species_index": 0
+  "gardeners": [
+    "MarieLynneBlock"
+  ],
+  "actions": {
+    "season": 1
+  },
+  "species_index": 0,
+  "last_action": {
+    "verb": "season",
+    "actor": "MarieLynneBlock",
+    "message": "turned the season to summer"
+  }
 }
