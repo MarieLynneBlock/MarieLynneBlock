@@ -1,0 +1,73 @@
+name: metrics
+
+# Self-hosted GitHub stats via lowlighter/metrics — replaces the third-party
+# readme-stats / activity-graph / trophies cards that kept going offline.
+# Requires repository secret METRICS_TOKEN (classic PAT; no scopes are needed
+# for public data). Without it the job is skipped and the last SVG stays.
+
+on:
+  schedule:
+    - cron: "41 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: metrics
+  cancel-in-progress: true
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for token
+        id: token
+        run: echo "present=${{ secrets.METRICS_TOKEN != '' }}" >> "$GITHUB_OUTPUT"
+
+      - name: Overview, languages, calendar
+        if: steps.token.outputs.present == 'true'
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: MarieLynneBlock
+          committer_token: ${{ secrets.METRICS_TOKEN }}
+          committer_branch: master
+          filename: assets/metrics/overview.svg
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: Europe/Brussels
+          config_display: large
+          plugin_languages: yes
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_ignored: html, css, scss, jupyter notebook
+          plugin_languages_limit: 10
+          plugin_languages_details: percentage
+          plugin_languages_colors: "#88C0D0, #81A1C1, #5E81AC, #B48EAD, #A3BE8C, #EBCB8B, #D08770, #BF616A, #8FBCBB, #D8DEE9"
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          repositories_forks: no
+
+      - name: Habits & notable contributions
+        if: steps.token.outputs.present == 'true'
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: MarieLynneBlock
+          committer_token: ${{ secrets.METRICS_TOKEN }}
+          committer_branch: master
+          filename: assets/metrics/habits.svg
+          template: classic
+          base: ""
+          config_timezone: Europe/Brussels
+          plugin_habits: yes
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: classic
+          plugin_habits_facts: yes
+          plugin_habits_from: 200
+          plugin_notable: yes
+          plugin_notable_from: all
+
+      - name: No token
+        if: steps.token.outputs.present != 'true'
+        run: echo "METRICS_TOKEN secret is not set — skipping. Add a classic PAT (no scopes) under Settings → Secrets → Actions."

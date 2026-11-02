@@ -1,0 +1,96 @@
+# Curated toolbox. Rendered by toolbox.py into a single Nord SVG.
+# `icon` is a simple-icons slug; omit it (or use an unknown one) to get a text chip.
+# `colour` is a Nord hex used for the icon/chip accent.
+
+- category: AI & Data
+  colour: "#88C0D0"
+  items:
+    - { name: Python, icon: python }
+    - { name: PyTorch, icon: pytorch }
+    - { name: TensorFlow, icon: tensorflow }
+    - { name: scikit-learn, icon: scikitlearn }
+    - { name: Hugging Face, icon: huggingface }
+    - { name: LangChain }
+    - { name: OpenAI, icon: openai }
+    - { name: pandas, icon: pandas }
+    - { name: NumPy, icon: numpy }
+    - { name: Jupyter, icon: jupyter }
+    - { name: MLflow, icon: mlflow }
+    - { name: Plotly / Dash, icon: plotly }
+    - { name: R, icon: r }
+    - { name: Julia, icon: julia }
+
+- category: Audio · DSP · Music tech
+  colour: "#B48EAD"
+  items:
+    - { name: librosa }
+    - { name: SciPy, icon: scipy }
+    - { name: JUCE }
+    - { name: ChucK }
+    - { name: SuperCollider }
+    - { name: Pure Data }
+    - { name: Max/MSP, icon: max }
+    - { name: Faust }
+    - { name: Ableton Live, icon: abletonlive }
+    - { name: Logic Pro }
+    - { name: Pro Tools, icon: protools }
+    - { name: Bitwig, icon: bitwig }
+    - { name: MIDI, icon: midi }
+    - { name: FFmpeg, icon: ffmpeg }
+
+- category: Creative coding
+  colour: "#A3BE8C"
+  items:
+    - { name: p5.js, icon: p5dotjs }
+    - { name: Processing, icon: processingfoundation }
+    - { name: Three.js, icon: threedotjs }
+    - { name: D3.js, icon: d3dotjs }
+    - { name: openFrameworks }
+    - { name: TouchDesigner }
+    - { name: Hydra }
+    - { name: Sonic Pi }
+    - { name: TidalCycles }
+    - { name: L-systems }
+
+- category: Languages
+  colour: "#EBCB8B"
+  items:
+    - { name: TypeScript, icon: typescript }
+    - { name: JavaScript, icon: javascript }
+    - { name: Java, icon: openjdk }
+    - { name: Kotlin, icon: kotlin }
+    - { name: C++, icon: cplusplus }
+    - { name: "C#", icon: csharp }
+    - { name: Rust, icon: rust }
+    - { name: Go, icon: go }
+    - { name: Scala, icon: scala }
+    - { name: Lua, icon: lua }
+
+- category: Platforms & DevOps
+  colour: "#81A1C1"
+  items:
+    - { name: Docker, icon: docker }
+    - { name: Kubernetes, icon: kubernetes }
+    - { name: Terraform, icon: terraform }
+    - { name: GitHub Actions, icon: githubactions }
+    - { name: AWS, icon: amazonaws }
+    - { name: Azure, icon: microsoftazure }
+    - { name: Google Cloud, icon: googlecloud }
+    - { name: PostgreSQL, icon: postgresql }
+    - { name: FastAPI, icon: fastapi }
+    - { name: Django, icon: django }
+    - { name: Grafana, icon: grafana }
+    - { name: Prometheus, icon: prometheus }
+
+- category: Creative tools
+  colour: "#D08770"
+  items:
+    - { name: Figma, icon: figma }
+    - { name: Blender, icon: blender }
+    - { name: Photoshop, icon: adobephotoshop }
+    - { name: Lightroom, icon: adobelightroom }
+    - { name: Fujifilm, icon: fujifilm }
+    - { name: Raspberry Pi, icon: raspberrypi }
+    - { name: Arduino, icon: arduino }
+    - { name: Miro, icon: miro }
+    - { name: Obsidian, icon: obsidian }

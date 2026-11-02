@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🌿 Tend the garden / 🎛️ add a note
+    url: https://github.com/MarieLynneBlock/MarieLynneBlock#readme
+    about: Use the buttons in the README — they open a pre-filled issue that a workflow turns into a new plant or a new note, then closes automatically.

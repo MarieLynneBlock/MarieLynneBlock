@@ -1,0 +1,75 @@
+{
+  "bpm": 120,
+  "steps": [
+    {
+      "pitch": "C4",
+      "author": "MarieLynneBlock"
+    },
+    {
+      "pitch": "Eb4",
+      "author": "MarieLynneBlock"
+    },
+    {
+      "pitch": "G4",
+      "author": "MarieLynneBlock"
+    },
+    {
+      "pitch": null,
+      "author": null
+    },
+    {
+      "pitch": "Bb4",
+      "author": "MarieLynneBlock"
+    },
+    {
+      "pitch": "G4",
+      "author": "MarieLynneBlock"
+    },
+    {
+      "pitch": "F4",
+      "author": "MarieLynneBlock"
+    },
+    {
+      "pitch": null,
+      "author": null
+    },
+    {
+      "pitch": "C5",
+      "author": "MarieLynneBlock"
+    },
+    {
+      "pitch": null,
+      "author": null
+    },
+    {
+      "pitch": "G4",
+      "author": "MarieLynneBlock"
+    },
+    {
+      "pitch": "Eb4",
+      "author": "MarieLynneBlock"
+    },
+    {
+      "pitch": "F4",
+      "author": "MarieLynneBlock"
+    },
+    {
+      "pitch": null,
+      "author": null
+    },
+    {
+      "pitch": "Eb4",
+      "author": "MarieLynneBlock"
+    },
+    {
+      "pitch": "C4",
+      "author": "MarieLynneBlock"
+    }
+  ],
+  "cursor": 0,
+  "composers": [
+    "MarieLynneBlock"
+  ],
+  "notes_added": 0,
+  "actions": {}
+}

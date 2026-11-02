@@ -1,0 +1,99 @@
+name: playground
+
+# Visitors interact with the README through pre-filled issues:
+#   "garden: grow | mutate | season"      → L-system garden
+#   "sequencer: C4 … Bb5 | rest | clear"  → step-sequencer (+ WAV, MIDI, header waveform)
+# A nightly schedule applies a gentle "drift" so the garden keeps changing.
+
+on:
+  issues:
+    types: [opened]
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+    inputs:
+      title:
+        description: "Simulated issue title, e.g. 'garden: grow'"
+        required: false
+        default: "garden: drift"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: playground
+  cancel-in-progress: false
+
+jobs:
+  play:
+    if: >-
+      github.event_name != 'issues' ||
+      startsWith(github.event.issue.title, 'garden:') ||
+      startsWith(github.event.issue.title, 'sequencer:')
+    runs-on: ubuntu-latest
+    env:
+      EVENT_NAME: ${{ github.event_name }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+      ISSUE_TITLE: ${{ github.event.issue.title }}
+      ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+      DISPATCH_TITLE: ${{ inputs.title }}
+      COMMENT_FILE: ${{ runner.temp }}/comment.md
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: generators/requirements.txt
+
+      - run: pip install -r generators/requirements.txt
+
+      - name: Apply the request and re-render assets
+        id: play
+        env:
+          PLAYGROUND_COMMENT_FILE: ${{ runner.temp }}/comment.md
+        run: |
+          if [ "$EVENT_NAME" = "issues" ]; then
+            python generators/playground.py --event "$GITHUB_EVENT_PATH"
+          elif [ "$EVENT_NAME" = "workflow_dispatch" ] && [ -n "$DISPATCH_TITLE" ] && [ "$DISPATCH_TITLE" != "garden: drift" ]; then
+            python generators/playground.py --title "$DISPATCH_TITLE" --actor "$GITHUB_ACTOR" --number "$GITHUB_RUN_NUMBER"
+          else
+            python generators/playground.py --drift
+          fi
+
+      - name: Commit and push
+        if: steps.play.outputs.status == 'ok'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets generators/garden/state.json generators/sequencer/state.json generators/ratelimit.json README.md
+          if git diff --cached --quiet; then
+            echo "nothing changed"; exit 0
+          fi
+          if [ "$EVENT_NAME" = "issues" ]; then
+            msg="playground: $ISSUE_TITLE (#$ISSUE_NUMBER by @$ISSUE_AUTHOR)"
+          else
+            msg="playground: nightly drift"
+          fi
+          git commit -m "$msg"
+          for attempt in 1 2 3; do
+            git pull --rebase origin master && git push origin HEAD:master && exit 0
+            sleep $((attempt * 5))
+          done
+          exit 1
+
+      - name: Reply and close the issue
+        if: github.event_name == 'issues' && always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -s "$COMMENT_FILE" ]; then
+            printf '🤖 Something went wrong while rendering — the owner will check the workflow log.\n\n_Closing this issue._' > "$COMMENT_FILE"
+          fi
+          gh issue comment "$ISSUE_NUMBER" --body-file "$COMMENT_FILE"
+          gh issue close "$ISSUE_NUMBER" --reason completed

@@ -1,0 +1,17 @@
+{
+  "species": "Fractal Plant",
+  "axiom": "X",
+  "rules": {
+    "X": "F+[[X]-X]-F[-FX]+X",
+    "F": "FF"
+  },
+  "angle": 25.0,
+  "iterations": 4,
+  "generation": 1,
+  "season": "spring",
+  "seed": 686579304,
+  "lineage": [],
+  "gardeners": [],
+  "actions": {},
+  "species_index": 0
+}
