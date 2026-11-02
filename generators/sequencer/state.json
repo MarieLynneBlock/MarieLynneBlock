@@ -6,7 +6,7 @@
       "author": "MarieLynneBlock"
     },
     {
-      "pitch": "Eb4",
+      "pitch": "Bb5",
       "author": "MarieLynneBlock"
     },
     {
@@ -66,17 +66,18 @@
       "author": "MarieLynneBlock"
     }
   ],
-  "cursor": 1,
+  "cursor": 2,
   "composers": [
     "MarieLynneBlock"
   ],
-  "notes_added": 1,
+  "notes_added": 2,
   "actions": {
-    "C4": 1
+    "C4": 1,
+    "Bb5": 1
   },
   "last_action": {
-    "verb": "C4",
+    "verb": "Bb5",
     "actor": "MarieLynneBlock",
-    "step": 0
+    "step": 1
   }
 }

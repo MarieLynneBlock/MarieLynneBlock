@@ -1,8 +1,8 @@
 <a href="https://themunchkinalgorithm.world">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-dark.svg?v=493e02551bed3d2e">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-light.svg?v=d0a67e2517d87858">
-    <img alt="Marie-Lynne Block. Audio-reactive header rendered from the visitor sequencer below" src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-dark.svg?v=493e02551bed3d2e" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-dark.svg?v=92a09d52294ce770">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-light.svg?v=f67b716b170a226f">
+    <img alt="Marie-Lynne Block. Audio-reactive header rendered from the visitor sequencer below" src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-dark.svg?v=92a09d52294ce770" width="100%">
   </picture>
 </a>
 
@@ -167,7 +167,7 @@ and redraws the header from the new audio.
 
 <p align="center">
 <!-- SEQUENCER:CREDITS:START -->
-<strong>12/16 steps filled</strong> · next free step: 2 · 1 notes placed by visitors<br><sub>recent composers: <a href="https://github.com/MarieLynneBlock">@MarieLynneBlock</a></sub><br><sub>latest: @MarieLynneBlock placed C4 on step 1</sub>
+<strong>12/16 steps filled</strong> · next free step: 3 · 2 notes placed by visitors<br><sub>recent composers: <a href="https://github.com/MarieLynneBlock">@MarieLynneBlock</a></sub><br><sub>latest: @MarieLynneBlock placed Bb5 on step 2</sub>
 <!-- SEQUENCER:CREDITS:END -->
 </p>
 
