@@ -6,6 +6,9 @@ name: playground
 # A nightly schedule applies a gentle "drift" so the garden keeps changing.
 
 on:
+  push:  # TEMPORARY smoke test — removed after verification
+    branches: [master]
+    paths: [.github/workflows/playground.yml]
   issues:
     types: [opened]
   schedule:
