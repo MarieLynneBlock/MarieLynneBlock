@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-light.svg">
-    <img alt="Marie-Lynne Block — audio-reactive header rendered from the visitor sequencer below" src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-dark.svg" width="100%">
+    <img alt="Marie-Lynne Block. Audio-reactive header rendered from the visitor sequencer below" src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-dark.svg" width="100%">
   </picture>
 </a>
 
