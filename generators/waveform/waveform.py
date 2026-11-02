@@ -1,8 +1,8 @@
 """Audio-reactive header rendered from the community sequencer's own WAV.
 
 Every time a visitor adds a note the sequencer rewrites ``sequence.wav`` and
-this module turns it into a breathing bar-waveform with peak-hold dots, name
-and taglines.
+this module turns it into a bar-waveform that pulses on the sequencer's notes,
+with peak-hold dots, name and taglines.
 """
 
 from __future__ import annotations
@@ -15,7 +15,9 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "sequencer"))
 
+import sequencer  # noqa: E402
 from nord import ASSETS, AURORA, Theme, esc, svg_open, text, write_pair  # noqa: E402
 
 WAV_PATH = ASSETS / "sequencer" / "sequence.wav"
@@ -29,9 +31,19 @@ BARS = 160
 BAR_W = 5.0
 PEAK_R = BAR_W / 2
 PEAK_GAP = 4.0 + PEAK_R  # distance from bar end to dot centre
-PEAK_HOLD_UNTIL = 0.55  # fraction of the bar cycle the peak dot lingers at the top
-PEAK_OPACITY = 0.8  # dots fade in towards the peak and fade out as they fall
-FADE_SPLINES = "0.6 0 0.4 1;0.4 0 0.6 1;0 0 0.4 1"
+MAX_H = HEIGHT * 0.78
+H_CAP = HEIGHT - 2 * (PEAK_GAP + PEAK_R) - 8  # keep bars plus dots inside the frame
+# Meter ballistics, synced to the sequencer's notes.
+ATTACK = 0.04  # s for a bar to jump to a hit
+RELEASE = 0.22  # s exponential decay time constant
+RELEASE_SPLINE = "0 .6 .4 1"  # ease-out approximating that decay between keyframes
+FLOOR = 0.7  # resting bar height as a fraction of the song envelope
+PEAK_HOLD = 0.35  # s a peak dot sticks before sinking
+PEAK_FALL = 140.0  # bar-height px/s the peak sinks (each dot moves half of that)
+PEAK_FADE = 1.2  # s an un-refreshed dot takes to fade out
+PEAK_OPACITY = 0.8
+SIM_DT = 0.002
+SEED = 7  # fixed so regenerating without new notes yields the same SVG
 NAME = "Marie-Lynne Block"
 TAGLINES = [
     "AI Expert · Technology Coach",
@@ -58,9 +70,77 @@ def load_envelope() -> np.ndarray:
     return np.clip(rms / peak, 0.03, 1.0)
 
 
+def load_hits() -> tuple[float, list[tuple[float, int]]]:
+    """Loop length and (time, pitch index) of every note the sequencer plays."""
+    state = sequencer.load_state()
+    step_dur = 60.0 / state["bpm"] / 2  # eighth notes, as in sequencer.render_wav
+    hits = [(i * step_dur, sequencer.PITCHES.index(s["pitch"]))
+            for i, s in enumerate(state["steps"]) if s["pitch"]]
+    return step_dur * len(state["steps"]), hits
+
+
+def simulate(env: np.ndarray, loop: float, hits: list[tuple[float, int]]) -> tuple[np.ndarray, ...]:
+    """Bar heights, peak-dot heights and dot opacities sampled every SIM_DT over one loop.
+
+    Bars jump to each hit in ATTACK and decay exponentially; the peak dot follows
+    meter ballistics (hold, then slow fall). One warm-up loop makes the result seamless.
+    """
+    rng = np.random.default_rng(SEED)
+    base = np.maximum(4.0, env * MAX_H)
+    floor = base * FLOOR
+    pos = (np.arange(BARS) + 0.5) / BARS
+    peaks = []
+    for _, pitch in hits:
+        # Higher notes push bars further right a bit, so the melody shows as a sweep.
+        centre = (pitch + 0.5) / len(sequencer.PITCHES)
+        gain = 0.5 * rng.random(BARS) + 0.5 * np.exp(-(((pos - centre) / 0.35) ** 2))
+        peaks.append(np.minimum(base * (0.9 + 0.4 * gain), H_CAP))
+    hit_at = {round(t / SIM_DT): k for k, (t, _) in enumerate(hits)}
+    n = round(loop / SIM_DT)
+
+    h, d, held = floor.copy(), floor.copy(), np.full(BARS, -1e9)
+    src, target, start = floor.copy(), floor.copy(), -1e9
+    bars, dots, glow = (np.empty((n + 1, BARS)) for _ in range(3))
+    for lap in range(2):
+        for j in range(n):
+            t = lap * loop + j * SIM_DT
+            if j in hit_at:
+                src, target, start = h.copy(), np.maximum(peaks[hit_at[j]], h), t
+            u = t - start
+            if u < ATTACK:
+                h = src + (target - src) * u / ATTACK
+            else:
+                h = floor + (target - floor) * np.exp(-(u - ATTACK) / RELEASE)
+            rising = h > d
+            held = np.where(rising, t, held)
+            sinking = np.maximum(h, d - PEAK_FALL * SIM_DT)
+            d = np.where(rising, h, np.where(t - held < PEAK_HOLD, d, sinking))
+            if lap:
+                bars[j], dots[j] = h, d
+                glow[j] = PEAK_OPACITY * np.clip(1 - (t - held) / PEAK_FADE, 0, 1)
+    bars[n], dots[n], glow[n] = bars[0], dots[0], glow[0]
+    return bars, dots, glow
+
+
+def _keyframes(loop: float, hit_times: list[float], offsets: list[float]) -> list[float]:
+    times = {0.0, loop}
+    for t in hit_times:
+        times.add(t)
+        times.update((t + o) % loop for o in offsets)
+    return sorted({round(t / SIM_DT) * SIM_DT for t in times})
+
+
+def _on_hit(t: float, hit_times: list[float]) -> bool:
+    return any(abs(t - h) < SIM_DT / 2 for h in hit_times)
+
+
+def _num(v: float, digits: int) -> str:
+    s = f"{v:.{digits}f}".rstrip("0").rstrip(".")
+    return s if s not in ("", "-0") else "0"
+
+
 def render(env: np.ndarray, theme: Theme) -> str:
     cy = HEIGHT / 2
-    max_h = HEIGHT * 0.78
     span = WIDTH - 80
     step = span / BARS
     parts = [svg_open(WIDTH, HEIGHT, theme, f"{NAME} — audio-reactive header rendered from the visitor sequencer")]
@@ -81,33 +161,40 @@ def render(env: np.ndarray, theme: Theme) -> str:
         f'<filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>'
         "</defs>"
     )
-    parts.append('<g fill="url(#aurora)" opacity="0.9">')
-    for i, v in enumerate(env):
-        x = 40 + i * step
-        h = max(4.0, v * max_h)
-        hi, lo = h * 1.18, max(4.0, h * 0.72)
-        dur = 1.8 + (i % 7) * 0.23
-        begin = -(i * 0.07)  # negative begin → bars are mid-animation at load, no visible "start"
+    loop, hits = load_hits()
+    bars, dots, glow = simulate(env, loop, hits)
+    hit_times = [t for t, _ in hits]
+    bar_keys = _keyframes(loop, hit_times, [ATTACK])
+    dot_keys = _keyframes(loop, hit_times, [ATTACK, ATTACK + PEAK_HOLD])
+    bar_kt = ";".join(_num(t / loop, 3) for t in bar_keys)
+    dot_kt = ";".join(_num(t / loop, 3) for t in dot_keys)
+    # Attack segments are linear; release segments ease out like an exponential decay.
+    bar_splines = ";".join("0 0 1 1" if _on_hit(t, hit_times) else RELEASE_SPLINE for t in bar_keys[:-1])
+    bar_idx = [round(t / SIM_DT) for t in bar_keys]
+    dot_idx = [round(t / SIM_DT) for t in dot_keys]
+    anim = f'dur="{_num(loop, 3)}s" repeatCount="indefinite"'
+
+    # Each bar is a round-capped half-bar plus its peak dot; a mirrored <use>
+    # draws the bottom half, which halves the animation data.
+    cap = BAR_W / 2
+    parts.append(f'<g fill="url(#aurora)" stroke="url(#aurora)" stroke-width="{BAR_W}" stroke-linecap="round" opacity="0.9">')
+    for i in range(BARS):
+        cx = 40 + i * step + cap
+        tips = [_num(cy - h / 2 + cap, 0) for h in bars[bar_idx, i]]
+        tops = [_num(cy - d / 2 - PEAK_GAP, 0) for d in dots[dot_idx, i]]
+        alphas = [_num(a, 1) for a in glow[dot_idx, i]]
         parts.append(
-            f'<rect x="{x:.1f}" y="{cy - h / 2:.1f}" width="{BAR_W}" height="{h:.1f}" rx="2.5">'
-            f'<animate attributeName="height" values="{h:.1f};{hi:.1f};{lo:.1f};{h:.1f}" dur="{dur:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>'
-            f'<animate attributeName="y" values="{cy - h / 2:.1f};{cy - hi / 2:.1f};{cy - lo / 2:.1f};{cy - h / 2:.1f}" dur="{dur:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>'
-            "</rect>"
+            f'<g id="b{i}"><line x1="{cx:.1f}" y1="{cy:g}" x2="{cx:.1f}" y2="{tips[0]}">'
+            f'<animate attributeName="y2" values="{";".join(tips)}" keyTimes="{bar_kt}" calcMode="spline" keySplines="{bar_splines}" {anim}/>'
+            "</line>"
+            # Peak-hold dot, like a stereo meter: it jumps up with each hit, sticks for
+            # PEAK_HOLD, then sinks slowly and fades unless a new peak refreshes it.
+            f'<circle cx="{cx:.1f}" cy="{tops[0]}" r="{PEAK_R}" stroke="none" opacity="{alphas[0]}">'
+            f'<animate attributeName="cy" values="{";".join(tops)}" keyTimes="{dot_kt}" {anim}/>'
+            f'<animate attributeName="opacity" values="{";".join(alphas)}" keyTimes="{dot_kt}" {anim}/>'
+            "</circle></g>"
+            f'<use href="#b{i}" transform="matrix(1 0 0 -1 0 {HEIGHT})"/>'
         )
-        # Peak-hold dots, like a stereo meter: they ride the bar up to its peak,
-        # linger there, then drop with gravity and fade out before landing.
-        dot_x = x + BAR_W / 2
-        hold = f"0;{1 / 3:.4f};{PEAK_HOLD_UNTIL:.4f};1"
-        splines = "0.4 0 0.6 1;0 0 1 1;0.5 0 1 1"
-        for sign in (-1, 1):
-            rest = cy + sign * (h / 2 + PEAK_GAP)
-            peak = cy + sign * (hi / 2 + PEAK_GAP)
-            parts.append(
-                f'<circle cx="{dot_x:.1f}" cy="{rest:.1f}" r="{PEAK_R}" opacity="0">'
-                f'<animate attributeName="cy" values="{rest:.1f};{peak:.1f};{peak:.1f};{rest:.1f}" keyTimes="{hold}" dur="{dur:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite" calcMode="spline" keySplines="{splines}"/>'
-                f'<animate attributeName="opacity" values="0;{PEAK_OPACITY};{PEAK_OPACITY * 0.6:.2f};0" keyTimes="{hold}" dur="{dur:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite" calcMode="spline" keySplines="{FADE_SPLINES}"/>'
-                "</circle>"
-            )
     parts.append("</g>")
     parts.append(f'<rect width="{WIDTH}" height="{HEIGHT}" rx="12" fill="url(#fade)"/>')
     # Soft backing so the name and taglines stay legible over the bars.
