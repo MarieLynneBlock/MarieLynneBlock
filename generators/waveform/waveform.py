@@ -19,7 +19,7 @@ from nord import ASSETS, AURORA, Theme, esc, svg_open, text, write_pair  # noqa:
 
 WAV_PATH = ASSETS / "sequencer" / "sequence.wav"
 OUT_STEM = ASSETS / "header" / "waveform"
-# Comfortaa Medium (SIL OFL, see fonts/OFL.txt), subset to the glyphs of NAME and
+# Quicksand Medium (SIL OFL, see fonts/OFL.txt), subset to the glyphs of NAME and
 # embedded so the name looks the same everywhere; re-subset it if NAME changes.
 NAME_FONT = Path(__file__).resolve().parent / "fonts" / "name-rounded.woff2"
 
@@ -28,7 +28,7 @@ BARS = 160
 BAR_W = 5.0
 NAME = "Marie-Lynne Block"
 TAGLINES = [
-    "AI expert & data scientist",
+    "AI expert · data scientist",
     "creative coder · sound designer",
     "humanising the AI era, one commit at a time",
 ]
