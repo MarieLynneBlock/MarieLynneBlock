@@ -1,9 +1,7 @@
 name: playground
 
-# Visitors interact with the README through pre-filled issues:
-#   "garden: grow | mutate | season"      → L-system garden
-#   "sequencer: C4 … Bb5 | rest | clear"  → step-sequencer (+ WAV, MIDI, header waveform)
-# A nightly schedule applies a gentle "drift" so the garden keeps changing.
+# Sequencer visitors interact through pre-filled issues.
+# Nightly runs refresh public commit history and rebuild the forest.
 
 on:
   issues:
@@ -13,9 +11,9 @@ on:
   workflow_dispatch:
     inputs:
       title:
-        description: "Simulated issue title, e.g. 'garden: grow'"
+        description: "Simulated issue title, e.g. 'sequencer: G4'"
         required: false
-        default: "garden: drift"
+        default: "sequencer: G4"
 
 permissions:
   contents: write
@@ -29,7 +27,6 @@ jobs:
   play:
     if: >-
       github.event_name != 'issues' ||
-      startsWith(github.event.issue.title, 'garden:') ||
       startsWith(github.event.issue.title, 'sequencer:')
     runs-on: ubuntu-latest
     env:
@@ -57,13 +54,14 @@ jobs:
         id: play
         env:
           PLAYGROUND_COMMENT_FILE: /tmp/playground-comment.md
+          GH_TOKEN: ${{ github.token }}
         run: |
           if [ "$EVENT_NAME" = "issues" ]; then
             python generators/playground.py --event "$GITHUB_EVENT_PATH"
-          elif [ "$EVENT_NAME" = "workflow_dispatch" ] && [ -n "$DISPATCH_TITLE" ] && [ "$DISPATCH_TITLE" != "garden: drift" ]; then
+          elif [ "$EVENT_NAME" = "workflow_dispatch" ] && [ -n "$DISPATCH_TITLE" ]; then
             python generators/playground.py --title "$DISPATCH_TITLE" --actor "$GITHUB_ACTOR" --number "$GITHUB_RUN_NUMBER"
           else
-            python generators/playground.py --drift
+            python generators/playground.py --refresh-history --render-only
           fi
 
       - name: Commit and push
@@ -78,7 +76,7 @@ jobs:
           if [ "$EVENT_NAME" = "issues" ]; then
             msg="playground: $ISSUE_TITLE (#$ISSUE_NUMBER by @$ISSUE_AUTHOR)"
           else
-            msg="playground: nightly drift"
+            msg="chore(garden): refresh commit forest"
           fi
           git commit -m "$msg"
           for attempt in 1 2 3; do

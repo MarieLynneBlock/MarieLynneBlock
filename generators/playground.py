@@ -1,14 +1,13 @@
 """Entry point for the playground workflow.
 
-Reads the GitHub issue event, applies the requested verb to the garden or the
-sequencer, re-renders every dependent asset, updates the README credit
-markers and writes the comment the workflow posts back on the issue.
+Reads a sequencer issue request, re-renders the dependent assets, updates the
+README credit markers and writes the comment the workflow posts back on the issue.
 
 Usage:
     python generators/playground.py --event "$GITHUB_EVENT_PATH"
-    python generators/playground.py --title "garden: grow" --actor someone --number 12
-    python generators/playground.py --drift            # nightly scheduled drift
-    python generators/playground.py --render-only      # rebuild everything from state
+    python generators/playground.py --title "sequencer: G4" --actor someone --number 12
+    python generators/playground.py --render-only      # rebuild assets from cached state
+    python generators/playground.py --refresh-history --render-only  # nightly history sync
 """
 
 from __future__ import annotations
@@ -19,18 +18,18 @@ import os
 import re
 import sys
 import time
-from datetime import datetime, timezone
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
+sys.path.insert(0, str(HERE.parent))
 sys.path.insert(0, str(HERE / "garden"))
 sys.path.insert(0, str(HERE / "sequencer"))
 sys.path.insert(0, str(HERE / "waveform"))
 
-import lsystem  # noqa: E402
 import sequencer  # noqa: E402
 import waveform  # noqa: E402
+from generators.garden import forest  # noqa: E402
 from nord import REPO_ROOT  # noqa: E402
 
 README = REPO_ROOT / "README.md"
@@ -39,8 +38,7 @@ RATE_LIMIT = 10           # actions per user per 24 h
 RATE_WINDOW = 24 * 3600
 RATE_FILE = HERE / "ratelimit.json"
 
-TITLE_RE = re.compile(r"^\s*(garden|sequencer)\s*:\s*(.+?)\s*$", re.IGNORECASE)
-GARDEN_VERBS = {"grow", "mutate", "season", "drift"}
+TITLE_RE = re.compile(r"^\s*sequencer\s*:\s*(.+?)\s*$", re.IGNORECASE)
 
 
 class Refusal(Exception):
@@ -51,10 +49,10 @@ def parse_title(title: str) -> tuple[str, str]:
     m = TITLE_RE.match(title or "")
     if not m:
         raise ValueError(
-            "I could not read that title. Use one of the buttons in the README — "
-            "titles look like `garden: grow` or `sequencer: G4`."
+            "I could not read that title. Use a sequencer button in the README — "
+            "titles look like `sequencer: G4`."
         )
-    return m.group(1).lower(), m.group(2)
+    return "sequencer", m.group(1)
 
 
 def check_rate_limit(actor: str, now: float) -> None:
@@ -63,7 +61,7 @@ def check_rate_limit(actor: str, now: float) -> None:
     if len(recent) >= RATE_LIMIT and actor != OWNER:
         raise Refusal(
             f"@{actor} has already made {RATE_LIMIT} changes in the last 24 hours — "
-            "thank you for the enthusiasm! Come back tomorrow, the garden needs time to settle. 🌙"
+            "thank you for the enthusiasm! Come back tomorrow and add another note. 🌙"
         )
     recent.append(now)
     data[actor] = recent
@@ -85,17 +83,12 @@ def handles(names: list[str]) -> str:
     return " · ".join(f'<a href="https://github.com/{n}">@{n}</a>' for n in names) if names else "<em>nobody yet — be the first!</em>"
 
 
-def refresh_readme(garden_state: dict, seq_state: dict) -> None:
-    g_last = garden_state.get("last_action", {})
+def refresh_readme(seq_state: dict) -> None:
     g_credit = (
-        f"<strong>{garden_state['species']}</strong> · generation {garden_state['generation']} · {garden_state['season']} · "
-        f"{sum(garden_state.get('actions', {}).values())} interventions<br><sub>recent gardeners: {handles(garden_state.get('gardeners', []))}</sub>"
+        f"<strong>{forest.summary(forest.load_history())}</strong><br>"
+        "<sub>Grown from public commit history · refreshed nightly</sub>"
     )
-    if g_last.get("message"):
-        who = "the nightly drift" if g_last.get("actor") == "nightly-drift" else f"@{g_last.get('actor')}"
-        g_credit += f"<br><sub>latest: {who} {g_last['message']}</sub>"
     update_readme_marker("GARDEN:CREDITS", g_credit)
-
     s_last = seq_state.get("last_action", {})
     filled = sum(1 for s in seq_state["steps"] if s["pitch"])
     s_credit = (
@@ -110,39 +103,18 @@ def refresh_readme(garden_state: dict, seq_state: dict) -> None:
     update_readme_marker("SEQUENCER:CREDITS", s_credit)
 
 
-def render_everything(garden_state: dict, seq_state: dict) -> None:
-    lsystem.render_all(garden_state)
-    lsystem.save_state(garden_state)
+def render_everything(seq_state: dict) -> None:
+    forest.render_all()
     sequencer.render_all(seq_state)
     sequencer.save_state(seq_state)
     waveform.render_all()
-    refresh_readme(garden_state, seq_state)
+    refresh_readme(seq_state)
 
 
 def run(title: str, actor: str, number: int | None, now: float) -> str:
-    garden_state = lsystem.load_state()
     seq_state = sequencer.load_state()
-    target, verb = parse_title(title)
+    _, verb = parse_title(title)
     verb_l = verb.lower()
-
-    if target == "garden":
-        if verb_l not in GARDEN_VERBS:
-            raise ValueError(f"`{verb}` is not a garden verb. Try `grow`, `mutate` or `season`.")
-        if verb_l == "drift" and actor != "nightly-drift" and actor != OWNER:
-            raise Refusal("`drift` is reserved for the nightly schedule — try `grow`, `mutate` or `season` instead. 🌬️")
-        if actor != "nightly-drift":
-            check_rate_limit(actor, now)
-        seed = number if number is not None else int(now)
-        message = lsystem.apply_verb(garden_state, verb_l, actor, seed)
-        render_everything(garden_state, seq_state)
-        return (
-            f"🌿 Thank you, @{actor}! You {message}.\n\n"
-            f"![garden](https://raw.githubusercontent.com/{OWNER}/{OWNER}/master/assets/garden/garden-dark.svg?v={number or int(now)})\n\n"
-            f"Current rules: `{garden_state['axiom']}` → "
-            + ", ".join(f"`{k} → {v}`" for k, v in garden_state["rules"].items())
-            + f" · angle {garden_state['angle']}° · iteration {garden_state['iterations']}\n\n"
-            "_The README will show the new plant in a minute or two (GitHub caches images). Closing this issue — it did its job._"
-        )
 
     if verb_l == "clear":
         if actor != OWNER:
@@ -151,7 +123,7 @@ def run(title: str, actor: str, number: int | None, now: float) -> str:
         raise ValueError(f"`{verb}` is not in the scale. Pick one of {', '.join(sequencer.PITCHES)} or `rest`.")
     check_rate_limit(actor, now)
     message = sequencer.apply_verb(seq_state, verb if verb_l != "clear" else "clear", actor)
-    render_everything(garden_state, seq_state)
+    render_everything(seq_state)
     stamp = number or int(now)
     return (
         f"🎛️ Thank you, @{actor}! You {message}.\n\n"
@@ -169,19 +141,23 @@ def main() -> int:
     ap.add_argument("--title")
     ap.add_argument("--actor", default="local")
     ap.add_argument("--number", type=int)
-    ap.add_argument("--drift", action="store_true")
     ap.add_argument("--render-only", action="store_true")
+    ap.add_argument("--refresh-history", action="store_true")
     ap.add_argument("--out", default=os.environ.get("PLAYGROUND_COMMENT_FILE", "comment.md"))
     args = ap.parse_args()
 
     now = time.time()
+    if args.refresh_history:
+        forest.refresh_history()
     if args.render_only:
-        render_everything(lsystem.load_state(), sequencer.load_state())
+        render_everything(sequencer.load_state())
+        gh_out = os.environ.get("GITHUB_OUTPUT")
+        if gh_out:
+            with open(gh_out, "a", encoding="utf-8") as f:
+                f.write("status=ok\n")
         print("rendered everything from state")
         return 0
-    if args.drift:
-        title, actor, number = "garden: drift", "nightly-drift", int(datetime.now(timezone.utc).strftime("%Y%m%d"))
-    elif args.event:
+    if args.event:
         event = json.loads(Path(args.event).read_text(encoding="utf-8"))
         issue = event["issue"]
         title, actor, number = issue["title"], issue["user"]["login"], issue["number"]

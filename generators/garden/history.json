@@ -1,0 +1,344 @@
+{
+  "login": "MarieLynneBlock",
+  "through": "2026-11-02",
+  "source": "GitHub public commit contributions",
+  "years": [
+    {
+      "year": 2016,
+      "seasons": {
+        "winter": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "spring": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "summer": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "autumn": {
+          "commits": 0,
+          "repositories": {}
+        }
+      }
+    },
+    {
+      "year": 2017,
+      "seasons": {
+        "winter": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "spring": {
+          "commits": 91,
+          "repositories": {
+            "MarieLynneBlock/CSS-Projects": 4,
+            "MarieLynneBlock/FundamentalsOfComputing-Specialization": 6,
+            "MarieLynneBlock/MachineLearning": 11,
+            "MarieLynneBlock/WebDeveloperBootcamp": 70
+          }
+        },
+        "summer": {
+          "commits": 181,
+          "repositories": {
+            "MarieLynneBlock/CreativeCoding": 12,
+            "MarieLynneBlock/DatabasesBootcamp": 2,
+            "MarieLynneBlock/FundamentalsOfComputing-Specialization": 3,
+            "MarieLynneBlock/Nanodegree-FrontEndWebDevelopment": 16,
+            "MarieLynneBlock/ObjectgeorienteerdProgrammerenJava1": 8,
+            "MarieLynneBlock/ProgrammingVisualArts-P5.JS": 4,
+            "MarieLynneBlock/ScriptingInPython-Specialization": 11,
+            "MarieLynneBlock/WebDeveloperBootcamp": 106,
+            "MarieLynneBlock/digital-sound-playground": 19
+          }
+        },
+        "autumn": {
+          "commits": 440,
+          "repositories": {
+            "MarieLynneBlock/CreativeCoding": 1,
+            "MarieLynneBlock/GoogleDeveloperChallengeScholarship-MobileWeb": 6,
+            "MarieLynneBlock/Nanodegree-FrontEndWebDevelopment": 227,
+            "MarieLynneBlock/ScriptingInPython-Specialization": 13,
+            "MarieLynneBlock/SoundSynthesis-Games": 21,
+            "MarieLynneBlock/WebDeveloperBootcamp": 99,
+            "MarieLynneBlock/digital-sound-playground": 73
+          }
+        }
+      }
+    },
+    {
+      "year": 2018,
+      "seasons": {
+        "winter": {
+          "commits": 274,
+          "repositories": {
+            "MarieLynneBlock/GoogleDeveloperChallengeScholarship-MobileWeb": 4,
+            "MarieLynneBlock/JavaAcademy": 25,
+            "MarieLynneBlock/JavaMasterclass": 111,
+            "MarieLynneBlock/Nanodegree-FrontEndWebDevelopment": 106,
+            "MarieLynneBlock/WebDeveloperBootcamp": 21,
+            "MarieLynneBlock/digital-sound-playground": 7
+          }
+        },
+        "spring": {
+          "commits": 196,
+          "repositories": {
+            "MarieLynneBlock/DjangoGirls-CodeCoachPreparation": 20,
+            "MarieLynneBlock/Java-HibernateAndJPA": 2,
+            "MarieLynneBlock/Java-Masterclass": 36,
+            "MarieLynneBlock/JavaAcademy-CreateRESTAPI-CRUD": 9,
+            "MarieLynneBlock/JavaAcademy-OrderManagementApplication1.0": 23,
+            "MarieLynneBlock/JavaAcademy-OrderManagementApplication2.0": 9,
+            "MarieLynneBlock/JavaMasterclass": 2,
+            "MarieLynneBlock/Nanodegree-FrontEndWebDevelopment": 20,
+            "MarieLynneBlock/WebDeveloperBootcamp": 1,
+            "MarieLynneBlock/java-theMasterclass": 4,
+            "boovard/digibooky": 47,
+            "llodavid/parkshark": 23
+          }
+        },
+        "summer": {
+          "commits": 30,
+          "repositories": {
+            "MarieLynneBlock/Bertelsmann_Scholarship_DataScience": 5,
+            "TheMunchkinAlgorithm/ChucK": 25
+          }
+        },
+        "autumn": {
+          "commits": 4,
+          "repositories": {
+            "TheMunchkinAlgorithm/ChucK": 4
+          }
+        }
+      }
+    },
+    {
+      "year": 2019,
+      "seasons": {
+        "winter": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "spring": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "summer": {
+          "commits": 3,
+          "repositories": {
+            "MarieLynneBlock/RealTimeAudioSignalProcessing-Faust": 2,
+            "MarieLynneBlock/WebDeveloperBootcamp": 1
+          }
+        },
+        "autumn": {
+          "commits": 0,
+          "repositories": {}
+        }
+      }
+    },
+    {
+      "year": 2020,
+      "seasons": {
+        "winter": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "spring": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "summer": {
+          "commits": 67,
+          "repositories": {
+            "MarieLynneBlock/MarieLynneBlock": 67
+          }
+        },
+        "autumn": {
+          "commits": 13,
+          "repositories": {
+            "MarieLynneBlock/MarieLynneBlock.github.io": 13
+          }
+        }
+      }
+    },
+    {
+      "year": 2021,
+      "seasons": {
+        "winter": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "spring": {
+          "commits": 15,
+          "repositories": {
+            "MarieLynneBlock/MarieLynneBlock": 14,
+            "MarieLynneBlock/nanodegree_AI-product-management": 1
+          }
+        },
+        "summer": {
+          "commits": 1,
+          "repositories": {
+            "MarieLynneBlock/MarieLynneBlock": 1
+          }
+        },
+        "autumn": {
+          "commits": 2,
+          "repositories": {
+            "MarieLynneBlock/MarieLynneBlock": 2
+          }
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "seasons": {
+        "winter": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "spring": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "summer": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "autumn": {
+          "commits": 0,
+          "repositories": {}
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "seasons": {
+        "winter": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "spring": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "summer": {
+          "commits": 113,
+          "repositories": {
+            "MarieLynneBlock/MarieLynneBlock": 56,
+            "MarieLynneBlock/nanodegree_AI-product-management": 57
+          }
+        },
+        "autumn": {
+          "commits": 4,
+          "repositories": {
+            "MarieLynneBlock/BitByBitDesign": 3,
+            "MarieLynneBlock/nanodegree_AI-product-management": 1
+          }
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "seasons": {
+        "winter": {
+          "commits": 8,
+          "repositories": {
+            "MarieLynneBlock/MarieLynneBlock": 8
+          }
+        },
+        "spring": {
+          "commits": 55,
+          "repositories": {
+            "MarieLynneBlock/MarieLynneBlock.github.io": 46,
+            "MarieLynneBlock/nanodegree_digital-arts": 1,
+            "TheMunchkinAlgorithm/.github": 8
+          }
+        },
+        "summer": {
+          "commits": 209,
+          "repositories": {
+            "ByteBuddies-HQ/.github": 2,
+            "ByteBuddies-HQ/api-bakery": 15,
+            "DimitriGeers/DimitriGeers": 20,
+            "MarieLynneBlock/AI-in-healthcare_KULeuvenX": 11,
+            "MarieLynneBlock/LearnLab_OCR": 2,
+            "MarieLynneBlock/MarieLynneBlock": 116,
+            "MarieLynneBlock/MarieLynneBlock.github.io": 1,
+            "MarieLynneBlock/animated-banner_github": 8,
+            "MarieLynneBlock/generative-art-and-computational-creativity_SFU": 4,
+            "MarieLynneBlock/music-information-retrieval_UVAC": 2,
+            "MarieLynneBlock/nanodegree_AI-product-management": 1,
+            "MarieLynneBlock/nanodegree_data-product-management": 1,
+            "MarieLynneBlock/nanodegree_generative-AI": 2,
+            "MarieLynneBlock/sonic-alchemy-lab": 24
+          }
+        },
+        "autumn": {
+          "commits": 15,
+          "repositories": {
+            "MarieLynneBlock/sonic-alchemy-lab": 15
+          }
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "seasons": {
+        "winter": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "spring": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "summer": {
+          "commits": 0,
+          "repositories": {}
+        },
+        "autumn": {
+          "commits": 2,
+          "repositories": {
+            "MarieLynneBlock/MarieLynneBlock": 2
+          }
+        }
+      }
+    },
+    {
+      "year": 2026,
+      "seasons": {
+        "winter": {
+          "commits": 95,
+          "repositories": {
+            "ByteBuddies-HQ/SDLC-Atelier": 60,
+            "MarieLynneBlock/LearnLab_OCR": 2,
+            "MarieLynneBlock/MarieLynneBlock": 1,
+            "MarieLynneBlock/TheMunchkinAlgorithm_website": 32
+          }
+        },
+        "spring": {
+          "commits": 62,
+          "repositories": {
+            "MarieLynneBlock/arcanum-artifex": 51,
+            "MarieLynneBlock/claude-lab": 11
+          }
+        },
+        "summer": {
+          "commits": 19,
+          "repositories": {
+            "MarieLynneBlock/arcanum-artifex": 19
+          }
+        },
+        "autumn": {
+          "commits": 49,
+          "repositories": {
+            "MarieLynneBlock/MarieLynneBlock": 29,
+            "MarieLynneBlock/arcanum-artifex": 20
+          }
+        }
+      }
+    }
+  ]
+}
