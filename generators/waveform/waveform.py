@@ -1,7 +1,8 @@
 """Audio-reactive header rendered from the community sequencer's own WAV.
 
 Every time a visitor adds a note the sequencer rewrites ``sequence.wav`` and
-this module turns it into a breathing bar-waveform with name and taglines.
+this module turns it into a breathing bar-waveform with peak-hold dots, name
+and taglines.
 """
 
 from __future__ import annotations
@@ -26,6 +27,9 @@ NAME_FONT = Path(__file__).resolve().parent / "fonts" / "name-rounded.woff2"
 WIDTH, HEIGHT = 1200, 300
 BARS = 160
 BAR_W = 5.0
+PEAK_R = BAR_W / 2
+PEAK_GAP = 4.0 + PEAK_R  # distance from bar end to dot centre
+PEAK_HOLD_UNTIL = 0.55  # fraction of the bar cycle the peak dot lingers at the top
 NAME = "Marie-Lynne Block"
 TAGLINES = [
     "AI Expert · Technology Coach",
@@ -88,6 +92,19 @@ def render(env: np.ndarray, theme: Theme) -> str:
             f'<animate attributeName="y" values="{cy - h / 2:.1f};{cy - hi / 2:.1f};{cy - lo / 2:.1f};{cy - h / 2:.1f}" dur="{dur:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>'
             "</rect>"
         )
+        # Peak-hold dots, like a stereo meter: they ride the bar up to its peak,
+        # linger there, then drop with gravity and land back on the bar top.
+        dot_x = x + BAR_W / 2
+        hold = f"0;{1 / 3:.4f};{PEAK_HOLD_UNTIL:.4f};1"
+        splines = "0.4 0 0.6 1;0 0 1 1;0.5 0 1 1"
+        for sign in (-1, 1):
+            rest = cy + sign * (h / 2 + PEAK_GAP)
+            peak = cy + sign * (hi / 2 + PEAK_GAP)
+            parts.append(
+                f'<circle cx="{dot_x:.1f}" cy="{rest:.1f}" r="{PEAK_R}">'
+                f'<animate attributeName="cy" values="{rest:.1f};{peak:.1f};{peak:.1f};{rest:.1f}" keyTimes="{hold}" dur="{dur:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite" calcMode="spline" keySplines="{splines}"/>'
+                "</circle>"
+            )
     parts.append("</g>")
     parts.append(f'<rect width="{WIDTH}" height="{HEIGHT}" rx="12" fill="url(#fade)"/>')
     # Soft backing so the name and taglines stay legible over the bars.
