@@ -12,6 +12,8 @@
   </sub>
 </p>
 
+<br>
+
 <p align="center">
   <sub><strong>Professional &amp; creative code</strong></sub><br>
   <!-- Keep tags adjacent so link whitespace does not appear underlined. -->
