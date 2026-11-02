@@ -38,7 +38,7 @@ jobs:
       ISSUE_TITLE: ${{ github.event.issue.title }}
       ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
       DISPATCH_TITLE: ${{ inputs.title }}
-      COMMENT_FILE: ${{ runner.temp }}/comment.md
+      COMMENT_FILE: /tmp/playground-comment.md
     steps:
       - uses: actions/checkout@v4
         with:
@@ -56,7 +56,7 @@ jobs:
       - name: Apply the request and re-render assets
         id: play
         env:
-          PLAYGROUND_COMMENT_FILE: ${{ runner.temp }}/comment.md
+          PLAYGROUND_COMMENT_FILE: /tmp/playground-comment.md
         run: |
           if [ "$EVENT_NAME" = "issues" ]; then
             python generators/playground.py --event "$GITHUB_EVENT_PATH"
