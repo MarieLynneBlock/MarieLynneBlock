@@ -100,9 +100,9 @@ It is generated entirely from history, with no visitor controls.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-light.svg">
-    <img alt="A continuous forest grown from public commit history, with seasonal trees from 2016 onwards" src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg" width="900">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=af9e8b434ab516e5">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-light.svg?v=a0e57fa51db609e1">
+    <img alt="A continuous forest grown from public commit history, with seasonal trees from 2016 onwards" src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=af9e8b434ab516e5" width="900">
   </picture>
 </p>
 
@@ -335,7 +335,7 @@ I'm always up for learning something new, collaborating on odd projects or talki
   | glue | [`generators/playground.py`](generators/playground.py) · [`.github/workflows/`](.github/workflows) | — |
 
   Every SVG exists in a dark and a light variant, picked with `<picture>` and `prefers-color-scheme`.
-  The header generator updates its image URL versions whenever the waveform changes, avoiding stale caches.
+  The header and forest generators update their image URL versions whenever their SVGs change, avoiding stale caches.
   When a social button's artwork changes, bump its asset key and README paths to avoid stale image caches;
   older assets remain available for existing links.
   Fork it, change the owner in `forest.py` and `playground.py`, refresh the history, and customise

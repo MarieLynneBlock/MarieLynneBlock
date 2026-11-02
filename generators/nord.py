@@ -2,9 +2,12 @@
 
 from __future__ import annotations
 
+import hashlib
 import html
+import re
 from dataclasses import dataclass
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 # Polar Night
 NORD0, NORD1, NORD2, NORD3 = "#2E3440", "#3B4252", "#434C5E", "#4C566A"
@@ -70,3 +73,28 @@ def write_pair(stem: Path, render) -> list[Path]:
         path.write_text(render(theme), encoding="utf-8")
         written.append(path)
     return written
+
+
+def update_readme_asset_links(
+    paths: list[Path], readme_path: Path, link_pattern: re.Pattern[str], asset_name: str,
+) -> None:
+    versions = {path.name: hashlib.sha256(path.read_bytes()).hexdigest()[:16] for path in paths}
+    original = readme_path.read_text(encoding="utf-8")
+    seen: set[str] = set()
+
+    def version_link(match: re.Match[str]) -> str:
+        parts = urlsplit(html.unescape(match.group()))
+        name = Path(parts.path).name
+        if name not in versions:
+            raise RuntimeError(f"No rendered {asset_name} found for {name}")
+        seen.add(name)
+        query = [(key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True) if key != "v"]
+        query.append(("v", versions[name]))
+        return esc(urlunsplit(("", "", parts.path, urlencode(query), parts.fragment)))
+
+    updated = link_pattern.sub(version_link, original)
+    missing = set(versions) - seen
+    if missing:
+        raise RuntimeError(f"{readme_path} is missing {asset_name} links: {', '.join(sorted(missing))}")
+    if updated != original:
+        readme_path.write_text(updated, encoding="utf-8")

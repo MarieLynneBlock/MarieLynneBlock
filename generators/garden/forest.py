@@ -10,6 +10,7 @@ import argparse
 import json
 import math
 import random
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -18,11 +19,17 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
-from nord import ASSETS, AURORA, esc, svg_open, text, write_pair  # noqa: E402
+from nord import (  # noqa: E402
+    ASSETS, AURORA, esc, svg_open, text, update_readme_asset_links, write_pair,
+)
 
 HERE = Path(__file__).resolve().parent
 HISTORY_PATH = HERE / "history.json"
 OUT_STEM = ASSETS / "garden" / "garden"
+README_PATH = ASSETS.parent / "README.md"
+GARDEN_LINK_RE = re.compile(
+    r"assets/garden/garden-(?:dark|light)\.svg(?:[?#][^\"'<>\s]*)?(?=[\"'])"
+)
 OWNER = "MarieLynneBlock"
 SEASONS = ("winter", "spring", "summer", "autumn")
 
@@ -324,7 +331,9 @@ def render(history: dict, theme) -> str:
 
 def render_all() -> list[Path]:
     history = load_history()
-    return write_pair(OUT_STEM, lambda theme: render(history, theme))
+    paths = write_pair(OUT_STEM, lambda theme: render(history, theme))
+    update_readme_asset_links(paths, README_PATH, GARDEN_LINK_RE, "garden")
+    return paths
 
 
 def main() -> None:

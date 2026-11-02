@@ -1,12 +1,15 @@
 import copy
+import hashlib
 import json
 import subprocess
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from html.parser import HTMLParser
 from pathlib import Path
 from unittest.mock import patch
+from urllib.parse import parse_qs, urlsplit
 
 from generators.garden import forest, lsystem
 from generators import playground
@@ -14,6 +17,27 @@ from nord import THEMES
 
 
 SVG = {"svg": "http://www.w3.org/2000/svg"}
+GARDEN_README = (
+    '<p>Keep this content.</p>\n<picture>\n'
+    '<source srcset="https://example.test/assets/garden/garden-dark.svg?source=profile&amp;v=old#top">\n'
+    '<source srcset="https://example.test/assets/garden/garden-light.svg?v=old">\n'
+    '<img src="https://example.test/assets/garden/garden-dark.svg">\n'
+    '</picture>\n<img src="https://example.test/assets/social/website.svg?v=old">'
+)
+
+
+class GardenLinkParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag not in {"source", "img"}:
+            return
+        attrs = dict(attrs)
+        url = attrs.get("srcset" if tag == "source" else "src", "")
+        if "/assets/garden/garden-" in url:
+            self.links.append(url)
 
 
 def group(repository, days, more=False, cursor=None, private=False):
@@ -31,6 +55,22 @@ def response(groups):
 
 
 class ForestTests(unittest.TestCase):
+    def assert_garden_versions(self, readme, stem):
+        parser = GardenLinkParser()
+        parser.feed(readme)
+        self.assertEqual(
+            [Path(urlsplit(link).path).name for link in parser.links],
+            ["garden-dark.svg", "garden-light.svg", "garden-dark.svg"],
+        )
+        versions = {}
+        for link in parser.links:
+            parts = urlsplit(link)
+            name = Path(parts.path).name
+            expected = hashlib.sha256(stem.with_name(name).read_bytes()).hexdigest()[:16]
+            self.assertEqual(parse_qs(parts.query).get("v"), [expected])
+            versions[name] = expected
+        return versions, parser.links
+
     def test_continuous_winter_and_season_boundaries_in_utc(self):
         cases = {
             "2018-12-01T00:00:00Z": (2019, "winter"),
@@ -185,7 +225,13 @@ class ForestTests(unittest.TestCase):
         history, _ = self.collect_fixture()
         with tempfile.TemporaryDirectory() as directory:
             stem = Path(directory) / "garden"
-            with patch.object(forest, "load_history", return_value=history), patch.object(forest, "OUT_STEM", stem):
+            readme = Path(directory) / "README.md"
+            readme.write_text(GARDEN_README, encoding="utf-8")
+            with (
+                patch.object(forest, "load_history", return_value=history),
+                patch.object(forest, "OUT_STEM", stem),
+                patch.object(forest, "README_PATH", readme),
+            ):
                 paths = lsystem.render_all()
                 self.assertEqual(len(paths), 2)
                 self.assertTrue(all(path.exists() for path in paths))
@@ -217,10 +263,13 @@ class ForestTests(unittest.TestCase):
         history, _ = self.collect_fixture()
         snapshot = copy.deepcopy(history)
         with tempfile.TemporaryDirectory() as directory:
+            readme = Path(directory) / "README.md"
+            readme.write_text(GARDEN_README, encoding="utf-8")
             with (
                 patch.object(forest, "load_history", return_value=history),
                 patch.object(forest, "refresh_history") as refresh,
                 patch.object(forest, "OUT_STEM", Path(directory) / "garden"),
+                patch.object(forest, "README_PATH", readme),
                 patch.object(playground, "check_rate_limit"),
                 patch.object(playground.sequencer, "render_all"),
                 patch.object(playground.sequencer, "save_state"),
@@ -236,6 +285,59 @@ class ForestTests(unittest.TestCase):
                     forest.render(history, THEMES[0]),
                 )
         self.assertEqual(history, snapshot)
+
+    def test_readme_uses_current_version_for_both_themes_and_fallback(self):
+        self.assert_garden_versions(
+            forest.README_PATH.read_text(encoding="utf-8"), forest.OUT_STEM,
+        )
+
+    def test_rendering_refreshes_garden_versions_when_history_changes(self):
+        history, _ = self.collect_fixture()
+        with tempfile.TemporaryDirectory() as directory:
+            readme = Path(directory) / "README.md"
+            readme.write_text(GARDEN_README, encoding="utf-8")
+            stem = Path(directory) / "garden"
+            with (
+                patch.object(forest, "README_PATH", readme),
+                patch.object(forest, "OUT_STEM", stem),
+                patch.object(forest, "load_history", return_value=history) as load_history,
+            ):
+                forest.render_all()
+                first = readme.read_text(encoding="utf-8")
+                first_versions, links = self.assert_garden_versions(first, stem)
+                self.assertEqual(parse_qs(urlsplit(links[0]).query)["source"], ["profile"])
+                self.assertEqual(urlsplit(links[0]).fragment, "top")
+                self.assertIn("<p>Keep this content.</p>", first)
+                self.assertIn("assets/social/website.svg?v=old", first)
+
+                changed = copy.deepcopy(history)
+                spring = changed["years"][0]["seasons"]["spring"]
+                spring["commits"] += 1
+                spring["repositories"]["other/project"] += 1
+                load_history.return_value = changed
+                forest.render_all()
+                second = readme.read_text(encoding="utf-8")
+                second_versions, _ = self.assert_garden_versions(second, stem)
+                for name in first_versions:
+                    self.assertNotEqual(first_versions[name], second_versions[name])
+
+                forest.render_all()
+                self.assertEqual(readme.read_text(encoding="utf-8"), second)
+
+    def test_missing_garden_theme_link_fails_without_changing_readme(self):
+        history, _ = self.collect_fixture()
+        original = '<img src="https://example.test/assets/garden/garden-dark.svg">'
+        with tempfile.TemporaryDirectory() as directory:
+            readme = Path(directory) / "README.md"
+            readme.write_text(original, encoding="utf-8")
+            with (
+                patch.object(forest, "README_PATH", readme),
+                patch.object(forest, "OUT_STEM", Path(directory) / "garden"),
+                patch.object(forest, "load_history", return_value=history),
+            ):
+                with self.assertRaisesRegex(RuntimeError, "garden-light.svg"):
+                    forest.render_all()
+            self.assertEqual(readme.read_text(encoding="utf-8"), original)
 
     def test_published_assets_match_cached_history(self):
         history = forest.load_history()
