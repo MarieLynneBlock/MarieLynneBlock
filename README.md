@@ -109,7 +109,7 @@ and redraws the header from the new audio.
 
 <p align="center">
 <!-- SEQUENCER:CREDITS:START -->
-<strong>12/16 steps filled</strong> · next free step: 1 · 0 notes placed by visitors<br><sub>recent composers: <a href="https://github.com/MarieLynneBlock">@MarieLynneBlock</a></sub>
+<strong>12/16 steps filled</strong> · next free step: 2 · 1 notes placed by visitors<br><sub>recent composers: <a href="https://github.com/MarieLynneBlock">@MarieLynneBlock</a></sub><br><sub>latest: @MarieLynneBlock placed C4 on step 1</sub>
 <!-- SEQUENCER:CREDITS:END -->
 </p>
 

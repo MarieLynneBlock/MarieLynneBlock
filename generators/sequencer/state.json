@@ -66,10 +66,17 @@
       "author": "MarieLynneBlock"
     }
   ],
-  "cursor": 0,
+  "cursor": 1,
   "composers": [
     "MarieLynneBlock"
   ],
-  "notes_added": 0,
-  "actions": {}
+  "notes_added": 1,
+  "actions": {
+    "C4": 1
+  },
+  "last_action": {
+    "verb": "C4",
+    "actor": "MarieLynneBlock",
+    "step": 0
+  }
 }
