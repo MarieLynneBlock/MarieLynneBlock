@@ -5,7 +5,7 @@
     "X": "F+[[X]-X]-F[-FX]+X",
     "F": "FF"
   },
-  "angle": 25.0,
+  "angle": 27.97,
   "iterations": 4,
   "generation": 1,
   "season": "summer",
@@ -15,12 +15,13 @@
     "MarieLynneBlock"
   ],
   "actions": {
-    "season": 1
+    "season": 1,
+    "drift": 1
   },
   "species_index": 0,
   "last_action": {
-    "verb": "season",
-    "actor": "MarieLynneBlock",
-    "message": "turned the season to summer"
+    "verb": "drift",
+    "actor": "nightly-drift",
+    "message": "bent the branching angle to 27.97°"
   }
 }
