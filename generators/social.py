@@ -9,13 +9,13 @@ BUTTONS = (
     ("website-v2", "website", 116, NORD15),
     ("linkedin", "LinkedIn", 132, NORD9),
     ("huggingface", "Hugging Face", 164, NORD13),
-    ("bandcamp", "Bandcamp", 140, NORD8),
-    ("vibe-v2", "VI.BE", 108, NORD14),
-    ("soundcloud", "SoundCloud", 148, NORD12),
+    ("openprocessing-v2", "OpenProcessing", 180, NORD9),
     ("youtube", "YouTube", 124, NORD11),
+    ("bandcamp", "Bandcamp", 140, NORD8),
+    ("soundcloud", "SoundCloud", 148, NORD12),
+    ("vibe-v2", "VI.BE", 108, NORD14),
     ("instagram", "Instagram / Munchkin", 228, NORD15),
     ("instagram-photography-v2", "Instagram / Photography", 250, NORD7),
-    ("openprocessing-v2", "OpenProcessing", 180, NORD9),
 )
 
 INSTAGRAM_ICON = (

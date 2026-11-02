@@ -13,6 +13,7 @@
 </p>
 
 <p align="center">
+  <sub><strong>Professional &amp; creative code</strong></sub><br>
   <!-- Keep tags adjacent so link whitespace does not appear underlined. -->
   <a href="https://themunchkinalgorithm.world"><picture><source media="(prefers-color-scheme: dark)"
     srcset="./assets/social/website-v2-dark.svg"><source media="(prefers-color-scheme: light)"
@@ -26,22 +27,30 @@
     srcset="./assets/social/huggingface-dark.svg"><source media="(prefers-color-scheme: light)"
     srcset="./assets/social/huggingface-light.svg"><img src="./assets/social/huggingface-dark.svg"
     alt="Hugging Face" width="164" height="44"></picture></a>
-  <a href="https://bandcamp.com/marielynneblock"><picture><source media="(prefers-color-scheme: dark)"
-    srcset="./assets/social/bandcamp-dark.svg"><source media="(prefers-color-scheme: light)"
-    srcset="./assets/social/bandcamp-light.svg"><img src="./assets/social/bandcamp-dark.svg"
-    alt="Bandcamp" width="140" height="44"></picture></a>
-  <a href="https://vi.be/platform/MarieLynneBlock"><picture><source media="(prefers-color-scheme: dark)"
-    srcset="./assets/social/vibe-v2-dark.svg"><source media="(prefers-color-scheme: light)"
-    srcset="./assets/social/vibe-v2-light.svg"><img src="./assets/social/vibe-v2-dark.svg"
-    alt="VI.BE" width="108" height="44"></picture></a>
-  <a href="https://soundcloud.com/marie-lynne-block"><picture><source media="(prefers-color-scheme: dark)"
-    srcset="./assets/social/soundcloud-dark.svg"><source media="(prefers-color-scheme: light)"
-    srcset="./assets/social/soundcloud-light.svg"><img src="./assets/social/soundcloud-dark.svg"
-    alt="SoundCloud" width="148" height="44"></picture></a>
+  <a href="https://openprocessing.org/@MarieLynneBlock"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/openprocessing-v2-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/openprocessing-v2-light.svg"><img src="./assets/social/openprocessing-v2-dark.svg"
+    alt="OpenProcessing" width="180" height="44"></picture></a>
+</p>
+
+<p align="center">
+  <sub><strong>Art &amp; media</strong></sub><br>
   <a href="https://www.youtube.com/channel/UCSQbAon579PYiTlXAv6avcA"><picture><source media="(prefers-color-scheme: dark)"
     srcset="./assets/social/youtube-dark.svg"><source media="(prefers-color-scheme: light)"
     srcset="./assets/social/youtube-light.svg"><img src="./assets/social/youtube-dark.svg"
     alt="YouTube" width="124" height="44"></picture></a>
+  <a href="https://bandcamp.com/marielynneblock"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/bandcamp-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/bandcamp-light.svg"><img src="./assets/social/bandcamp-dark.svg"
+    alt="Bandcamp" width="140" height="44"></picture></a>
+  <a href="https://soundcloud.com/marie-lynne-block"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/soundcloud-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/soundcloud-light.svg"><img src="./assets/social/soundcloud-dark.svg"
+    alt="SoundCloud" width="148" height="44"></picture></a>
+  <a href="https://vi.be/platform/MarieLynneBlock"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/vibe-v2-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/vibe-v2-light.svg"><img src="./assets/social/vibe-v2-dark.svg"
+    alt="VI.BE" width="108" height="44"></picture></a>
   <a href="https://www.instagram.com/themunchkinalgorithm/"><picture><source media="(prefers-color-scheme: dark)"
     srcset="./assets/social/instagram-dark.svg"><source media="(prefers-color-scheme: light)"
     srcset="./assets/social/instagram-light.svg"><img src="./assets/social/instagram-dark.svg"
@@ -50,11 +59,9 @@
     srcset="./assets/social/instagram-photography-v2-dark.svg"><source media="(prefers-color-scheme: light)"
     srcset="./assets/social/instagram-photography-v2-light.svg"><img src="./assets/social/instagram-photography-v2-dark.svg"
     alt="Instagram / Photography" width="250" height="44"></picture></a>
-  <a href="https://openprocessing.org/@MarieLynneBlock"><picture><source media="(prefers-color-scheme: dark)"
-    srcset="./assets/social/openprocessing-v2-dark.svg"><source media="(prefers-color-scheme: light)"
-    srcset="./assets/social/openprocessing-v2-light.svg"><img src="./assets/social/openprocessing-v2-dark.svg"
-    alt="OpenProcessing" width="180" height="44"></picture></a>
-  <br><br>
+</p>
+
+<p align="center">
   <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock">
     <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock&label=visitors&labelColor=%232d3440&countColor=%2380a0c0&style=flat-square" alt="visitors">
   </a>
