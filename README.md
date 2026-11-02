@@ -52,9 +52,13 @@
     srcset="./assets/social/soundcloud-light.svg"><img src="./assets/social/soundcloud-dark.svg"
     alt="SoundCloud" width="148" height="44"></picture></a>
   <a href="https://vi.be/platform/MarieLynneBlock"><picture><source media="(prefers-color-scheme: dark)"
-    srcset="./assets/social/vibe-v2-dark.svg"><source media="(prefers-color-scheme: light)"
-    srcset="./assets/social/vibe-v2-light.svg"><img src="./assets/social/vibe-v2-dark.svg"
-    alt="VI.BE" width="108" height="44"></picture></a>
+    srcset="./assets/social/vibe-personal-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/vibe-personal-light.svg"><img src="./assets/social/vibe-personal-dark.svg"
+    alt="VI.BE / Personal" width="180" height="44"></picture></a>
+  <a href="https://vi.be/platform/TheMunchkinAlgorithm"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/vibe-project-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/vibe-project-light.svg"><img src="./assets/social/vibe-project-dark.svg"
+    alt="VI.BE / The Munchkin Algorithm" width="310" height="44"></picture></a>
   <a href="https://www.instagram.com/themunchkinalgorithm/"><picture><source media="(prefers-color-scheme: dark)"
     srcset="./assets/social/instagram-dark.svg"><source media="(prefers-color-scheme: light)"
     srcset="./assets/social/instagram-light.svg"><img src="./assets/social/instagram-dark.svg"

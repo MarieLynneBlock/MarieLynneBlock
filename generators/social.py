@@ -13,10 +13,13 @@ BUTTONS = (
     ("youtube", "YouTube", 124, NORD11),
     ("bandcamp", "Bandcamp", 140, NORD8),
     ("soundcloud", "SoundCloud", 148, NORD12),
-    ("vibe-v2", "VI.BE", 108, NORD14),
+    ("vibe-personal", "VI.BE / Personal", 180, NORD14),
+    ("vibe-project", "VI.BE / The Munchkin Algorithm", 310, NORD15),
     ("instagram", "Instagram / Munchkin", 228, NORD15),
     ("instagram-photography-v2", "Instagram / Photography", 250, NORD7),
 )
+
+VIBE_ICON = '<path d="M14 4v11.2a3.2 3.2 0 1 1-2-3V7l8-2v8.2a3.2 3.2 0 1 1-2-3V4"/>'
 
 INSTAGRAM_ICON = (
     '<rect x="4" y="4" width="16" height="16" rx="5"/>'
@@ -42,7 +45,8 @@ ICONS = {
         '<rect x="3" y="12" width="4" height="8" rx="2"/>'
         '<rect x="17" y="12" width="4" height="8" rx="2"/>'
     ),
-    "vibe-v2": '<path d="M14 4v11.2a3.2 3.2 0 1 1-2-3V7l8-2v8.2a3.2 3.2 0 1 1-2-3V4"/>',
+    "vibe-personal": VIBE_ICON,
+    "vibe-project": VIBE_ICON,
     "soundcloud": (
         '<path d="M3 13v3m3-5v7m3-9v9m3-11v11"/>'
         '<path d="M12 9a4 4 0 0 1 7 3h.5a3 3 0 0 1 0 6H12"/>'
