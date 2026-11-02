@@ -28,9 +28,10 @@ BARS = 160
 BAR_W = 5.0
 NAME = "Marie-Lynne Block"
 TAGLINES = [
-    "AI expert · data scientist",
-    "creative coder · sound designer",
-    "humanising the AI era, one commit at a time",
+    "AI Expert · Technology Coach",
+    "Creative Coder · Mathemagician · Binary Bard",
+    "Sound Designer · Producer · Mastering Engineer",
+    "Humanising the AI era, one commit at a time",
 ]
 
 
