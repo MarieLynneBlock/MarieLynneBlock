@@ -2,19 +2,20 @@
 
 from __future__ import annotations
 
-from nord import ASSETS, NORD0, NORD8, NORD9, NORD11, NORD12, NORD13, NORD14, NORD15, Theme, esc, text, write_pair
+from nord import ASSETS, NORD0, NORD7, NORD8, NORD9, NORD11, NORD12, NORD13, NORD14, NORD15, Theme, esc, text, write_pair
 
+# Bump an asset key and its README paths when its artwork changes to avoid stale caches.
 BUTTONS = (
-    ("website", "website", 116, NORD15),
+    ("website-v2", "website", 116, NORD15),
     ("linkedin", "LinkedIn", 132, NORD9),
     ("huggingface", "Hugging Face", 164, NORD13),
     ("bandcamp", "Bandcamp", 140, NORD8),
-    ("vibe", "VI.BE", 108, NORD11),
+    ("vibe-v2", "VI.BE", 108, NORD14),
     ("soundcloud", "SoundCloud", 148, NORD12),
     ("youtube", "YouTube", 124, NORD11),
     ("instagram", "Instagram / Munchkin", 228, NORD15),
-    ("instagram-photography", "Instagram / Photography", 250, NORD15),
-    ("openprocessing", "OpenProcessing", 180, NORD14),
+    ("instagram-photography-v2", "Instagram / Photography", 250, NORD7),
+    ("openprocessing-v2", "OpenProcessing", 180, NORD9),
 )
 
 INSTAGRAM_ICON = (
@@ -24,7 +25,7 @@ INSTAGRAM_ICON = (
 )
 
 ICONS = {
-    "website": (
+    "website-v2": (
         '<path d="M4 11a8 8 0 0 1 16 0Z"/>'
         '<path d="M7 14c-3 3 3 3 0 6m5-6c-3 3 3 3 0 7m5-7c-3 3 3 3 0 6"/>'
     ),
@@ -41,7 +42,7 @@ ICONS = {
         '<rect x="3" y="12" width="4" height="8" rx="2"/>'
         '<rect x="17" y="12" width="4" height="8" rx="2"/>'
     ),
-    "vibe": '<path d="M14 4v11.2a3.2 3.2 0 1 1-2-3V7l8-2v8.2a3.2 3.2 0 1 1-2-3V4"/>',
+    "vibe-v2": '<path d="M14 4v11.2a3.2 3.2 0 1 1-2-3V7l8-2v8.2a3.2 3.2 0 1 1-2-3V4"/>',
     "soundcloud": (
         '<path d="M3 13v3m3-5v7m3-9v9m3-11v11"/>'
         '<path d="M12 9a4 4 0 0 1 7 3h.5a3 3 0 0 1 0 6H12"/>'
@@ -51,8 +52,8 @@ ICONS = {
         '<path d="M10 9l5 3-5 3z"/>'
     ),
     "instagram": INSTAGRAM_ICON,
-    "instagram-photography": INSTAGRAM_ICON,
-    "openprocessing": '<path d="M9 7 4 12l5 5m6-10 5 5-5 5M13 5l-2 14"/>',
+    "instagram-photography-v2": INSTAGRAM_ICON,
+    "openprocessing-v2": '<path d="M9 7 4 12l5 5m6-10 5 5-5 5M13 5l-2 14"/>',
 }
 
 

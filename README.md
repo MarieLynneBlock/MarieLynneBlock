@@ -13,76 +13,47 @@
 </p>
 
 <p align="center">
-  <a href="https://themunchkinalgorithm.world">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/website-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/social/website-light.svg">
-      <img src="./assets/social/website-dark.svg" alt="website" width="116" height="44">
-    </picture>
-  </a>
-  <a href="https://www.linkedin.com/in/marielynneblock/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/linkedin-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/social/linkedin-light.svg">
-      <img src="./assets/social/linkedin-dark.svg" alt="LinkedIn" width="132" height="44">
-    </picture>
-  </a>
-  <a href="https://huggingface.co/MarieLynneBlock">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/huggingface-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/social/huggingface-light.svg">
-      <img src="./assets/social/huggingface-dark.svg" alt="Hugging Face" width="164" height="44">
-    </picture>
-  </a>
-  <a href="https://bandcamp.com/marielynneblock">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/bandcamp-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/social/bandcamp-light.svg">
-      <img src="./assets/social/bandcamp-dark.svg" alt="Bandcamp" width="140" height="44">
-    </picture>
-  </a>
-  <a href="https://vi.be/platform/MarieLynneBlock">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/vibe-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/social/vibe-light.svg">
-      <img src="./assets/social/vibe-dark.svg" alt="VI.BE" width="108" height="44">
-    </picture>
-  </a>
-  <a href="https://soundcloud.com/marie-lynne-block">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/soundcloud-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/social/soundcloud-light.svg">
-      <img src="./assets/social/soundcloud-dark.svg" alt="SoundCloud" width="148" height="44">
-    </picture>
-  </a>
-  <a href="https://www.youtube.com/channel/UCSQbAon579PYiTlXAv6avcA">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/youtube-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/social/youtube-light.svg">
-      <img src="./assets/social/youtube-dark.svg" alt="YouTube" width="124" height="44">
-    </picture>
-  </a>
-  <a href="https://www.instagram.com/themunchkinalgorithm/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/instagram-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/social/instagram-light.svg">
-      <img src="./assets/social/instagram-dark.svg" alt="Instagram / Munchkin" width="228" height="44">
-    </picture>
-  </a>
-  <a href="https://www.instagram.com/munchkin.shuttersup/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/instagram-photography-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/social/instagram-photography-light.svg">
-      <img src="./assets/social/instagram-photography-dark.svg" alt="Instagram / Photography" width="250" height="44">
-    </picture>
-  </a>
-  <a href="https://openprocessing.org/@MarieLynneBlock">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/openprocessing-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/social/openprocessing-light.svg">
-      <img src="./assets/social/openprocessing-dark.svg" alt="OpenProcessing" width="180" height="44">
-    </picture>
-  </a>
+  <!-- Keep tags adjacent so link whitespace does not appear underlined. -->
+  <a href="https://themunchkinalgorithm.world"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/website-v2-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/website-v2-light.svg"><img src="./assets/social/website-v2-dark.svg"
+    alt="website" width="116" height="44"></picture></a>
+  <a href="https://www.linkedin.com/in/marielynneblock/"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/linkedin-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/linkedin-light.svg"><img src="./assets/social/linkedin-dark.svg"
+    alt="LinkedIn" width="132" height="44"></picture></a>
+  <a href="https://huggingface.co/MarieLynneBlock"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/huggingface-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/huggingface-light.svg"><img src="./assets/social/huggingface-dark.svg"
+    alt="Hugging Face" width="164" height="44"></picture></a>
+  <a href="https://bandcamp.com/marielynneblock"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/bandcamp-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/bandcamp-light.svg"><img src="./assets/social/bandcamp-dark.svg"
+    alt="Bandcamp" width="140" height="44"></picture></a>
+  <a href="https://vi.be/platform/MarieLynneBlock"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/vibe-v2-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/vibe-v2-light.svg"><img src="./assets/social/vibe-v2-dark.svg"
+    alt="VI.BE" width="108" height="44"></picture></a>
+  <a href="https://soundcloud.com/marie-lynne-block"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/soundcloud-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/soundcloud-light.svg"><img src="./assets/social/soundcloud-dark.svg"
+    alt="SoundCloud" width="148" height="44"></picture></a>
+  <a href="https://www.youtube.com/channel/UCSQbAon579PYiTlXAv6avcA"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/youtube-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/youtube-light.svg"><img src="./assets/social/youtube-dark.svg"
+    alt="YouTube" width="124" height="44"></picture></a>
+  <a href="https://www.instagram.com/themunchkinalgorithm/"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/instagram-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/instagram-light.svg"><img src="./assets/social/instagram-dark.svg"
+    alt="Instagram / Munchkin" width="228" height="44"></picture></a>
+  <a href="https://www.instagram.com/munchkin.shuttersup/"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/instagram-photography-v2-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/instagram-photography-v2-light.svg"><img src="./assets/social/instagram-photography-v2-dark.svg"
+    alt="Instagram / Photography" width="250" height="44"></picture></a>
+  <a href="https://openprocessing.org/@MarieLynneBlock"><picture><source media="(prefers-color-scheme: dark)"
+    srcset="./assets/social/openprocessing-v2-dark.svg"><source media="(prefers-color-scheme: light)"
+    srcset="./assets/social/openprocessing-v2-light.svg"><img src="./assets/social/openprocessing-v2-dark.svg"
+    alt="OpenProcessing" width="180" height="44"></picture></a>
   <br><br>
   <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock">
     <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock&label=visitors&labelColor=%232d3440&countColor=%2380a0c0&style=flat-square" alt="visitors">
@@ -331,6 +302,8 @@ I'm always up for learning something new, collaborating on odd projects or talki
   | glue | [`generators/playground.py`](generators/playground.py) · [`.github/workflows/`](.github/workflows) | — |
 
   Every SVG exists in a dark and a light variant, picked with `<picture>` and `prefers-color-scheme`.
+  When a social button's artwork changes, bump its asset key and README paths to avoid stale image caches;
+  older assets remain available for existing links.
   Fork it, change `toolbox.yaml` and the two `state.json` files, and you have your own living README.
 </details>
 
