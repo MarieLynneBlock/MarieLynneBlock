@@ -79,7 +79,7 @@
 
 ## Hej! I'm Marie-Lynne <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28px" alt="👋">
 
-I'm an AI expert and technology coach with a long background in data science — working with AI since before
+I'm an AI expert and technology coach with a long background in data science; working with AI since before
 the hype. I love building intelligent systems, creating playful digital experiences, and designing sound with
 a story. Through hands-on workshops, I help curious humans become makers.
 
