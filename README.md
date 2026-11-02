@@ -13,10 +13,34 @@
 </p>
 
 <p align="center">
-  <a href="https://themunchkinalgorithm.world">🪼 themunchkinalgorithm.world</a> ·
-  <a href="https://www.linkedin.com/in/marielynneblock/">💼 LinkedIn</a> ·
-  <a href="https://huggingface.co/MarieLynneBlock">🤗 Hugging Face</a> ·
-  <a href="https://bandcamp.com/marielynneblock">🎧 Bandcamp</a>
+  <a href="https://themunchkinalgorithm.world">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/website-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/social/website-light.svg">
+      <img src="./assets/social/website-dark.svg" alt="themunchkinalgorithm.world" width="280" height="44">
+    </picture>
+  </a>
+  <a href="https://www.linkedin.com/in/marielynneblock/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/linkedin-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/social/linkedin-light.svg">
+      <img src="./assets/social/linkedin-dark.svg" alt="LinkedIn" width="132" height="44">
+    </picture>
+  </a>
+  <a href="https://huggingface.co/MarieLynneBlock">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/huggingface-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/social/huggingface-light.svg">
+      <img src="./assets/social/huggingface-dark.svg" alt="Hugging Face" width="164" height="44">
+    </picture>
+  </a>
+  <a href="https://bandcamp.com/marielynneblock">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/social/bandcamp-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/social/bandcamp-light.svg">
+      <img src="./assets/social/bandcamp-dark.svg" alt="Bandcamp" width="140" height="44">
+    </picture>
+  </a>
   <br><br>
   <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock">
     <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FMarieLynneBlock&label=visitors&labelColor=%232d3440&countColor=%2380a0c0&style=flat-square" alt="visitors">
@@ -257,6 +281,7 @@ I'm always up for learning something new, collaborating on odd projects or talki
   | piece | source | trigger |
   |---|---|---|
   | header waveform | [`generators/waveform/waveform.py`](generators/waveform/waveform.py) | whenever the sequencer changes |
+  | social buttons | [`generators/social.py`](generators/social.py) | manually: `python generators/social.py` |
   | L-system garden | [`generators/garden/lsystem.py`](generators/garden/lsystem.py) | visitor issues · nightly drift |
   | step-sequencer (SVG, WAV, MIDI) | [`generators/sequencer/sequencer.py`](generators/sequencer/sequencer.py) | visitor issues |
   | toolbox | [`generators/toolbox/toolbox.py`](generators/toolbox/toolbox.py) | on push to its config |
