@@ -8,7 +8,7 @@
 
 <p align="center">
   <sub>
-    ↑ that header is not a picture. It is the waveform of the loop <em>you</em> can edit further down — redrawn by this repo's own GitHub Actions every time someone adds a note.
+    ↑ The header is not a picture. It is the waveform of the loop <em>you</em> can edit further down; redrawn every time someone adds a note to the sequencer.
   </sub>
 </p>
 
