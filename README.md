@@ -56,7 +56,7 @@ If nobody visits, a nightly *drift* keeps it slowly evolving.
 
 <p align="center">
 <!-- GARDEN:CREDITS:START -->
-<strong>Fractal Plant</strong> · generation 1 · summer · 2 interventions<br><sub>recent gardeners: <a href="https://github.com/MarieLynneBlock">@MarieLynneBlock</a></sub><br><sub>latest: the nightly drift bent the branching angle to 27.97°</sub>
+<strong>Fractal Plant</strong> · generation 1 · autumn · 3 interventions<br><sub>recent gardeners: <a href="https://github.com/MarieLynneBlock">@MarieLynneBlock</a></sub><br><sub>latest: @MarieLynneBlock turned the season to autumn</sub>
 <!-- GARDEN:CREDITS:END -->
 </p>
 

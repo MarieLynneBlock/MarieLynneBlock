@@ -8,20 +8,20 @@
   "angle": 27.97,
   "iterations": 4,
   "generation": 1,
-  "season": "summer",
+  "season": "autumn",
   "seed": 686579304,
   "lineage": [],
   "gardeners": [
     "MarieLynneBlock"
   ],
   "actions": {
-    "season": 1,
+    "season": 2,
     "drift": 1
   },
   "species_index": 0,
   "last_action": {
-    "verb": "drift",
-    "actor": "nightly-drift",
-    "message": "bent the branching angle to 27.97°"
+    "verb": "season",
+    "actor": "MarieLynneBlock",
+    "message": "turned the season to autumn"
   }
 }
