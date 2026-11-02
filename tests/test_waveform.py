@@ -1,9 +1,12 @@
+import hashlib
 import tempfile
 import unittest
 import wave
 import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
 from pathlib import Path
 from unittest.mock import patch
+from urllib.parse import parse_qs, urlsplit
 
 import numpy as np
 
@@ -14,7 +17,38 @@ from nord import THEMES
 SVG = {"svg": "http://www.w3.org/2000/svg"}
 
 
+class HeaderLinkParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag not in {"source", "img"}:
+            return
+        attrs = dict(attrs)
+        url = attrs.get("srcset" if tag == "source" else "src", "")
+        if "/assets/header/waveform-" in url:
+            self.links.append(url)
+
+
 class WaveformTests(unittest.TestCase):
+    def assert_header_versions(self, readme, stem):
+        parser = HeaderLinkParser()
+        parser.feed(readme)
+        self.assertEqual(
+            [Path(urlsplit(link).path).name for link in parser.links],
+            ["waveform-dark.svg", "waveform-light.svg", "waveform-dark.svg"],
+        )
+        versions = {}
+        for link in parser.links:
+            parts = urlsplit(link)
+            name = Path(parts.path).name
+            path = stem.with_name(name)
+            expected = hashlib.sha256(path.read_bytes()).hexdigest()[:16]
+            self.assertEqual(parse_qs(parts.query).get("v"), [expected])
+            versions[name] = expected
+        return versions, parser.links
+
     def test_envelope_uses_audio_and_trims_silent_tail(self):
         samples = np.concatenate(
             [
@@ -102,6 +136,60 @@ class WaveformTests(unittest.TestCase):
                     actual == expected,
                     f"{path.name} is stale; run python generators/waveform/waveform.py",
                 )
+
+    def test_readme_uses_current_version_for_both_themes_and_fallback(self):
+        self.assert_header_versions(
+            waveform.README_PATH.read_text(encoding="utf-8"), waveform.OUT_STEM
+        )
+
+    def test_rendering_refreshes_header_versions_when_audio_changes(self):
+        original = (
+            '<p>Keep this content.</p>\n<picture>\n'
+            '<source srcset="https://example.test/assets/header/waveform-dark.svg?source=profile&amp;v=old#top">\n'
+            '<source srcset="https://example.test/assets/header/waveform-light.svg?v=old">\n'
+            '<img src="https://example.test/assets/header/waveform-dark.svg">\n'
+            '</picture>\n<img src="https://example.test/assets/social/website.svg?v=old">'
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            readme = Path(directory) / "README.md"
+            readme.write_text(original, encoding="utf-8")
+            stem = Path(directory) / "waveform"
+            envelope = np.linspace(0.03, 1.0, waveform.BARS)
+            with (
+                patch.object(waveform, "README_PATH", readme),
+                patch.object(waveform, "OUT_STEM", stem),
+                patch.object(waveform, "load_envelope", return_value=envelope) as load_envelope,
+            ):
+                waveform.render_all()
+                first = readme.read_text(encoding="utf-8")
+                first_versions, links = self.assert_header_versions(first, stem)
+                self.assertEqual(parse_qs(urlsplit(links[0]).query)["source"], ["profile"])
+                self.assertEqual(urlsplit(links[0]).fragment, "top")
+                self.assertIn('<p>Keep this content.</p>', first)
+                self.assertIn('assets/social/website.svg?v=old', first)
+
+                load_envelope.return_value = envelope[::-1]
+                waveform.render_all()
+                second = readme.read_text(encoding="utf-8")
+                second_versions, _ = self.assert_header_versions(second, stem)
+                for name in first_versions:
+                    self.assertNotEqual(first_versions[name], second_versions[name])
+
+                waveform.render_all()
+                self.assertEqual(readme.read_text(encoding="utf-8"), second)
+
+    def test_missing_theme_link_fails_without_changing_readme(self):
+        original = '<img src="https://example.test/assets/header/waveform-dark.svg">'
+        with tempfile.TemporaryDirectory() as directory:
+            readme = Path(directory) / "README.md"
+            readme.write_text(original, encoding="utf-8")
+            with (
+                patch.object(waveform, "README_PATH", readme),
+                patch.object(waveform, "OUT_STEM", Path(directory) / "waveform"),
+            ):
+                with self.assertRaisesRegex(RuntimeError, "waveform-light.svg"):
+                    waveform.render_all()
+            self.assertEqual(readme.read_text(encoding="utf-8"), original)
 
 
 if __name__ == "__main__":

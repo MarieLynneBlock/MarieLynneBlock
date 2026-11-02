@@ -1,8 +1,8 @@
 <a href="https://themunchkinalgorithm.world">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-light.svg">
-    <img alt="Marie-Lynne Block. Audio-reactive header rendered from the visitor sequencer below" src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-dark.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-dark.svg?v=493e02551bed3d2e">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-light.svg?v=d0a67e2517d87858">
+    <img alt="Marie-Lynne Block. Audio-reactive header rendered from the visitor sequencer below" src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/header/waveform-dark.svg?v=493e02551bed3d2e" width="100%">
   </picture>
 </a>
 
@@ -311,6 +311,7 @@ I'm always up for learning something new, collaborating on odd projects or talki
   | glue | [`generators/playground.py`](generators/playground.py) · [`.github/workflows/`](.github/workflows) | — |
 
   Every SVG exists in a dark and a light variant, picked with `<picture>` and `prefers-color-scheme`.
+  The header generator updates its image URL versions whenever the waveform changes, avoiding stale caches.
   When a social button's artwork changes, bump its asset key and README paths to avoid stale image caches;
   older assets remain available for existing links.
   Fork it, change `toolbox.yaml` and the two `state.json` files, and you have your own living README.

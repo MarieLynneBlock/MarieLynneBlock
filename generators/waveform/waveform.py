@@ -7,9 +7,13 @@ this module turns it into a breathing bar-waveform with name and taglines.
 from __future__ import annotations
 
 import base64
+import hashlib
+import html
+import re
 import sys
 import wave
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 import numpy as np
 
@@ -19,6 +23,10 @@ from nord import ASSETS, AURORA, Theme, esc, svg_open, text, write_pair  # noqa:
 
 WAV_PATH = ASSETS / "sequencer" / "sequence.wav"
 OUT_STEM = ASSETS / "header" / "waveform"
+README_PATH = ASSETS.parent / "README.md"
+HEADER_LINK_RE = re.compile(
+    r"assets/header/waveform-(?:dark|light)\.svg(?:[?#][^\"'<>\s]*)?(?=[\"'])"
+)
 # Quicksand Medium (SIL OFL, see fonts/OFL.txt), subset to the glyphs of NAME and
 # embedded so the name looks the same everywhere; re-subset it if NAME changes.
 NAME_FONT = Path(__file__).resolve().parent / "fonts" / "name-rounded.woff2"
@@ -114,9 +122,34 @@ def render(env: np.ndarray, theme: Theme) -> str:
     return "".join(parts)
 
 
+def update_readme_links(paths: list[Path]) -> None:
+    versions = {path.name: hashlib.sha256(path.read_bytes()).hexdigest()[:16] for path in paths}
+    original = README_PATH.read_text(encoding="utf-8")
+    seen: set[str] = set()
+
+    def version_link(match: re.Match[str]) -> str:
+        parts = urlsplit(html.unescape(match.group()))
+        name = Path(parts.path).name
+        if name not in versions:
+            raise RuntimeError(f"No rendered waveform found for {name}")
+        seen.add(name)
+        query = [(key, value) for key, value in parse_qsl(parts.query, keep_blank_values=True) if key != "v"]
+        query.append(("v", versions[name]))
+        return esc(urlunsplit(("", "", parts.path, urlencode(query), parts.fragment)))
+
+    updated = HEADER_LINK_RE.sub(version_link, original)
+    missing = set(versions) - seen
+    if missing:
+        raise RuntimeError(f"{README_PATH} is missing waveform links: {', '.join(sorted(missing))}")
+    if updated != original:
+        README_PATH.write_text(updated, encoding="utf-8")
+
+
 def render_all() -> list[Path]:
     env = load_envelope()
-    return write_pair(OUT_STEM, lambda t: render(env, t))
+    paths = write_pair(OUT_STEM, lambda t: render(env, t))
+    update_readme_links(paths)
+    return paths
 
 
 if __name__ == "__main__":
