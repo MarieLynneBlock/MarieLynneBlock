@@ -16,6 +16,7 @@
 
 <p align="center">
   <sub><strong>Professional &amp; creative code</strong></sub><br>
+  <br>
   <!-- Keep tags adjacent so link whitespace does not appear underlined. -->
   <a href="https://themunchkinalgorithm.world"><picture><source media="(prefers-color-scheme: dark)"
     srcset="./assets/social/website-v2-dark.svg"><source media="(prefers-color-scheme: light)"
@@ -37,6 +38,7 @@
 
 <p align="center">
   <sub><strong>Art &amp; media</strong></sub><br>
+  <br>
   <a href="https://www.youtube.com/channel/UCSQbAon579PYiTlXAv6avcA"><picture><source media="(prefers-color-scheme: dark)"
     srcset="./assets/social/youtube-dark.svg"><source media="(prefers-color-scheme: light)"
     srcset="./assets/social/youtube-light.svg"><img src="./assets/social/youtube-dark.svg"
