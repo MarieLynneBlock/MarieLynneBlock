@@ -37,6 +37,7 @@ BAR_W = 5.0
 NAME = "Marie-Lynne Block"
 TAGLINES = [
     "AI Expert · Technology Coach",
+    "Music Technologist",
     "Creative Coder · Mathemagician · Binary Bard",
     "Sound Designer · Producer · Mastering Engineer",
     "Humanising the AI era, one commit at a time",
