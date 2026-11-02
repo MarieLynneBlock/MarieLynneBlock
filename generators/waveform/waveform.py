@@ -6,6 +6,7 @@ this module turns it into a breathing bar-waveform with name and taglines.
 
 from __future__ import annotations
 
+import base64
 import sys
 import wave
 from pathlib import Path
@@ -18,6 +19,9 @@ from nord import ASSETS, AURORA, Theme, esc, svg_open, text, write_pair  # noqa:
 
 WAV_PATH = ASSETS / "sequencer" / "sequence.wav"
 OUT_STEM = ASSETS / "header" / "waveform"
+# Comfortaa Medium (SIL OFL, see fonts/OFL.txt), subset to the glyphs of NAME and
+# embedded so the name looks the same everywhere; re-subset it if NAME changes.
+NAME_FONT = Path(__file__).resolve().parent / "fonts" / "name-rounded.woff2"
 
 WIDTH, HEIGHT = 1200, 300
 BARS = 160
@@ -27,7 +31,6 @@ TAGLINES = [
     "AI expert & data scientist",
     "creative coder · sound designer",
     "humanising the AI era, one commit at a time",
-    "this header is drawn from the sequencer below ↓",
 ]
 
 
@@ -54,6 +57,11 @@ def render(env: np.ndarray, theme: Theme) -> str:
     span = WIDTH - 80
     step = span / BARS
     parts = [svg_open(WIDTH, HEIGHT, theme, f"{NAME} — audio-reactive header rendered from the visitor sequencer")]
+    font_data = base64.b64encode(NAME_FONT.read_bytes()).decode("ascii")
+    parts.append(
+        "<defs><style>@font-face{font-family:'Name Rounded';font-weight:500;"
+        f"src:url(data:font/woff2;base64,{font_data}) format('woff2');}}</style></defs>"
+    )
     parts.append(
         "<defs>"
         '<linearGradient id="aurora" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="{0}" y2="0">'.format(WIDTH)
@@ -84,8 +92,9 @@ def render(env: np.ndarray, theme: Theme) -> str:
     # Soft backing so the name and taglines stay legible over the bars.
     parts.append(f'<rect x="{WIDTH / 2 - 330}" y="{cy - 64}" width="660" height="134" rx="40" fill="{theme.bg}" opacity="0.72" filter="url(#blur)"/>')
     # Name + rotating taglines
-    parts.append(text(WIDTH / 2, cy - 6, NAME, theme.text, 54, anchor="middle", weight="bold",
-                      extra='letter-spacing="2"'))
+    parts.append(text(WIDTH / 2, cy - 6, NAME, theme.text, 48, anchor="middle", weight="500",
+                      extra='letter-spacing="3"',
+                      font_family="'Name Rounded', ui-rounded, 'SF Pro Rounded', 'Avenir Next', sans-serif"))
     per = 4.0
     total = per * len(TAGLINES)
     for i, line in enumerate(TAGLINES):

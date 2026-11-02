@@ -53,9 +53,10 @@ def svg_open(width: int, height: int, theme: Theme, title: str, extra_attrs: str
 
 
 def text(x: float, y: float, content: str, fill: str, size: int = 12, anchor: str = "start",
-         weight: str = "normal", opacity: float = 1.0, extra: str = "") -> str:
+         weight: str = "normal", opacity: float = 1.0, extra: str = "",
+         font_family: str = FONT) -> str:
     return (
-        f'<text x="{x:.1f}" y="{y:.1f}" fill="{fill}" font-family="{FONT}" font-size="{size}" '
+        f'<text x="{x:.1f}" y="{y:.1f}" fill="{fill}" font-family="{font_family}" font-size="{size}" '
         f'text-anchor="{anchor}" font-weight="{weight}" opacity="{opacity}" {extra}>{esc(content)}</text>'
     )
 
