@@ -30,6 +30,8 @@ BAR_W = 5.0
 PEAK_R = BAR_W / 2
 PEAK_GAP = 4.0 + PEAK_R  # distance from bar end to dot centre
 PEAK_HOLD_UNTIL = 0.55  # fraction of the bar cycle the peak dot lingers at the top
+PEAK_OPACITY = 0.8  # dots fade in towards the peak and fade out as they fall
+FADE_SPLINES = "0.6 0 0.4 1;0.4 0 0.6 1;0 0 0.4 1"
 NAME = "Marie-Lynne Block"
 TAGLINES = [
     "AI Expert · Technology Coach",
@@ -93,7 +95,7 @@ def render(env: np.ndarray, theme: Theme) -> str:
             "</rect>"
         )
         # Peak-hold dots, like a stereo meter: they ride the bar up to its peak,
-        # linger there, then drop with gravity and land back on the bar top.
+        # linger there, then drop with gravity and fade out before landing.
         dot_x = x + BAR_W / 2
         hold = f"0;{1 / 3:.4f};{PEAK_HOLD_UNTIL:.4f};1"
         splines = "0.4 0 0.6 1;0 0 1 1;0.5 0 1 1"
@@ -101,8 +103,9 @@ def render(env: np.ndarray, theme: Theme) -> str:
             rest = cy + sign * (h / 2 + PEAK_GAP)
             peak = cy + sign * (hi / 2 + PEAK_GAP)
             parts.append(
-                f'<circle cx="{dot_x:.1f}" cy="{rest:.1f}" r="{PEAK_R}">'
+                f'<circle cx="{dot_x:.1f}" cy="{rest:.1f}" r="{PEAK_R}" opacity="0">'
                 f'<animate attributeName="cy" values="{rest:.1f};{peak:.1f};{peak:.1f};{rest:.1f}" keyTimes="{hold}" dur="{dur:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite" calcMode="spline" keySplines="{splines}"/>'
+                f'<animate attributeName="opacity" values="0;{PEAK_OPACITY};{PEAK_OPACITY * 0.6:.2f};0" keyTimes="{hold}" dur="{dur:.2f}s" begin="{begin:.2f}s" repeatCount="indefinite" calcMode="spline" keySplines="{FADE_SPLINES}"/>'
                 "</circle>"
             )
     parts.append("</g>")
