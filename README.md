@@ -100,9 +100,9 @@ It is generated entirely from history, with no visitor controls.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=5f8fa64735641a99">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-light.svg?v=9bb867d739b13829">
-    <img alt="A commit tree with one limb per active season-year, oldest at the roots and newest in the crown. Seasonal foliage shows winter, spring, summer and autumn; empty years are knots." src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=5f8fa64735641a99" width="900">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=a503bf39b2e9bc21">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-light.svg?v=7c306e198b59b887">
+    <img alt="A commit tree with one limb per active season-year, oldest at the roots and newest in the crown. Seasonal foliage shows winter, spring, summer and autumn; empty years are knots." src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=a503bf39b2e9bc21" width="900">
   </picture>
 </p>
 
