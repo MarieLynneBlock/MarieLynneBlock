@@ -79,7 +79,7 @@
 
 ## Hej! I'm Marie-Lynne <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28px" alt="👋">
 
-I'm an AI expert and technology coach with a long background in data science; working with AI since before
+I'm an AI expert and technology coach with a long background in data science and software engineering; working with AI since long before
 the hype. I love building intelligent systems, creating playful digital experiences, and designing sound with
 a story. Through hands-on workshops, I help curious humans become makers.
 
@@ -92,11 +92,11 @@ Wander through the commit tree, add a note to the sequencer, and make yourself a
 
 ## 🌿 The garden
 
-A single **tree of commits**, grown from my **public commit contributions across GitHub**, including repositories I contribute to.
+A **tree of commits**, grown from my **public commit contributions across GitHub**, including repositories I contribute to.
 Each active season-year grows a limb, with the oldest at the roots and the newest in the crown.
 Its foliage follows the seasons: winter frost, spring greens and blossoms, summer greens, and autumn colours.
-Empty seasons grow no foliage, and years without public commits leave knots. The tree refreshes nightly rather than inventing growth.
-It is generated entirely from history, with no visitor controls.
+Empty seasons grow no foliage, and years without public commits leave knots. The tree refreshes nightly.
+It is generated entirely from history.
 
 <p align="center">
   <picture>
