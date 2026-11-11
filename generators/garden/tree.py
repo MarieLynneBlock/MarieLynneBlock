@@ -44,24 +44,24 @@ def _ribbon(points: list[Point], widths: list[float], fill: str) -> str:
     return f'<path d="M{"L".join(left)}L{"L".join(reversed(right))}Z" fill="{fill}"/>'
 
 
+# Per season: share of tips in leaf, leaves per tip, leaf size.
+FOLIAGE = {
+    "winter": (.55, 1, .8),
+    "spring": (1.0, 2, 1.0),
+    "summer": (1.0, 3, 1.05),
+    "autumn": (.85, 2, 1.1),
+}
+
+
 def _season_growth(
     year: int, season: str, count: int, maximum: int, season_index: int,
-    origin: Point, heading: float, palette: Palette, bounds: tuple[float, float, float, float],
-    detail: float,
+    origin: Point, heading: float, girth: float, palette: Palette, wood: str,
+    bounds: tuple[float, float, float, float], detail: float,
 ) -> str:
     ratio = _ratio(count, maximum)
-    species_index = (year * 4 + season_index * 3) % len(lsystem.SPECIES)
-    _, axiom, rules, turn_angle, max_iterations = lsystem.SPECIES[species_index]
-    budget = (120 + 650 * ratio) * detail
-    iterations = 1 if detail < .25 else 2
-    while (
-        iterations < max_iterations
-        and lsystem.expand(axiom, rules, iterations + 1).count("F") <= budget
-    ):
-        iterations += 1
-
+    iterations = max(1, round((3 + 3.6 * ratio) * detail**.4))
     rng = random.Random(year * 4 + season_index)
-    segments, leaves = lsystem.turtle(lsystem.expand(axiom, rules, iterations), turn_angle, rng)
+    segments, leaves = lsystem.turtle(lsystem.expand(iterations), heading, rng)
     if not segments or not leaves:
         raise RuntimeError(f"No drawable seasonal growth for {season} {year}")
     coordinates = [
@@ -70,61 +70,63 @@ def _season_growth(
         for x, y in ((segment[0], segment[1]), (segment[2], segment[3]))
     ]
     reach = max(math.hypot(x, y) for x, y in coordinates)
-    if not reach:
-        raise RuntimeError(f"Zero-length seasonal growth for {season} {year}")
-    scale = (30 + 46 * ratio) / reach
-    rotation = math.radians(heading + 90)
-    cosine, sine = math.cos(rotation), math.sin(rotation)
-    rotated = [(x * cosine - y * sine, x * sine + y * cosine) for x, y in coordinates]
+    scale = (34 + 62 * ratio) / reach
     left, top, right, bottom = bounds
     if not (left < origin[0] < right and top < origin[1] < bottom):
         raise RuntimeError(f"Seasonal growth origin is outside the canvas for {season} {year}")
-    min_x, max_x = min(x for x, _ in rotated), max(x for x, _ in rotated)
-    min_y, max_y = min(y for _, y in rotated), max(y for _, y in rotated)
+    min_x, max_x = min(x for x, _ in coordinates), max(x for x, _ in coordinates)
+    min_y, max_y = min(y for _, y in coordinates), max(y for _, y in coordinates)
     # Keep unusually tall or wide growth inside the artwork, away from its header and legend.
+    margin = 4
     for distance, extent in (
-        (origin[0] - left, -min_x), (right - origin[0], max_x),
-        (origin[1] - top, -min_y), (bottom - origin[1], max_y),
+        (origin[0] - left - margin, -min_x), (right - origin[0] - margin, max_x),
+        (origin[1] - top - margin, -min_y), (bottom - origin[1] - margin, max_y),
     ):
         if extent > 0:
-            scale = min(scale, distance / extent)
+            scale = min(scale, max(distance, 0) / extent)
 
     def transform(x: float, y: float) -> Point:
-        return (
-            round(origin[0] + scale * (x * cosine - y * sine), 1),
-            round(origin[1] + scale * (x * sine + y * cosine), 1),
-        )
+        return (round(origin[0] + scale * x, 1), round(origin[1] + scale * y, 1))
 
-    branches, colours = palette
-    max_depth = max(segment[4] for segment in segments) or 1
     paths: dict[int, list[str]] = {}
     ends: dict[int, Point] = {}
-    for x1, y1, x2, y2, depth in segments:
+    for x1, y1, x2, y2, forks in segments:
         start, end = transform(x1, y1), transform(x2, y2)
-        move = "" if ends.get(depth) == start else f"M{start[0]} {start[1]}"
-        paths.setdefault(depth, []).append(f"{move}L{end[0]} {end[1]}")
-        ends[depth] = end
+        move = "" if ends.get(forks) == start else f"M{start[0]} {start[1]}"
+        paths.setdefault(forks, []).append(f"{move}L{end[0]} {end[1]}")
+        ends[forks] = end
 
     title = f"{season} {year}: {count} public commit contributions"
     parts = [f'<g class="season" data-season="{season}" data-commits="{count}"><title>{esc(title)}</title>']
-    for depth, commands in sorted(paths.items()):
-        colour = branches[min(depth * len(branches) // (max_depth + 1), len(branches) - 1)]
-        stroke = max(.5, (1.4 + 2.6 * ratio) * (1 - depth / (max_depth + 1)))
+    thickness = min(girth * .85, 1.3 + 2.4 * ratio)
+    for forks, commands in sorted(paths.items()):
+        stroke = max(.45, thickness * lsystem.WIDTH_DECAY**forks)
         parts.append(
-            f'<path d="{"".join(commands)}" fill="none" stroke="{colour}" '
-            f'stroke-width="{stroke:.1f}" stroke-linecap="round" opacity=".92"/>'
+            f'<path d="{"".join(commands)}" fill="none" stroke="{wood}" '
+            f'stroke-width="{stroke:.2f}" stroke-linecap="round" stroke-linejoin="round"/>'
         )
 
-    tips = rng.sample(leaves, min(len(leaves), max(1, int((12 + 72 * ratio) * detail))))
+    share, cluster, size = FOLIAGE[season]
+    if detail < .5:
+        cluster = 1
+    tips = rng.sample(leaves, max(1, round(len(leaves) * share)))
+    colours = palette[1]
+    spread = 1.6 + 2.2 * ratio
     dots: dict[tuple[str, float], list[str]] = {}
     for x, y, _ in tips:
         tx, ty = transform(x, y)
-        key = (rng.choice(colours), rng.choice((1.0, 1.25, 1.55)))
-        dots.setdefault(key, []).append(f"M{tx:.1f} {ty:.1f}h0")
+        for leaf in range(cluster):
+            if leaf:
+                lx = min(max(tx + rng.gauss(0, spread), left), right)
+                ly = min(max(ty + rng.gauss(0, spread), top), bottom)
+            else:
+                lx, ly = tx, ty
+            key = (rng.choice(colours), rng.choice((.8, 1.0, 1.3)))
+            dots.setdefault(key, []).append(f"M{lx:.1f} {ly:.1f}h0")
     parts.append('<g class="leaves" filter="url(#glow)">')
-    for (colour, size), points in sorted(dots.items()):
+    for (colour, weight), points in sorted(dots.items()):
         parts.append(
-            f'<path d="{"".join(points)}" stroke="{colour}" stroke-width="{(1.7 + 1.6 * ratio) * size:.1f}" '
+            f'<path d="{"".join(points)}" stroke="{colour}" stroke-width="{(1.9 + 1.3 * ratio) * size * weight:.1f}" '
             f'stroke-linecap="round" opacity=".9"/>'
         )
     parts.append("</g></g>")
@@ -239,41 +241,75 @@ def _render(history: dict, theme: Theme, seasons: tuple[str, ...], summary: str,
         f'<rect x="0" y="{base + 14}" width="{width}" height="2" fill="url(#aurora)" opacity=".7"/>'
     )
 
-    trunk = [
-        _bezier(
-            (centre, base + 2), (centre - 16, base - 105),
-            (centre + 18, top + 70), (centre + 4, top - 4), index / 200,
-        )
-        for index in range(201)
-    ]
-
-    def trunk_point(y: float) -> Point:
-        return min(trunk, key=lambda point: abs(point[1] - y))
-
     spacing = (base - 62 - top) / max(len(years) - 1, 1)
+    anchors = [top if len(years) == 1 else base - 62 - index * spacing for index in range(len(years))]
+
+    # Each limb grows on the lighter side of the tree, and the trunk leans away from it.
+    sides: dict[int, int] = {}
+    weight = 0.0
+    for index, total in enumerate(totals):
+        if total:
+            side = -1 if weight >= 0 else 1
+            if sides and abs(weight) < .35:
+                side = -list(sides.values())[-1]
+            sides[index] = side
+            weight += side * _ratio(total, maximum_year)
+    knots = [(centre, base + 2.0), (centre - 3.0, base - 30.0)]
+    drift, slope = -3.0, 0.0
+    for index, y in enumerate(anchors):
+        drift += slope * (knots[-1][1] - y)
+        drift = max(-26.0, min(26.0, drift))
+        knots.append((centre + drift, y))
+        if index in sides:
+            slope = slope * .4 - sides[index] * (.08 + .2 * _ratio(totals[index], maximum_year)) + rng.uniform(-.03, .03)
+
+    def spline(y: float) -> float:
+        for (x1, y1), (x2, y2) in zip(knots, knots[1:]):
+            if y >= y2:
+                return x1 + (x2 - x1) * (y1 - y) / (y1 - y2)
+        return knots[-1][0]
+
+    crown = knots[-1][1]
+    trunk = [(spline(y), y) for y in (base + 2 + (crown - base - 2) * step / 200 for step in range(201))]
+    for _ in range(3):  # round the corners off the leaning trunk
+        trunk = [
+            (sum(x for x, _ in trunk[max(i - 6, 0):i + 7]) / len(trunk[max(i - 6, 0):i + 7]), y)
+            for i, (_, y) in enumerate(trunk)
+        ]
+
+    def trunk_x(y: float) -> float:
+        return min(trunk, key=lambda point: abs(point[1] - y))[0]
+
     rows = []
     limbs = []
-    for index, (year, total) in enumerate(zip(years, totals)):
-        y = top if len(years) == 1 else base - 62 - index * spacing
-        x = trunk_point(y)[0]
+    for index, (year, total, y) in enumerate(zip(years, totals, anchors)):
+        x = trunk_x(y)
         rows.append((year, total, x, y))
         if total:
             limbs.append((index, year, total, x, y))
 
     branches = []
-    for index, year, total, x, y in limbs:
+    for order, (index, year, total, x, y) in enumerate(limbs):
         ratio = _ratio(total, maximum_year)
-        side = -1 if index % 2 == 0 else 1
+        side = sides[index]
         height_fraction = .5 if len(years) == 1 else index / (len(years) - 1)
-        lean = 70 - 12 * height_fraction + rng.uniform(-5, 5)
-        length = (68 + 180 * ratio) * (1 - .34 * height_fraction)
-        angle = -90 + side * lean
-        end = (x + math.cos(math.radians(angle)) * length, y + math.sin(math.radians(angle)) * length)
-        c1 = (x + side * length * .45, y - length * .05)
-        c2 = (end[0] - side * length * .12, end[1] + length * .18)
+        leader = order == len(limbs) - 1 and len(limbs) > 1
+        lean = (12 if leader else 60 - 30 * height_fraction) + rng.uniform(-5, 5)
+        length = (56 + 122 * ratio) * (1 - .25 * height_fraction)
+
+        def direction(degrees: float) -> Point:
+            return (side * math.sin(math.radians(degrees)), -math.cos(math.radians(degrees)))
+
+        # Limbs leave the trunk reaching outwards, then turn up towards the light.
+        out, aim, up = direction(lean + 16), direction(lean), direction(max(lean - 26, 0))
+        # Leave room inside the artwork for the foliage at the limb's tip.
+        length = min(length, (y - 84 - 34) / -aim[1], (width / 2 - 54) / abs(aim[0] or 1))
+        end = (x + aim[0] * length, y + aim[1] * length)
+        c1 = (x + out[0] * length * .4, y + out[1] * length * .4)
+        c2 = (end[0] - up[0] * length * .32, end[1] - up[1] * length * .32)
         curve = [_bezier((x, y), c1, c2, end, step / 16) for step in range(17)]
-        thickness = 2.4 + 4.6 * ratio
-        widths = [thickness + (.8 - thickness) * step / 16 for step in range(17)]
+        thickness = 2.6 + 5 * ratio
+        widths = [.9 + (thickness - .9) * (1 - step / 16) ** 1.3 for step in range(17)]
         motion_rng = random.Random(year["year"] * 97)
         duration = 7 + motion_rng.uniform(0, 3)
         delay = motion_rng.uniform(0, duration)
@@ -288,24 +324,29 @@ def _render(history: dict, theme: Theme, seasons: tuple[str, ...], summary: str,
             (season, year["seasons"][season]["commits"])
             for season in seasons if year["seasons"][season]["commits"]
         ]
+        # The year's last season carries the limb on; earlier ones fork off on alternating sides.
         for slot, (season, count) in enumerate(active):
-            fraction = .5 if len(active) == 1 else slot / (len(active) - 1)
-            t = 1.0 if len(active) == 1 else .25 + .7 * fraction
-            t = min(1.0, max(.2, t + rng.uniform(-.025, .025)))
-            position = round(t * 16)
+            last = slot == len(active) - 1
+            t = 1.0 if last else .34 + .5 * slot / max(len(active) - 2, 1) + rng.uniform(-.03, .03)
+            if len(active) == 2 and not last:
+                t = .55 + rng.uniform(-.03, .03)
+            position = round(min(t, 1.0) * 16)
             origin = curve[position]
             a, b = curve[max(position - 1, 0)], curve[min(position + 1, 16)]
             heading = math.degrees(math.atan2(b[1] - a[1], b[0] - a[0]))
-            heading -= side * (50 - 55 * fraction + rng.uniform(-4, 4))
+            if not last:
+                fork = -side if slot % 2 == 0 else side
+                heading += fork * (42 + rng.uniform(-6, 6))
             branch.append(_season_growth(
                 year["year"], season, count, maximum_season, seasons.index(season),
-                origin, heading, palettes[season], (20, 84, width - 20, base - 12), detail,
+                origin, heading, widths[position], palettes[season], limb_colour,
+                (20, 84, width - 20, base - 12), detail,
             ))
         branch.append("</g>")
         branches.append("".join(branch))
 
     # The trunk's girth carries the combined width of all limbs above it.
-    limb_widths = [(y, 2.4 + 4.6 * _ratio(total, maximum_year)) for _, _, total, _, y in limbs]
+    limb_widths = [(y, 2.6 + 5 * _ratio(total, maximum_year)) for _, _, total, _, y in limbs]
     widths = [
         math.sqrt(2.4**2 + sum(w**2 for limb_y, w in limb_widths if limb_y < y)) * 1.05
         + 22 * math.exp(-(base - y) / 16)
@@ -318,7 +359,11 @@ def _render(history: dict, theme: Theme, seasons: tuple[str, ...], summary: str,
         line = [_bezier(start, bend, bend, end, step / 14) for step in range(15)]
         parts.append(_ribbon(line, [root_width * (1 - step / 15) + .6 for step in range(15)], "url(#bark)"))
     parts.extend(branches)
-    parts.append(f'<g class="trunk">{_ribbon(trunk, widths, "url(#bark)")}</g>')
+    tip_x, tip_y = trunk[-1]
+    parts.append(
+        f'<g class="trunk">{_ribbon(trunk, widths, "url(#bark)")}'
+        f'<circle cx="{tip_x:.1f}" cy="{tip_y:.1f}" r="{widths[-1] / 2:.1f}" fill="{bark_light}"/></g>'
+    )
 
     for offset, colour, opacity in ((-.30, bark_dark, .55), (-.05, bark_dark, .35), (.18, bark_dark, .45), (-.38, NORD8, .18)):
         fibre_rng = random.Random(int(offset * 100))

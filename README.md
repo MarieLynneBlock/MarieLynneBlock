@@ -100,9 +100,9 @@ It is generated entirely from history.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=a503bf39b2e9bc21">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-light.svg?v=7c306e198b59b887">
-    <img alt="A commit tree with one limb per active season-year, oldest at the roots and newest in the crown. Seasonal foliage shows winter, spring, summer and autumn; empty years are knots." src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=a503bf39b2e9bc21" width="900">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=4232e48a5cf163fa">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-light.svg?v=104e510834732759">
+    <img alt="A commit tree with one limb per active season-year, oldest at the roots and newest in the crown. Seasonal foliage shows winter, spring, summer and autumn; empty years are knots." src="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/garden/garden-dark.svg?v=4232e48a5cf163fa" width="900">
   </picture>
 </p>
 
@@ -143,6 +143,8 @@ It is generated entirely from history.
   Rebuild offline: `python generators/playground.py --render-only`.
   Sources: [`forest.py`](generators/garden/forest.py), [`tree.py`](generators/garden/tree.py),
   [`lsystem.py`](generators/garden/lsystem.py).
+  The boughs grow from a small L-system, after Alex Bespoyasov's
+  [Generating Trees on Canvas](https://bespoyasov.me/blog/generating-trees-on-canvas-using-typescript-and-oop/).
 </details>
 
 ---

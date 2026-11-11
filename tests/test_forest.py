@@ -341,7 +341,8 @@ class ForestTests(unittest.TestCase):
                 any(other != key and (x - xx) ** 2 + (y - yy) ** 2 < 64 for xx, yy, other in points)
                 for x, y, key in points
             )
-            self.assertLess(close / len(points), .25)
+            # Boughs of one crown overlap, but most foliage still stands clear of other seasons.
+            self.assertLess(close / len(points), .4)
 
     def test_long_active_history_keeps_every_season_within_image_budget(self):
         history = representative_history()

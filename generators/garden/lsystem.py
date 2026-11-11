@@ -33,54 +33,59 @@ LIGHT_SEASON_PALETTES = {
     "winter": (["#426E91", "#53677F", "#527965"], ["#426E91", "#53677F", "#527965"]),
 }
 
-# Curated, well-behaved species. Each is (name, axiom, rules, angle, start_iterations).
-SPECIES = [
-    ("Fractal Plant", "X", {"X": "F+[[X]-X]-F[-FX]+X", "F": "FF"}, 25.0, 4),
-    ("Stochastic Bush", "F", {"F": "FF-[-F+F+F]+[+F-F-F]"}, 22.5, 3),
-    ("Fern", "X", {"X": "F[+X][-X]FX", "F": "FF"}, 25.7, 5),
-    ("Twig", "F", {"F": "F[+F]F[-F]F"}, 25.7, 4),
-    ("Seaweed", "F", {"F": "F[+F]F[-F][F]"}, 20.0, 4),
-    ("Spiral Weed", "X", {"X": "F-[[X]+X]+F[+FX]-X", "F": "FF"}, 22.5, 4),
-    ("Aurora Tree", "F", {"F": "F[-F][+F]FF"}, 28.0, 4),
-    ("Sage", "X", {"X": "F[+X]F[-X]+X", "F": "FF"}, 20.0, 5),
-]
+# One species for the whole tree: a binary L-system whose older internodes keep
+# lengthening while every tip forks, after Alex Bespoyasov's canvas trees
+# (https://bespoyasov.me/blog/generating-trees-on-canvas-using-typescript-and-oop/).
+# "1" and "2" are wood, "0" is a leaf, "[" and "]" open and close a fork.
+AXIOM = "220"
+RULES = {"1": "21", "0": "1[20]20"}
+JOINT_ANGLE = 27.0       # each fork spreads this far to either side
+ANGLE_DEVIATION = 11.0   # random wobble added to every fork
+GROW_CHANCE = .6         # share of wood symbols that actually grow
+WIDTH_DECAY = .75        # every fork thins the wood
+TROPISM = .05            # how strongly each segment bends back towards the light
 
 # ----------------------------------------------------------------------------- rendering
 
-def expand(axiom: str, rules: dict, iterations: int) -> str:
-    s = axiom
+def expand(iterations: int) -> str:
+    program = AXIOM
     for _ in range(iterations):
-        s = "".join(rules.get(c, c) for c in s)
-    return s
+        program = "".join(RULES.get(symbol, symbol) for symbol in program)
+    return program
 
 
-def turtle(program: str, angle_deg: float, rng: random.Random):
-    """Return (segments, leaves) in unit space. Segment: (x1,y1,x2,y2,depth)."""
-    x, y, heading = 0.0, 0.0, -90.0
+def turtle(program: str, heading: float, rng: random.Random):
+    """Grow a program from the origin, in unit steps, starting along heading (degrees).
+
+    Returns (segments, leaves): segments are (x1, y1, x2, y2, forks) and leaves
+    are (x, y, heading), where forks counts the forks between origin and segment.
+    """
+    x, y = 0.0, 0.0
     stack = []
-    depth = 0
+    forks = 0
     segments, leaves = [], []
-    for c in program:
-        if c == "F":
-            jitter = 1.0 + rng.uniform(-0.08, 0.08)
-            nx = x + math.cos(math.radians(heading)) * jitter
-            ny = y + math.sin(math.radians(heading)) * jitter
-            segments.append((x, y, nx, ny, depth))
+    for symbol in program:
+        if symbol in "12":
+            # Skipping wood at random is what gives every bough its own proportions.
+            if segments and rng.random() > GROW_CHANCE:
+                continue
+            # Bend towards straight up (-90 degrees), the short way round.
+            heading += ((-90 - heading + 180) % 360 - 180) * TROPISM
+            nx = x + math.cos(math.radians(heading))
+            ny = y + math.sin(math.radians(heading))
+            segments.append((x, y, nx, ny, forks))
             x, y = nx, ny
             if len(segments) > MAX_SEGMENTS:
                 raise OverflowError
-        elif c == "+":
-            heading += angle_deg * (1.0 + rng.uniform(-0.15, 0.15))
-        elif c == "-":
-            heading -= angle_deg * (1.0 + rng.uniform(-0.15, 0.15))
-        elif c == "[":
-            stack.append((x, y, heading))
-            depth += 1
-        elif c == "]":
-            leaves.append((x, y, depth))
-            if stack:
-                x, y, heading = stack.pop()
-            depth = max(0, depth - 1)
+        elif symbol == "0":
+            leaves.append((x, y, heading))
+        elif symbol == "[":
+            forks += 1
+            heading -= JOINT_ANGLE + rng.uniform(-ANGLE_DEVIATION, ANGLE_DEVIATION)
+            stack.append((x, y, heading, forks))
+        elif symbol == "]":
+            x, y, heading, forks = stack.pop()
+            heading += 2 * JOINT_ANGLE + rng.uniform(-ANGLE_DEVIATION, ANGLE_DEVIATION)
     return segments, leaves
 
 
