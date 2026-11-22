@@ -37,6 +37,8 @@ OWNER = "MarieLynneBlock"
 RATE_LIMIT = 10           # actions per user per 24 h
 RATE_WINDOW = 24 * 3600
 RATE_FILE = HERE / "ratelimit.json"
+MAX_PLACEMENTS = 8        # notes one visitor may place per issue (half the pattern)
+LIVE_URL = f"https://{OWNER.lower()}.github.io/{OWNER}/"
 
 TITLE_RE = re.compile(r"^\s*sequencer\s*:\s*(.+?)\s*$", re.IGNORECASE)
 
@@ -50,7 +52,7 @@ def parse_title(title: str) -> tuple[str, str]:
     if not m:
         raise ValueError(
             "I could not read that title. Use a sequencer button in the README — "
-            "titles look like `sequencer: G4`."
+            "titles look like `sequencer: G4` or `sequencer: 7=G4`."
         )
     return "sequencer", m.group(1)
 
@@ -98,6 +100,9 @@ def refresh_readme(seq_state: dict) -> None:
     if s_last.get("actor"):
         if s_last.get("verb") == "clear":
             s_credit += f"<br><sub>latest: @{s_last['actor']} cleared the sequence — a blank canvas!</sub>"
+        elif s_last.get("count", 1) > 1:
+            where = ", ".join(str(i + 1) for i in s_last.get("steps", []))
+            s_credit += f"<br><sub>latest: @{s_last['actor']} placed {s_last['count']} notes on steps {where}</sub>"
         else:
             s_credit += f"<br><sub>latest: @{s_last['actor']} placed {s_last['verb']} on step {s_last.get('step', 0) + 1}</sub>"
     update_readme_marker("SEQUENCER:CREDITS", s_credit)
@@ -119,8 +124,11 @@ def run(title: str, actor: str, number: int | None, now: float) -> str:
     if verb_l == "clear":
         if actor != OWNER:
             raise Refusal("Only the owner can clear the sequence — but you can overwrite steps one note at a time. 🎹")
-    elif verb_l != sequencer.REST and sequencer.normalise_pitch(verb) is None:
-        raise ValueError(f"`{verb}` is not in the scale. Pick one of {', '.join(sequencer.PITCHES)} or `rest`.")
+    elif len(sequencer.parse_request(verb)) > MAX_PLACEMENTS and actor != OWNER:
+        raise Refusal(
+            f"That is more than {MAX_PLACEMENTS} notes in one go — leave some steps for the next composer. "
+            "Trim the phrase and try again. 🎹"
+        )
     check_rate_limit(actor, now)
     message = sequencer.apply_verb(seq_state, verb if verb_l != "clear" else "clear", actor)
     render_everything(seq_state)
@@ -128,7 +136,8 @@ def run(title: str, actor: str, number: int | None, now: float) -> str:
     return (
         f"🎛️ Thank you, @{actor}! You {message}.\n\n"
         f"![sequencer](https://raw.githubusercontent.com/{OWNER}/{OWNER}/master/assets/sequencer/sequencer-dark.svg?v={stamp})\n\n"
-        f"▶ [Listen to the new loop](https://github.com/{OWNER}/{OWNER}/blob/master/assets/sequencer/sequence.wav) · "
+        f"▶ [Play the new loop live]({LIVE_URL}) · "
+        f"⬇ [WAV](https://github.com/{OWNER}/{OWNER}/raw/master/assets/sequencer/sequence.wav) · "
         f"⬇ [MIDI](https://github.com/{OWNER}/{OWNER}/raw/master/assets/sequencer/sequence.mid)\n\n"
         "_The header waveform at the top of the README is rendered from this very audio, so you just changed that too. "
         "Closing this issue — it did its job._"

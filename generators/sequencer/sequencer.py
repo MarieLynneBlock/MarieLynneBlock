@@ -1,13 +1,20 @@
 """Visitor step-sequencer.
 
 16 steps, C-minor pentatonic across two octaves, one note per step, 120 BPM.
-Visitors append a note (or a rest) via the playground workflow; this module
+Visitors place notes (or rests) via the playground workflow; this module
 renders an animated piano-roll SVG plus a WAV and a MIDI file.
+
+A request is one or more tokens separated by spaces or commas:
+    G4            next free step, then the cursor advances
+    7=G4          step 7, the cursor stays where it is
+    C4 Eb4 rest   a phrase, written from the cursor onwards
+    3=C4 9=rest   several chosen steps at once (what the live page submits)
 """
 
 from __future__ import annotations
 
 import json
+import re
 import struct
 import sys
 import wave
@@ -71,30 +78,57 @@ def default_state() -> dict:
     }
 
 
+def parse_request(raw: str) -> list[tuple[int | None, str | None]]:
+    """Turn a request into `(step index or None for the cursor, pitch or None for a rest)` pairs."""
+    tokens = [t for t in re.split(r"[\s,]+", re.sub(r"\s*=\s*", "=", raw.strip())) if t]
+    if not tokens:
+        raise ValueError("That request is empty. Titles look like `sequencer: G4` or `sequencer: 7=G4`.")
+    placements: list[tuple[int | None, str | None]] = []
+    for token in tokens:
+        position, _, name = token.rpartition("=")
+        step = None
+        if position:
+            if not position.isdigit() or not 1 <= int(position) <= STEPS:
+                raise ValueError(f"`{position}` is not a step. Steps run from 1 to {STEPS}, as in `7=G4`.")
+            step = int(position) - 1
+        if name.lower() == REST:
+            pitch = None
+        else:
+            pitch = normalise_pitch(name)
+            if pitch is None:
+                raise ValueError(f"`{name}` is not in the scale. Pick one of {', '.join(PITCHES)} or `rest`.")
+        placements.append((step, pitch))
+    return placements
+
+
 def apply_verb(state: dict, verb: str, actor: str) -> str:
     verb = verb.strip()
-    if verb == "clear":
+    if verb.lower() == "clear":
         state["steps"] = [{"pitch": None, "author": None} for _ in range(STEPS)]
         state["cursor"] = 0
         state["last_action"] = {"verb": "clear", "actor": actor}
         return "cleared the sequence"
-    if verb == REST:
-        pitch = None
-    else:
-        pitch = normalise_pitch(verb)
-        if pitch is None:
-            raise ValueError(f"unknown pitch: {verb}")
-    i = state["cursor"] % STEPS
-    state["steps"][i] = {"pitch": pitch, "author": actor}
-    state["cursor"] = (i + 1) % STEPS
-    state["notes_added"] = state.get("notes_added", 0) + 1
+    placements = parse_request(verb)
+    state.setdefault("actions", {})
+    placed: list[tuple[int, str | None]] = []
+    for step, pitch in placements:
+        if step is None:
+            step = state["cursor"] % STEPS
+            state["cursor"] = (step + 1) % STEPS
+        state["steps"][step] = {"pitch": pitch, "author": actor}
+        state["actions"][pitch or REST] = state["actions"].get(pitch or REST, 0) + 1
+        placed.append((step, pitch))
+    state["notes_added"] = state.get("notes_added", 0) + len(placed)
     if actor:
         composers = [c for c in state.get("composers", []) if c != actor]
         state["composers"] = ([actor] + composers)[:8]
-    state.setdefault("actions", {})
-    state["actions"][pitch or REST] = state["actions"].get(pitch or REST, 0) + 1
-    state["last_action"] = {"verb": pitch or REST, "actor": actor, "step": i}
-    return f"placed {'a rest' if pitch is None else pitch} on step {i + 1}"
+    if len(placed) == 1:
+        step, pitch = placed[0]
+        state["last_action"] = {"verb": pitch or REST, "actor": actor, "step": step}
+        return f"placed {'a rest' if pitch is None else pitch} on step {step + 1}"
+    steps = sorted({step for step, _ in placed})
+    state["last_action"] = {"verb": "phrase", "actor": actor, "count": len(placed), "steps": steps}
+    return f"placed {len(placed)} notes on steps {', '.join(str(i + 1) for i in steps)}"
 
 
 def normalise_pitch(raw: str) -> str | None:
