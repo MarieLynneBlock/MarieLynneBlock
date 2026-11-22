@@ -155,6 +155,9 @@ Sixteen steps, **C minor pentatonic** over two octaves, 120 BPM. Pick a note and
 (then wraps around and overwrites). A workflow re-renders the piano roll, synthesises a **WAV** and a **MIDI** file,
 and redraws the header from the new audio.
 
+**[▶ Play it live](https://marielynneblock.github.io/MarieLynneBlock/)**: hear the loop in your browser, click notes onto
+any step, and send your changes back here.
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarieLynneBlock/MarieLynneBlock/master/assets/sequencer/sequencer-dark.svg">
@@ -178,7 +181,7 @@ and redraws the header from the new audio.
     <td align="center"><a href="https://github.com/MarieLynneBlock/MarieLynneBlock/issues/new?title=sequencer%3A%20F5&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20a%20workflow%20will%20add%20this%20note%20to%20the%20sequencer%2C%20re-render%20the%20piano%20roll%2C%20WAV%2C%20MIDI%20and%20header%2C%20then%20close%20this%20issue.%20%F0%9F%8E%9B%EF%B8%8F"><strong>♪ F5</strong></a></td>
     <td align="center"><a href="https://github.com/MarieLynneBlock/MarieLynneBlock/issues/new?title=sequencer%3A%20G5&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20a%20workflow%20will%20add%20this%20note%20to%20the%20sequencer%2C%20re-render%20the%20piano%20roll%2C%20WAV%2C%20MIDI%20and%20header%2C%20then%20close%20this%20issue.%20%F0%9F%8E%9B%EF%B8%8F"><strong>♪ G5</strong></a></td>
     <td align="center"><a href="https://github.com/MarieLynneBlock/MarieLynneBlock/issues/new?title=sequencer%3A%20Bb5&body=Just%20press%20%2A%2ASubmit%20new%20issue%2A%2A%20%E2%80%94%20a%20workflow%20will%20add%20this%20note%20to%20the%20sequencer%2C%20re-render%20the%20piano%20roll%2C%20WAV%2C%20MIDI%20and%20header%2C%20then%20close%20this%20issue.%20%F0%9F%8E%9B%EF%B8%8F"><strong>♪ B♭5</strong></a></td>
-    <td align="center"><a href="https://github.com/MarieLynneBlock/MarieLynneBlock/blob/master/assets/sequencer/sequence.wav"><strong>▶ listen</strong></a> · <a href="https://github.com/MarieLynneBlock/MarieLynneBlock/raw/master/assets/sequencer/sequence.mid"><strong>⬇ MIDI</strong></a></td>
+    <td align="center"><a href="https://marielynneblock.github.io/MarieLynneBlock/"><strong>▶ play live</strong></a> · <a href="https://github.com/MarieLynneBlock/MarieLynneBlock/raw/master/assets/sequencer/sequence.wav"><strong>⬇ WAV</strong></a> · <a href="https://github.com/MarieLynneBlock/MarieLynneBlock/raw/master/assets/sequencer/sequence.mid"><strong>⬇ MIDI</strong></a></td>
   </tr>
 </table>
 
@@ -196,6 +199,11 @@ and redraws the header from the new audio.
   it is the same trick behind the black keys on a piano and most crowd-sourced music toys. The audio is
   synthesised with NumPy (a sine with two harmonics, an exponential envelope and a dotted-eighth delay),
   written with the standard-library `wave` module, and the MIDI file is hand-rolled bytes. No audio libraries, no services.
+  The [live page](docs/index.html) rebuilds the same synth with the Web Audio API and reads the same `state.json`.
+
+  The buttons are just issue titles, so you can write your own: `sequencer: 7=G4` puts a note on step 7,
+  `sequencer: C4 Eb4 rest G4` writes a phrase from the next free step, and `sequencer: 3=C4 9=rest` changes
+  several steps at once (up to eight notes per issue).
   Source: [`generators/sequencer/sequencer.py`](generators/sequencer/sequencer.py) ·
   header: [`generators/waveform/waveform.py`](generators/waveform/waveform.py).
 </details>
@@ -335,6 +343,7 @@ I'm always up for learning something new, collaborating on odd projects or talki
   | social buttons | [`generators/social.py`](generators/social.py) | manually: `python generators/social.py` |
   | commit tree | [`generators/garden/forest.py`](generators/garden/forest.py) · [`tree.py`](generators/garden/tree.py) · [`lsystem.py`](generators/garden/lsystem.py) | nightly history sync |
   | step-sequencer (SVG, WAV, MIDI) | [`generators/sequencer/sequencer.py`](generators/sequencer/sequencer.py) | visitor issues |
+  | live sequencer page | [`docs/index.html`](docs/index.html) | GitHub Pages, reads the sequencer state |
   | toolbox | [`generators/toolbox/toolbox.py`](generators/toolbox/toolbox.py) | on push to its config |
   | metrics | [lowlighter/metrics](https://github.com/lowlighter/metrics) | daily |
   | glue | [`generators/playground.py`](generators/playground.py) · [`.github/workflows/`](.github/workflows) | — |

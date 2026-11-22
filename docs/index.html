@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visitor sequencer · Marie-Lynne Block</title>
+<meta name="description" content="Play the visitor step-sequencer from Marie-Lynne Block's GitHub profile, try your own notes, and send them to the README.">
+<style>
+  :root {
+    --bg: #2E3440; --panel: #3B4252; --grid: #434C5E; --text: #ECEFF4; --muted: #D8DEE9;
+    --accent: #88C0D0; --warn: #EBCB8B;
+    --aurora: linear-gradient(90deg, #A3BE8C, #88C0D0, #81A1C1, #B48EAD, #BF616A);
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #ECEFF4; --panel: #E5E9F0; --grid: #D8DEE9; --text: #2E3440; --muted: #4C566A;
+      --accent: #5E81AC; --warn: #D08770;
+      color-scheme: light;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  main { max-width: 940px; margin: 0 auto; padding: 28px 16px 48px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p { margin: 0; }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); font-size: 12px; }
+  header { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; align-items: end; }
+
+  .bar { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin: 22px 0 14px; }
+  button.ctl, a.ctl {
+    font: inherit; font-weight: bold; color: var(--text); background: var(--panel);
+    border: 1px solid var(--grid); border-radius: 8px; padding: 8px 14px; cursor: pointer; text-decoration: none;
+  }
+  button.ctl:hover:not(:disabled), a.ctl:hover { border-color: var(--accent); }
+  button.ctl:disabled { opacity: .45; cursor: default; }
+  button.ctl:focus-visible, a.ctl:focus-visible, .cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  #play { min-width: 104px; }
+  #submit { background: var(--accent); color: #2E3440; border-color: transparent; }
+  #submit[aria-disabled="true"] { opacity: .45; pointer-events: none; }
+
+  .roll {
+    display: grid; grid-template-columns: 34px repeat(16, minmax(0, 1fr)); gap: 4px;
+    padding: 14px 14px 10px 6px; border-radius: 12px; border: 1px solid var(--grid);
+  }
+  .label { font-size: 11px; color: var(--muted); text-align: right; padding-right: 4px; align-self: center; }
+  .num { font-size: 10px; color: var(--muted); text-align: center; padding-top: 2px; }
+  .num.next { color: var(--accent); font-weight: bold; }
+  .cell {
+    height: 26px; padding: 0; border: 0; border-radius: 5px; background: var(--panel); opacity: .6;
+    cursor: pointer; transition: transform .08s, box-shadow .08s;
+  }
+  .cell.beat { opacity: .95; }
+  .cell:hover { box-shadow: inset 0 0 0 2px var(--grid); }
+  .cell.on { background: var(--c); opacity: .85; }
+  .cell.draft { opacity: 1; box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--c); }
+  .cell.gone { background: transparent; opacity: 1; box-shadow: inset 0 0 0 2px var(--c); }
+  .cell.now { box-shadow: inset 0 0 0 1px var(--accent); opacity: 1; }
+  .cell.on.now { transform: scale(1.12); box-shadow: 0 0 10px var(--c); }
+  .cell.draft.now { box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--c), 0 0 12px var(--c); }
+  .rule { height: 3px; border-radius: 2px; background: var(--aurora); opacity: .7; margin: 14px 0; }
+  .legend { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 10px; }
+  .key { display: inline-block; width: 14px; height: 10px; border-radius: 3px; vertical-align: -1px; margin-right: 5px; }
+  .key.k-on { background: #88C0D0; }
+  .key.k-draft { background: #88C0D0; box-shadow: 0 0 0 1px var(--bg), 0 0 0 2px #88C0D0; }
+  .key.k-gone { box-shadow: inset 0 0 0 2px #88C0D0; }
+  #status { min-height: 1.5em; }
+  #status.warn { color: var(--warn); }
+  ol { padding-left: 20px; margin: 8px 0 0; }
+  h2 { font-size: 14px; margin: 26px 0 0; }
+  @media (max-width: 560px) {
+    .roll { gap: 2px; padding: 10px 8px 8px 2px; grid-template-columns: 28px repeat(16, minmax(0, 1fr)); }
+    .cell { height: 24px; border-radius: 3px; }
+    .num { font-size: 8px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .cell { transition: none; } .cell.on.now { transform: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>visitor sequencer</h1>
+      <p class="muted">the loop from <a href="https://github.com/MarieLynneBlock#readme">Marie-Lynne Block's GitHub profile</a>, playing in your browser</p>
+    </div>
+    <p class="muted" id="meta">16 steps · C minor pentatonic</p>
+  </header>
+
+  <div class="bar">
+    <button class="ctl" id="play" type="button">▶ play</button>
+    <button class="ctl" id="reset" type="button" disabled>↺ undo my changes</button>
+    <a class="ctl" id="submit" aria-disabled="true" target="_blank" rel="noopener">send to the README →</a>
+  </div>
+
+  <div class="roll" id="roll" role="group" aria-label="Piano roll: rows are pitches, columns are steps"></div>
+
+  <p class="legend muted">
+    <span><span class="key k-on"></span>in the README now</span>
+    <span><span class="key k-draft"></span>your change</span>
+    <span><span class="key k-gone"></span>note you removed</span>
+  </p>
+
+  <div class="rule"></div>
+  <p id="status" class="muted" role="status">loading the current loop…</p>
+  <p id="credits" class="muted"></p>
+
+  <h2>how it works</h2>
+  <ol class="muted">
+    <li>Press play (or the space bar) to hear the loop as it stands.</li>
+    <li>Click any cell to put a note on that step, or click a note to remove it. Each step holds one note, and your changes play straight away — only for you.</li>
+    <li>Happy? “Send to the README” opens a pre-filled GitHub issue. Submit it and a workflow writes your notes into the shared loop, the piano roll and the header waveform.</li>
+  </ol>
+  <p class="muted" style="margin-top:10px">Up to <span id="max"></span> changes per issue. The shared loop can take a few minutes to refresh here after you submit.</p>
+</main>
+
+<script>
+(() => {
+  "use strict";
+  const OWNER = "MarieLynneBlock";
+  const STEPS = 16;
+  const MAX_CHANGES = 8; // keep in step with MAX_PLACEMENTS in generators/playground.py
+  // Same scale, colours and synth recipe as generators/sequencer/sequencer.py.
+  const PITCHES = ["C4", "Eb4", "F4", "G4", "Bb4", "C5", "Eb5", "F5", "G5", "Bb5"];
+  const MIDI = { C4: 60, Eb4: 63, F4: 65, G4: 67, Bb4: 70, C5: 72, Eb5: 75, F5: 77, G5: 79, Bb5: 82 };
+  const COLOURS = ["#A3BE8C", "#8FBCBB", "#88C0D0", "#81A1C1", "#5E81AC", "#B48EAD", "#BF616A", "#D08770", "#EBCB8B", "#A3BE8C"];
+  const ROWS = [...PITCHES].reverse(); // high pitches on top
+  const pretty = (p) => p.replace("b", "♭");
+
+  const local = ["localhost", "127.0.0.1"].includes(location.hostname);
+  const STATE_URL = local
+    ? "../generators/sequencer/state.json"
+    : `https://raw.githubusercontent.com/${OWNER}/${OWNER}/master/generators/sequencer/state.json`;
+  const ISSUE_BODY = "Just press **Submit new issue** — a workflow will add these notes to the sequencer, "
+    + "re-render the piano roll, WAV, MIDI and header, then close this issue. 🎛️";
+
+  const $ = (id) => document.getElementById(id);
+  const roll = $("roll"), playBtn = $("play"), resetBtn = $("reset"), submit = $("submit"), status = $("status");
+  $("max").textContent = MAX_CHANGES;
+
+  let bpm = 120;
+  let committed = Array(STEPS).fill(null);
+  let authors = Array(STEPS).fill(null);
+  let cursor = 0;
+  const draft = new Map(); // step -> pitch or null (a rest)
+  const effective = (c) => (draft.has(c) ? draft.get(c) : committed[c]);
+
+  // ---------------------------------------------------------------- grid
+  const cells = ROWS.map(() => []);
+  const nums = [];
+  ROWS.forEach((pitch, r) => {
+    const label = document.createElement("span");
+    label.className = "label";
+    label.textContent = pretty(pitch);
+    roll.append(label);
+    for (let c = 0; c < STEPS; c++) {
+      const cell = document.createElement("button");
+      cell.type = "button";
+      cell.className = "cell" + (c % 4 === 0 ? " beat" : "");
+      cell.style.setProperty("--c", COLOURS[PITCHES.indexOf(pitch)]);
+      cell.addEventListener("click", () => toggle(c, pitch));
+      cells[r].push(cell);
+      roll.append(cell);
+    }
+  });
+  roll.append(document.createElement("span"));
+  for (let c = 0; c < STEPS; c++) {
+    const n = document.createElement("span");
+    n.className = "num";
+    n.textContent = c + 1;
+    nums.push(n);
+    roll.append(n);
+  }
+
+  function say(message, warn = false) {
+    status.textContent = message;
+    status.classList.toggle("warn", warn);
+  }
+
+  function toggle(c, pitch) {
+    const next = effective(c) === pitch ? null : pitch;
+    if (next === committed[c]) {
+      draft.delete(c);
+    } else if (!draft.has(c) && draft.size >= MAX_CHANGES) {
+      say(`That would be more than ${MAX_CHANGES} changes — send these first, or undo one.`, true);
+      return;
+    } else {
+      draft.set(c, next);
+    }
+    if (next) audition(next);
+    paint();
+  }
+
+  function paint() {
+    ROWS.forEach((pitch, r) => {
+      for (let c = 0; c < STEPS; c++) {
+        const cell = cells[r][c];
+        const on = effective(c) === pitch;
+        const changed = draft.has(c);
+        const gone = changed && !on && committed[c] === pitch;
+        cell.classList.toggle("on", on);
+        cell.classList.toggle("draft", on && changed);
+        cell.classList.toggle("gone", gone);
+        cell.setAttribute("aria-pressed", String(on));
+        let label = `step ${c + 1}, ${pretty(pitch)}`;
+        if (on && changed) label += ", your change";
+        else if (on && authors[c]) label += `, placed by @${authors[c]}`;
+        else if (gone) label += ", removed by you";
+        cell.setAttribute("aria-label", label);
+        cell.title = label;
+      }
+    });
+    nums.forEach((n, c) => n.classList.toggle("next", c === cursor));
+
+    const steps = [...draft.keys()].sort((a, b) => a - b);
+    resetBtn.disabled = steps.length === 0;
+    if (steps.length) {
+      const request = steps.map((c) => `${c + 1}=${draft.get(c) || "rest"}`).join(" ");
+      submit.href = `https://github.com/${OWNER}/${OWNER}/issues/new?title=${encodeURIComponent("sequencer: " + request)}`
+        + `&body=${encodeURIComponent(ISSUE_BODY)}`;
+      submit.setAttribute("aria-disabled", "false");
+      say(`${steps.length} change${steps.length > 1 ? "s" : ""} ready on step${steps.length > 1 ? "s" : ""} `
+        + `${steps.map((c) => c + 1).join(", ")} — only you can hear ${steps.length > 1 ? "them" : "it"} until you send.`);
+    } else {
+      submit.removeAttribute("href");
+      submit.setAttribute("aria-disabled", "true");
+      say("Click a cell to try a note.");
+    }
+  }
+
+  resetBtn.addEventListener("click", () => { draft.clear(); paint(); });
+
+  // ---------------------------------------------------------------- audio
+  let ctx = null, bus = null, envelope = null, envelopeFor = 0;
+  const stepDur = () => 60 / bpm / 2; // eighth notes
+
+  function audio() {
+    if (!ctx) {
+      ctx = new (window.AudioContext || window.webkitAudioContext)();
+      bus = ctx.createGain();
+      const out = ctx.createGain();
+      out.gain.value = 0.32;
+      const delay = ctx.createDelay(2);
+      delay.delayTime.value = stepDur() * 1.5; // the dotted-eighth echo
+      const wet = ctx.createGain();
+      wet.gain.value = 0.28;
+      bus.connect(out);
+      bus.connect(delay).connect(wet).connect(out);
+      out.connect(ctx.destination);
+    }
+    if (ctx.state === "suspended") ctx.resume();
+    return ctx;
+  }
+
+  function envelopeCurve(dur) {
+    if (envelope && envelopeFor === dur) return envelope;
+    const n = 256, attack = 0.008, release = 0.18;
+    envelope = new Float32Array(n);
+    for (let i = 0; i < n; i++) {
+      const t = (i / (n - 1)) * dur;
+      let v = Math.min(1, t / attack) * Math.exp(-3.2 * t / dur);
+      if (t > dur - release) v *= (dur - t) / release;
+      envelope[i] = v * 0.55;
+    }
+    envelopeFor = dur;
+    return envelope;
+  }
+
+  function playNote(pitch, when) {
+    const dur = stepDur() * 1.6;
+    const freq = 440 * 2 ** ((MIDI[pitch] - 69) / 12);
+    const amp = ctx.createGain();
+    amp.gain.setValueAtTime(0, when);
+    amp.gain.setValueCurveAtTime(envelopeCurve(dur), when, dur);
+    amp.connect(bus);
+    [[1, 1], [2, 0.35], [3, 0.15]].forEach(([harmonic, level]) => {
+      const osc = ctx.createOscillator();
+      const g = ctx.createGain();
+      osc.frequency.value = freq * harmonic;
+      g.gain.value = level;
+      osc.connect(g).connect(amp);
+      osc.start(when);
+      osc.stop(when + dur + 0.02);
+    });
+  }
+
+  function audition(pitch) {
+    audio();
+    playNote(pitch, ctx.currentTime + 0.02);
+  }
+
+  // Look-ahead scheduler: a timer queues notes slightly ahead on the audio clock,
+  // and the animation frame moves the playhead when the audio clock reaches them.
+  let playing = false, timer = 0, nextStep = 0, nextTime = 0, shown = -1;
+  const queue = [];
+
+  function schedule() {
+    while (nextTime < ctx.currentTime + 0.12) {
+      const pitch = effective(nextStep);
+      if (pitch) playNote(pitch, nextTime);
+      queue.push({ step: nextStep, time: nextTime });
+      nextStep = (nextStep + 1) % STEPS;
+      nextTime += stepDur();
+    }
+  }
+
+  function showStep(step) {
+    if (step === shown) return;
+    for (let r = 0; r < ROWS.length; r++) {
+      if (shown >= 0) cells[r][shown].classList.remove("now");
+      if (step >= 0) cells[r][step].classList.add("now");
+    }
+    shown = step;
+  }
+
+  function frame() {
+    if (!playing) return;
+    while (queue.length && queue[0].time <= ctx.currentTime) showStep(queue.shift().step);
+    requestAnimationFrame(frame);
+  }
+
+  function start() {
+    audio();
+    playing = true;
+    nextStep = 0;
+    nextTime = ctx.currentTime + 0.06;
+    queue.length = 0;
+    schedule();
+    timer = setInterval(schedule, 25);
+    requestAnimationFrame(frame);
+    playBtn.textContent = "■ stop";
+  }
+
+  function stop() {
+    playing = false;
+    clearInterval(timer);
+    queue.length = 0;
+    showStep(-1);
+    playBtn.textContent = "▶ play";
+  }
+
+  playBtn.addEventListener("click", () => (playing ? stop() : start()));
+  document.addEventListener("keydown", (e) => {
+    if (e.code !== "Space" || e.target.closest("button, a, input")) return;
+    e.preventDefault();
+    playing ? stop() : start();
+  });
+  document.addEventListener("visibilitychange", () => { if (document.hidden && playing) stop(); });
+
+  // ---------------------------------------------------------------- state
+  async function load() {
+    try {
+      const res = await fetch(STATE_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error(res.status);
+      const state = await res.json();
+      bpm = Number(state.bpm) || 120;
+      committed = state.steps.slice(0, STEPS).map((s) => (PITCHES.includes(s.pitch) ? s.pitch : null));
+      authors = state.steps.slice(0, STEPS).map((s) => s.author || null);
+      cursor = (Number(state.cursor) || 0) % STEPS;
+      $("meta").textContent = `${STEPS} steps · C minor pentatonic · ${bpm} bpm`;
+      const filled = committed.filter(Boolean).length;
+      const last = state.last_action && state.last_action.actor;
+      $("credits").textContent = `${filled}/${STEPS} steps filled · ${state.notes_added || 0} notes placed by visitors`
+        + (last ? ` · last composer @${last}` : "");
+      paint();
+    } catch (err) {
+      paint();
+      say("Could not load the shared loop, so this grid is empty — you can still play with it. Reload to try again.", true);
+    }
+  }
+
+  load();
+})();
+</script>
+</body>
+</html>
